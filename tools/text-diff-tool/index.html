@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Diff Tool: Quick, Efficient & Accurate for Text Comparisons - 52tools</title>
@@ -16,7 +17,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="../../shared/css/styles.css">
+    <link rel="stylesheet" href="shared/css/styles.css">
     <style>
         @keyframes pulse {
             0% { opacity: 0.6; }
@@ -106,7 +107,7 @@
                     data.tools.forEach(tool => {
                         const li = document.createElement('li');
                         const link = document.createElement('a');
-                        link.href = `/tools/${tool.slug}/index.html`;
+                        link.href = `tools/${tool.slug}/index.html`;
                         link.textContent = tool.name;
                         link.setAttribute('aria-label', `Access ${tool.name} tool page`);
                         li.appendChild(link);
@@ -137,6 +138,6 @@
             });
         });
     </script>
-    <script src="../../shared/js/scripts.js"></script>
+    <script src="shared/js/scripts.js"></script>
 </body>
 </html>

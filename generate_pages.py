@@ -32,7 +32,8 @@ client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 # ===============================================
 # ✅ Global settings from .env
 # ===============================================
-base_url = os.getenv("BASE_URL", "https://tool52.com")
+base_url = os.getenv("BASE_URL", "https://troygamble.github.io/52tools")
+
 
 # ===============================================
 # ✅ Utility: Slugify tool names for safe filenames
@@ -183,15 +184,24 @@ async def generate_tool_page(tool_name, log_file, semaphore, force_regenerate=Fa
                 logging.error(f"Missing required SEO fields for {tool_name}: {seo_content}")
                 return
 
+            import re  # (add this at the top if not already there)
+
+            # Extract only the <body> content from the HTML
+            full_html = tool_content.get("html", "")
+            body_match = re.search(r"<body.*?>(.*?)</body>", full_html, re.DOTALL)
+            tool_html_content = body_match.group(1) if body_match else full_html
+
+
             rendered_page = template.render(
                 tool_title=seo_content.get("title", "Untitled Tool"),
                 tool_description=seo_content.get("description", "No description available."),
                 tool_keywords=seo_content.get("keywords", ""),
                 canonical_url=f"{base_url}/tools/{tool_slug}/index.html",
                 navigation="",
-                tool_content=tool_content.get("html", "") + seo_content.get("long_tail_content", ""),
+                tool_content=tool_html_content + seo_content.get("long_tail_content", ""),
                 depth=2
             )
+
 
             os.makedirs(tool_dir, exist_ok=True)
             async with aiofiles.open(f"{tool_dir}/index.html", "w", encoding="utf-8") as f:

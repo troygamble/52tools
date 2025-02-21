@@ -22,7 +22,8 @@ load_dotenv()
 # ===============================================
 # ✅ Global settings from .env
 # ===============================================
-base_url = os.getenv("BASE_URL", "https://tool52.com")
+base_url = os.getenv("BASE_URL", "https://troygamble.github.io/52tools")
+
 
 # ===============================================
 # ✅ Utility: Slugify tool names for safe filenames

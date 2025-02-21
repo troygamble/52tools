@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="{{ base_url }}/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>52tools - The Ultimate Collection of Online Tools - 52tools</title>
@@ -113,7 +114,7 @@
                     data.tools.forEach(tool => {
                         const li = document.createElement('li');
                         const link = document.createElement('a');
-                        link.href = `/tools/${tool.slug}/index.html`;
+                        link.href = `tools/${tool.slug}/index.html`;
                         link.textContent = tool.name;
                         link.setAttribute('aria-label', `Access ${tool.name} tool page`);
                         li.appendChild(link);
