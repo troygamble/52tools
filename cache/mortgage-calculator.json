@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Online Mortgage Calculator - Free & Simple to Use",
+        "description": "Easily calculate your mortgage payments with our free online Mortgage Calculator. Accurately plan your finances, try now!",
+        "keywords": "Mortgage Calculator, Online Mortgage Calculator, Mortgage Payment Calculator, Home Loan Calculator, Mortgage Calculator free",
+        "long_tail_content": "https://www.website.com/tools/mortgage-calculator"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>Mortgage Calculator</title>\n<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>\n</head>\n<body>\n<h1>Mortgage Calculator</h1>\n<form id='mortgageCalculator'>\n<label for='homePrice'>Home Price:</label>\n<input type='number' id='homePrice' required><br>\n<label for='downPayment'>Down Payment:</label>\n<input type='number' id='downPayment' required><br>\n<label for='loanTerm'>Loan Term (Years):</label>\n<input type='number' id='loanTerm' required><br>\n<label for='interestRate'>Interest Rate:</label>\n<input type='number' id='interestRate' required><br>\n<button type='submit'>Calculate</button>\n</form>\n<h2 id='monthlyPayment'></h2>\n<script>\n$('#mortgageCalculator').on('submit', function(event){\nevent.preventDefault();\nvar homePrice = $('#homePrice').val();\nvar downPayment = $('#downPayment').val();\nvar loanAmount = homePrice - downPayment;\nvar loanTerm = $('#loanTerm').val();\nvar numPayments = loanTerm * 12;\nvar interestRate = $('#interestRate').val();\nvar monthlyInterestRate = (interestRate / 100) / 12;\nvar monthlyPayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numPayments));\n$('#monthlyPayment').text('Monthly Payment: ' + monthlyPayment.toFixed(2));\n});\n</script>\n</body>\n</html>"
+    }
+}

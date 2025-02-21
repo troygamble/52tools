@@ -1,0 +1,12 @@
+{
+    "seo": {
+        "title": "Real-time Weather Widget: Accurate Forecasts & Updates",
+        "description": "Stay informed on local and global weather conditions on-the-go with our Weather Widget. Receive real-time weather updates, accurate forecasts, temperature information, and more.",
+        "keywords": "weather widget, weather updates, real-time weather, accurate forecasts, local weather, global weather",
+        "long_tail_content": "https://www.yourwebsite.com/widgets/weather-widget"
+    },
+    "html": {
+        "html": "<div id='weather-widget'></div>",
+        "js": "fetch('https://api.weatherapi.com/v1/current.json?key=YOUR_KEY&location=YOUR_LOCATION') .then(response => response.json()) .then(data => { let widget = document.getElementById('weather-widget'); widget.innerHTML = `<h1>Current Weather</h1><h2>${data.location.name}, ${data.location.country}</h2><p>${data.current.temp_c}\u00b0C, ${data.current.condition.text}</p>`; })"
+    }
+}

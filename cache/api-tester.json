@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "API Tester - Efficient and Reliable Tool for API Testing",
+        "description": "API Tester is an intuitive, robust, and highly reliable tool designed to make API testing faster, easier, and more efficient. Designed to cater to both beginners and experts.",
+        "keywords": "API testing, API tester, Web API Testing, REST API testing tool, Automated API testing, API Testing Software, API endpoint tester",
+        "canonical_url": "https://www.apitester.com"
+    },
+    "html": {
+        "html": "<html>\n<head>\n    <title>API Tester</title>\n    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>\n</head>\n<body>\n    <h1>API Tester</h1>\n    <form id='api-tester-form'>\n        <label for='url'>URL:</label><br>\n        <input type='text' id='url' name='url'><br>\n        <input type='submit' value='Test API'>\n    </form>\n    <pre id='result'></pre>\n    <script>\n        $(document).ready(function(){\n            $('#api-tester-form').submit(function(e){\n                e.preventDefault();\n                var url = $('#url').val();\n                $.ajax({\n                    url: url,\n                    type: 'GET',\n                    success: function(data) {\n                        $('#result').text(JSON.stringify(data, null, 2));\n                    },\n                    error: function(error) {\n                        $('#result').text('Error: ' + error);\n                    }\n                });\n            });\n        });\n    </script>\n</body>\n</html>"
+    }
+}

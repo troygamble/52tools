@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Best HTML Entity Encoder/Decoder - Convert Special Characters Online",
+        "description": "Use our online HTML Entity Encoder/Decoder tool to quickly encode and decode special characters in your HTML code. It's free, fast, and browser-based.",
+        "keywords": "HTML Encoder, HTML Decoder, HTML Entity Encoder/Decoder, Online HTML Encoder, Online HTML Decoder, Convert Special Characters, Encode HTML, Decode HTML",
+        "canonical_URL": "https://www.yourwebsite.com/html-entity-encoder-decoder"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>HTML Entity Encoder/Decoder</title>\n<script>\nfunction encodeHTML() {\nvar htmlInput = document.getElementById('htmlInput').value;\nvar encodedHTML = encodeURIComponent(htmlInput);\ndocument.getElementById('output').innerHTML = encodedHTML;\n} \nfunction decodeHTML() {\nvar encodedHTML = document.getElementById('htmlInput').value;\nvar decodedHTML = decodeURIComponent(encodedHTML);\ndocument.getElementById('output').innerHTML = decodedHTML;\n}\n</script>\n</head>\n<body>\n<h1>HTML Entity Encoder/Decoder</h1>\n<textarea id='htmlInput' rows='10' cols='50'></textarea><br>\n<button onclick='encodeHTML()'>Encode</button>\n<button onclick='decodeHTML()'>Decode</button>\n<p id='output'></p>\n</body>\n</html>"
+    }
+}

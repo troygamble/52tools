@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Best Online Time Zone Converter | Convert Time Zones Quickly",
+        "description": "Effortlessly convert time zones with our easy-to-use online Time Zone Converter - perfect for business meetings, travel planning & international communication.",
+        "keywords": "Time Zone Converter, time conversion tool, global time zones, world time converter, timezone calculator, international time conversion",
+        "long_tail_content": "https://www.example.com/time-zone-converter"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.31/moment-timezone-with-data.min.js\"></script>\n</head>\n<body>\n<h2>Time Zone Converter</h2>\n<label for=\"time\">Time (24-hour format):</label><br>\n<input type=\"text\" id=\"time\" name=\"time\" value=\"12:00\"><br>\n<label for=\"fromZone\">From Time Zone:</label><br>\n<input type=\"text\" id=\"fromZone\" name=\"fromZone\" value=\"America/New_York\"><br>\n<label for=\"toZone\">To Time Zone:</label><br>\n<input type=\"text\" id=\"toZone\" name=\"toZone\" value=\"Asia/Kolkata\"><br>\n<button id=\"convert\" onclick=\"convertTime()\">Convert</button>\n<p id=\"output\"></p>\n<script>\nfunction convertTime() {\n    var time = $('#time').val();\n    var fromZone = $('#fromZone').val();\n    var toZone = $('#toZone').val();\n    var result = moment.tz(time, 'HH:mm', fromZone).tz(toZone).format('HH:mm');\n    $('#output').text('Converted Time: '+result);\n}\n</script>\n</body>\n</html>"
+    }
+}

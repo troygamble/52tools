@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Free Binary to Decimal Converter Online | Fast & Accurate",
+        "description": "Use our free Binary to Decimal Converter tool to quickly convert binary code into decimal numbers, with ease and accuracy. No downloads or technical skills required. Start converting now!",
+        "keywords": "Binary to Decimal, Binary Converter, Decimal Converter, Online Conversion, Free Binary to Decimal Conversion, Convert Binary Code, Binary Code Translation",
+        "long_tail_content": "Our easy-to-use, accurate, and fast online Binary to Decimal Converter tool will help you translate binary code into decimal numbers in a few simple steps. Great for students, programmers, and anyone who works with binary and decimal numbers."
+    },
+    "html": {
+        "html": "<div id='conversion-tool'>\n\t<input id='binary-input' type='text' placeholder='Enter binary value' />\n\t<button onclick='binaryToDecimal()'>Convert</button>\n\t<p id='result'></p>\n</div>\n<script>\n\tfunction binaryToDecimal() {\n\t\tvar binary = document.getElementById('binary-input').value;\n\t\tvar decimal = 0;\n\t\tfor(var i = 0; i < binary.length; i++){\n\t\t\tif(binary[binary.length-i-1] === '1'){\n\t\t\t\tdecimal += Math.pow(2, i);\n\t\t\t}\n\t\t}\n\t\tdocument.getElementById('result').innerText = 'Decimal value is: ' + decimal + '.';\n\t}\n</script>"
+    }
+}

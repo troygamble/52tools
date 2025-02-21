@@ -1,0 +1,117 @@
+2025-02-21 22:14:48,108 - INFO - Jinja2 environment and template loaded successfully.
+2025-02-21 22:14:48,118 - INFO - Loaded 50 tools from tools_list.json.
+2025-02-21 22:14:48,126 - INFO - Loaded metadata for 2 tools.
+2025-02-21 22:14:48,127 - INFO - Template rendered successfully.
+2025-02-21 22:14:48,127 - INFO - index.html generated successfully.
+2025-02-21 22:14:48,129 - INFO - tools_list.json generated successfully.
+2025-02-21 22:14:48,129 - INFO - Index page generation script completed.
+2025-02-21 22:25:24,264 - INFO - Jinja2 environment and template loaded successfully.
+2025-02-21 22:25:24,267 - INFO - Loaded 50 tools from tools_list.json.
+2025-02-21 22:25:24,267 - INFO - Loaded metadata for 2 tools.
+2025-02-21 22:25:24,267 - INFO - Generating metadata for: IBAN Validator
+2025-02-21 22:25:33,550 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:25:33,555 - INFO - Generating metadata for: Credit Card Validator
+2025-02-21 22:25:40,209 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:25:40,210 - INFO - Generating metadata for: URL Validator
+2025-02-21 22:25:50,708 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:25:50,712 - INFO - Generating metadata for: Image Resizer
+2025-02-21 22:25:58,385 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:25:58,386 - INFO - Generating metadata for: To-Do List
+2025-02-21 22:26:04,460 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:26:04,461 - INFO - Generating metadata for: Time Zone Converter
+2025-02-21 22:26:13,466 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:26:13,467 - INFO - Generating metadata for: UUID Generator
+2025-02-21 22:26:19,629 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:26:19,634 - INFO - Generating metadata for: YAML Formatter
+2025-02-21 22:26:30,407 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:26:30,409 - INFO - Generating metadata for: Color Palette Generator
+2025-02-21 22:26:37,612 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:26:37,613 - INFO - Generating metadata for: File Size Converter
+2025-02-21 22:26:45,617 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:26:45,618 - ERROR - Failed to generate metadata for File Size Converter: Invalid control character at: line 2 column 121 (char 122)
+2025-02-21 22:26:45,618 - INFO - Generating metadata for: API Tester
+2025-02-21 22:26:54,817 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:26:54,818 - INFO - Generating metadata for: Password Generator
+2025-02-21 22:27:01,747 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:27:01,784 - INFO - Generating metadata for: Git Cheat Sheet
+2025-02-21 22:27:10,503 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:27:10,520 - INFO - Generating metadata for: Tip Calculator
+2025-02-21 22:27:19,345 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:27:19,354 - INFO - Generating metadata for: Pomodoro Timer
+2025-02-21 22:27:28,996 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:27:29,005 - INFO - Generating metadata for: Lorem Ipsum Generator
+2025-02-21 22:27:38,953 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:27:38,956 - INFO - Generating metadata for: Percentage Calculator
+2025-02-21 22:27:45,171 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:27:45,179 - INFO - Generating metadata for: Character Counter
+2025-02-21 22:27:51,714 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:27:51,722 - INFO - Generating metadata for: World Clock
+2025-02-21 22:28:00,195 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:28:00,203 - INFO - Generating metadata for: Cron Job Scheduler
+2025-02-21 22:28:08,395 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:28:08,396 - INFO - Generating metadata for: Text Diff Tool
+2025-02-21 22:28:15,979 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:28:15,980 - INFO - Generating metadata for: BMI Calculator
+2025-02-21 22:28:23,690 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:28:23,702 - INFO - Generating metadata for: IP Address Lookup
+2025-02-21 22:28:35,227 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:28:35,236 - INFO - Generating metadata for: Browser Details Detector
+2025-02-21 22:28:42,411 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:28:42,417 - INFO - Generating metadata for: Currency Converter
+2025-02-21 22:28:50,998 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:28:50,999 - INFO - Generating metadata for: Email Validator
+2025-02-21 22:29:01,448 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:29:01,449 - INFO - Generating metadata for: Text Case Converter
+2025-02-21 22:29:12,433 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:29:12,445 - INFO - Generating metadata for: CSV to JSON Converter
+2025-02-21 22:29:20,468 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:29:20,479 - INFO - Generating metadata for: XML Formatter
+2025-02-21 22:29:25,446 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:29:25,452 - INFO - Generating metadata for: Fake Data Generator
+2025-02-21 22:29:32,564 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:29:32,565 - INFO - Generating metadata for: Mortgage Calculator
+2025-02-21 22:29:40,409 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:29:40,410 - INFO - Generating metadata for: Hex to RGB Converter
+2025-02-21 22:29:49,518 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:29:49,524 - INFO - Generating metadata for: Loan Calculator
+2025-02-21 22:29:57,065 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:29:57,069 - INFO - Generating metadata for: Image to Base64 Converter
+2025-02-21 22:30:07,937 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:30:07,938 - INFO - Generating metadata for: SQL Query Builder
+2025-02-21 22:30:15,514 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:30:15,531 - INFO - Generating metadata for: Color Picker
+2025-02-21 22:30:24,527 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:30:24,543 - INFO - Generating metadata for: Weather Widget
+2025-02-21 22:30:31,728 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:30:31,729 - INFO - Generating metadata for: Regex Tester
+2025-02-21 22:30:41,524 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:30:41,525 - INFO - Generating metadata for: Text to Speech
+2025-02-21 22:30:51,941 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:30:51,942 - INFO - Generating metadata for: Age Calculator
+2025-02-21 22:31:02,604 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:31:02,605 - INFO - Generating metadata for: HTML Formatter
+2025-02-21 22:31:09,168 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:31:09,179 - INFO - Generating metadata for: QR Code Generator
+2025-02-21 22:31:22,678 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:31:22,679 - INFO - Generating metadata for: Notes App
+2025-02-21 22:31:32,172 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:31:32,184 - INFO - Generating metadata for: Markdown Editor
+2025-02-21 22:31:41,160 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:31:41,166 - INFO - Generating metadata for: Image Compressor
+2025-02-21 22:31:49,911 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:31:49,912 - INFO - Generating metadata for: Binary to Decimal Converter
+2025-02-21 22:31:59,128 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:31:59,136 - INFO - Generating metadata for: Random Number Generator
+2025-02-21 22:32:05,686 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:32:05,686 - INFO - Generating metadata for: Unit Converter
+2025-02-21 22:32:13,503 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 22:32:13,516 - INFO - Updated tools_metadata.json with generated entries.
+2025-02-21 22:32:13,516 - CRITICAL - Critical failure in generate_index_page: string indices must be integers, not 'str'
+2025-02-21 22:32:13,519 - INFO - Index page generation script completed.
+2025-02-21 22:49:16,427 - INFO - Jinja2 environment and template loaded successfully.
+2025-02-21 22:49:16,434 - INFO - Loaded 0 tools from tools_list.json.
+2025-02-21 22:49:16,434 - WARNING - No tools found to include in the index page.
+2025-02-21 22:49:16,436 - INFO - Loaded metadata for 50 tools.
+2025-02-21 22:49:16,436 - INFO - Template rendered successfully.
+2025-02-21 22:49:16,436 - INFO - index.html generated successfully.
+2025-02-21 22:49:16,436 - INFO - Index page generation script completed.

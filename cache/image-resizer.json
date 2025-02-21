@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Best Free Online Image Resizer | Resize Your Images Instantly",
+        "description": "Use 'Image Resizer' for quick and easy online resizing of your images. Perfect for reducing size, adjusting dimensions, or creating custom sizes. No software download required, resize images from your browser directly.",
+        "keywords": "Image Resizer, Resize Image online, Free Image Resizer, Photo Resizer, JPEG Resizer, PNG Resizer, WebP Resizer, Image Resizer tool",
+        "long_tail_content": "https://www.imageresizer.com/online-tool"
+    },
+    "html": {
+        "html": "<div id='imageResizer'><input type='file' id='image_upload' /><button id='resize_button'>Resize</button><canvas id='resize_canvas'></canvas></div><script>document.getElementById('resize_button').addEventListener('click', function(){ var canvas = document.getElementById('resize_canvas'); var context = canvas.getContext('2d'); var img = new Image(); img.onload = function(){ canvas.width = img.width / 2; canvas.height = img.height / 2; context.drawImage(img, 0, 0, img.width / 2, img.height / 2); }; img.src = URL.createObjectURL(document.getElementById('image_upload').files[0]);});</script>"
+    }
+}

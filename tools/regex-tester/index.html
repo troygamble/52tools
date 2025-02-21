@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>Online Regex Tester: Effective Tool for Regular Expressions Testing - 52tools</title>
+    <meta name="description" content="Our 'Regex Tester' is a versatile online tool designed to test and debug your regular expressions. Perfect for developers and programmers to make their workflow seamless.">
+    <meta name="keywords" content="Regex Tester, Regular Expressions Tester, Online Regex Tool, Regex Check, Debug Regular Expressions">
+    <link rel="canonical" href="https://tool52.com/tools/regex-tester/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="Online Regex Tester: Effective Tool for Regular Expressions Testing - 52tools">
+    <meta property="og:description" content="Our 'Regex Tester' is a versatile online tool designed to test and debug your regular expressions. Perfect for developers and programmers to make their workflow seamless.">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/regex-tester/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,37 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>Online Regex Tester: Effective Tool for Regular Expressions Testing</h1>
+        <p>Our 'Regex Tester' is a versatile online tool designed to test and debug your regular expressions. Perfect for developers and programmers to make their workflow seamless.</p>
+        <!DOCTYPE html>
+<html>
+<head>
+<title>Regex Tester</title>
+</head>
+<body>
+<h2>REGEX TESTER</h2>
+<form>
+Regex pattern:<br>
+<input type="text" id="pattern" name="pattern"><br>
+Test string:<br>
+<input type="text" id="testString" name="testString"><br><br>
+<input type="button" value="Test" onclick="testRegex()">
+</form>
+<p id="result"></p>
+<script>
+function testRegex() {
+let pattern = document.getElementById('pattern').value;
+let testString = document.getElementById('testString').value;
+try {
+pattern = new RegExp(pattern);
+document.getElementById('result').innerText = pattern.test(testString) ? 'Match Found.': 'No match.';
+} catch(e) {
+document.getElementById('result').innerText = 'Invalid regular expression.';
+}
+}
+</script>
+</body>
+</html>https://www.toolswebsite.com/regex-tester
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

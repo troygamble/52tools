@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "UUID Generator - Create Unique Identifiers Efficiently",
+        "description": "Skip the hassle of manual coding. Use our UUID Generator web tool to create unique identifiers fixable for various uses, including databases, systems, and more.",
+        "keywords": "UUID Generator, Unique Identifier Generator, Free UUID Generator, Online UUID Tool, UUID Creation Tool",
+        "long_tail_content": "https://www.uuidgenerator.com/create-unique-identifier"
+    },
+    "html": {
+        "html": "<html>\n<head>\n<title>UUID Generator</title>\n<script>\nfunction generateUUID() {\nvar d = new Date().getTime();\nif (typeof performance !== 'undefined' && typeof performance.now === 'function') {\nd += performance.now();\n}\nreturn 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {\nvar r = (d + Math.random() * 16) % 16 | 0;\nd = Math.floor(d / 16);\nreturn (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);\n});\n}\ndocument.getElementById('generate').addEventListener('click', function() {\ndocument.getElementById('uuid').value = generateUUID();\n});\n</script>\n</head>\n<body>\n<button id='generate'>Generate UUID</button>\n<input type='text' id='uuid' readonly>\n</body>\n</html>"
+    }
+}

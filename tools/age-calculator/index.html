@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>Free Online Age Calculator - Calculate Your Age Precisely - 52tools</title>
+    <meta name="description" content="Our free online Age Calculator tool accurately calculates your age in years, months, and days. Discover the number of days you've been alive with our precise tool.">
+    <meta name="keywords" content="online age calculator, calculate age, free age calculator, age calculating tool, precise age identifier, calculate your age, age calculator tool">
+    <link rel="canonical" href="https://tool52.com/tools/age-calculator/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="Free Online Age Calculator - Calculate Your Age Precisely - 52tools">
+    <meta property="og:description" content="Our free online Age Calculator tool accurately calculates your age in years, months, and days. Discover the number of days you've been alive with our precise tool.">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/age-calculator/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,36 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>Free Online Age Calculator - Calculate Your Age Precisely</h1>
+        <p>Our free online Age Calculator tool accurately calculates your age in years, months, and days. Discover the number of days you've been alive with our precise tool.</p>
+        <!DOCTYPE html>
+<html>
+<head>
+<title>Age Calculator</title>
+<script>
+function calculateAge() {
+const dateOfBirth = document.getElementById('dob').value;
+const dob = new Date(dateOfBirth);
+const today = new Date();
+const ageInMilliseconds = today - dob;
+const ageInSeconds = ageInMilliseconds / 1000;
+const ageInMinutes = ageInSeconds / 60;
+const ageInHours = ageInMinutes / 60;
+const ageInDays = ageInHours / 24;
+const ageInYears = ageInDays / 365;
+return Math.floor(ageInYears);
+}
+document.getElementById('age').innerHTML = calculateAge();
+</script>
+</head>
+<body>
+<h2>Age Calculator</h2>
+<p>Enter your Date of Birth:</p>
+<input type='date' id='dob'>
+<button onclick='calculateAge()'>Calculate Age</button>
+<p id='age'></p>
+</body>
+</html>
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

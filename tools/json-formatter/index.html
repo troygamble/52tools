@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>Fast, reliable JSON Formatter online - 52tools</title>
+    <meta name="description" content="Organize and beautify your JSON data with our online JSON Formatter. Ideal for editing, validating, and producing readable JSON structure instantly.">
+    <meta name="keywords" content="JSON, online JSON formatter, JSON beautifier, JSON editor, JSON tools, JSON validation, JSON structure, readable JSON">
+    <link rel="canonical" href="https://tool52.com/tools/json-formatter/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="Fast, reliable JSON Formatter online - 52tools">
+    <meta property="og:description" content="Organize and beautify your JSON data with our online JSON Formatter. Ideal for editing, validating, and producing readable JSON structure instantly.">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/json-formatter/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,39 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>Fast, reliable JSON Formatter online</h1>
+        <p>Organize and beautify your JSON data with our online JSON Formatter. Ideal for editing, validating, and producing readable JSON structure instantly.</p>
+        <!DOCTYPE html>
+<html>
+<head>
+<title>JSON Formatter</title>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+<textarea v-model="jsonInput" @input="formatJSON()"></textarea>
+<pre v-html="formattedJSON"></pre>
+</div>
+<script>
+new Vue({
+  el: '#app',
+  data: {
+    jsonInput: '',
+    formattedJSON: ''
+  },
+  methods: {
+    formatJSON() {
+      try {
+        this.formattedJSON = JSON.stringify(JSON.parse(this.jsonInput), null, 2);
+      } catch (e) {
+        this.formattedJSON = 'Invalid JSON';
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>https://www.jsonformatter.com
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

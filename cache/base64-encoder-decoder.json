@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Free Online Base64 Encoder/Decoder - Convert Text & Files",
+        "description": "Use our free online Base64 Encoder/Decoder to easily convert your text or files to and from Base64 format. Accurate, fast, and secure!",
+        "keywords": "base64 encoder, base64 decoder, online base64 converter, convert to base64, convert from base64, text to base64, file to base64, base64 to text, base64 to file",
+        "canonical_URL": "https://www.base64encoderdecoder.com"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>Base64 Encoder/Decoder</title>\n<script>\nfunction base64Encode() {\nvar val = document.getElementById('input').value;\nvar base64 = window.btoa(val);\ndocument.getElementById('output').value = base64;\n}\nfunction base64Decode() {\nvar val = document.getElementById('output').value;\nvar text = window.atob(val);\ndocument.getElementById('input').value = text;\n}\n</script>\n</head>\n<body>\n<h2>Base64 Encoder/Decoder</h2>\n<div>\n<textarea id='input' placeholder='Input'></textarea>\n<button onclick='base64Encode()'>Encode</button>\n<button onclick='base64Decode()'>Decode</button>\n<textarea id='output' placeholder='Output'></textarea>\n</div>\n</body>\n</html>"
+    }
+}

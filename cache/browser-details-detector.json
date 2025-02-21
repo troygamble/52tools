@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Browser Details Detector - Detect Your Web Browser Specifications Online",
+        "description": "Carry out comprehensive tests with our browser details detector tool. Check your web browser's specifications instantly, including version, user agent, operating system. Ideal for web developers and quality analysts.",
+        "keywords": "Browser detector, Web browser details, User agent detector, Check browser version online, Browser info tool, Browser specification tool",
+        "canonical_url": "https://www.website.com/browser-details-detector"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>Browser Details Detector</title>\n</head>\n<body>\n<h2>Browser Details:</h2>\n<p id='details'></p>\n\n<script>\nvar details = 'Browser CodeName: ' + navigator.appCodeName;\ndetails += '<br>Browser Name: ' + navigator.appName;\ndetails += '<br>Browser Version: ' + navigator.appVersion;\ndetails += '<br>Cookies Enabled: ' + navigator.cookieEnabled;\ndetails += '<br>Platform: ' + navigator.platform;\nif (navigator.userAgent) {\ndetails += '<br>User-agent header: ' + navigator.userAgent;\n}\ndocument.getElementById('details').innerHTML = details;\n</script>\n</body>\n</html>"
+    }
+}

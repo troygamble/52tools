@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Check Your International Bank Account Numbers with IBAN Validator",
+        "description": "Easily check and validate all your IBANs using our reliable online IBAN Validator tool. Ensure properly formatted IBANs and smooth international transactions in just a few clicks.",
+        "keywords": "IBAN, IBAN validation, IBAN checking, online IBAN validator, IBAN validator tool, IBAN number validation, validate international bank account numbers",
+        "long_tail_content": "https://www.ibanvalidator.com/validate-your-iban"
+    },
+    "html": {
+        "html": "<!DOCTYPE html><html><head><title>IBAN Validator</title><script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script></head><body><h2>IBAN Validator</h2><div><input type='text' id='iban' placeholder='Enter your IBAN here.'><button id='validate'>Validate</button></div><div id='message'></div><script>$('#validate').click(function(){var iban = $('#iban').val(); $.get('https://openiban.com/validate/' + iban, function(data){$('#message').html(data.valid ? 'Valid IBAN.' : 'Invalid IBAN.');});});</script></body></html>"
+    }
+}

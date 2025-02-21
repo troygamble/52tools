@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "YAML Formatter - Simple & Efficient Online Tool for Formatting YAML Files",
+        "description": "Use YAML Formatter to make your YAML files more readable and consistent. Our online tool allows for hassle-free formating, which improves code clarity and debugging process.",
+        "keywords": "YAML Formatter, YAML, Online YAML Formatter, YAML Files, Code Formatter, YAML Code Formatter",
+        "long_tail_content": "online-tool-for-formatting-yaml-files"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n\t<title>YAML Formatter</title>\n\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.11.0/js-yaml.min.js\"></script>\n</head>\n<body>\n\t<textarea id=\"input\" placeholder=\"Enter YAML here\"></textarea>\n\t<button id=\"format\">Format YAML</button>\n\t<pre id=\"output\"></pre>\n\t<script>\n\t\tdocument.getElementById('format').addEventListener('click', function() {\n\t\t\tvar input = document.getElementById('input').value;\n\t\t\ttry {\n\t\t\t\tvar output = jsyaml.safeDump(jsyaml.safeLoad(input));\n\t\t\t\tdocument.getElementById('output').innerText = output;\n\t\t\t} catch (e) {\n\t\t\t\talert('Invalid YAML!');\n\t\t\t}\n\t\t});\n\t</script>\n</body>\n</html>"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Best Online Color Picker Tool for Designers & Developers",
+        "description": "Simplify your design work with our free, easy-to-use online Color Picker tool. Helps designers & developers to find, create and customize the perfect color palette instantly.",
+        "keywords": "Color Picker, Online Color Picker, Free Color Picker, Color Palette Tool, Web Color Picker, RGB color picker, HTML color picker, color selector",
+        "long_tail_content": "https://www.colorpicker.com"
+    },
+    "html": {
+        "html": "<input type=\"color\" id=\"myColorPicker\" value=\"#ff0000\"><button onclick=\"getSelectedColor()\">Get Selected Color</button><p id=\"colorValue\"></p><script>function getSelectedColor() {var x = document.getElementById(\"myColorPicker\").value;document.getElementById(\"colorValue\").innerHTML = \"Selected Color: \" + x;}</script>"
+    }
+}

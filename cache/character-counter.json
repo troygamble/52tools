@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Best Online Character Counter - Count Letters, Words, Sentences Instantly",
+        "description": "Efficiently count characters, letters, words, sentences in text with our free online Character Counter. Perfect for social media, SEO, essays and more.",
+        "keywords": "Character Counter, Free Online Tool, Word Counter, Letter Counter, Sentence Counter, SEO, Writing Tool, Text Analysis",
+        "canonical_url": "https://www.charactercounter.com"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>Character Counter</title>\n<script>\nfunction characterCount() {\nvar text = document.getElementById('text').value;\ndocument.getElementById('count').innerHTML = 'Character Count: ' + text.length;\n}\n</script>\n</head>\n<body>\n<h2>Character Counter Tool</h2>\n<textarea id='text' onkeyup='characterCount()'></textarea>\n<p id='count'>Character Count: 0</p>\n</body>\n</html>"
+    }
+}

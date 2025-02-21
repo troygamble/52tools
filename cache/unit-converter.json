@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Fast and Reliable Unit Converter - Convert Various Measurement Units",
+        "description": "Our Unit Converter tool is efficient, precise, and free. Convert among several units like temperature, length, weight, and many more with ease.",
+        "keywords": "unit converter, conversion tool, measurement converter, length converter, temperature converter, weight converter, free converter",
+        "long_tail_content": "https://www.unitconverter.com"
+    },
+    "html": {
+        "html": "<div id='unitConverter'>\n    <h2>Unit Converter</h2>\n    <select id='inputUnit'>\n        <option value='cm'>cm</option>\n        <option value='m'>m</option>\n    </select>\n    <input type='text' id='inputValue' placeholder='Enter a value'/>\n    <select id='outputUnit'>\n        <option value='cm'>cm</option>\n        <option value='m'>m</option>\n    </select>\n    <input type='text' id='outputValue' disabled/>\n    <button onclick='convertUnits()'>Convert</button>\n</div>\n<script>\n    function convertUnits() {\n        var inputUnit = document.getElementById('inputUnit').value;\n        var inputValue = document.getElementById('inputValue').value;\n        var outputUnit = document.getElementById('outputUnit').value;\n        var outputValue = inputValue;\n        if (inputUnit == 'cm' && outputUnit == 'm') {\n            outputValue = inputValue * 0.01;\n        } else if (inputUnit == 'm' && outputUnit == 'cm') {\n            outputValue = inputValue * 100;\n        }\n        document.getElementById('outputValue').value = outputValue;\n    }\n</script>"
+    }
+}

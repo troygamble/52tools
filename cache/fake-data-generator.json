@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Fake Data Generator - Free Online Tool for Data Testing",
+        "description": "Effortlessly generate random, fake data for your applications' testing needs using our advanced Fake Data Generator tool online. Customize according to your requirements.",
+        "keywords": "fake data generator, data generation tool, online data generator, test data generator, random data generator, false data creator, dummy data generator",
+        "long_tail_content": "Create customizable, high-quality mock data for your software testing or data analysis with our easy-to-use, free online Fake Data Generator tool."
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>Fake Data Generator</title>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js\"></script>\n</head>\n<body>\n<h1>Fake Data Generator</h1>\n<button onclick=\"generateData()\">Generate</button>\n<p id=\"data\"></p>\n<script>\nfunction generateData() {\nvar randomName = faker.name.findName();\nvar randomEmail = faker.internet.email();\nvar randomCard = faker.helpers.createCard();\ndocument.getElementById('data').innerHTML = 'Name: ' + randomName + '<br>Email: ' + randomEmail + '<br>Card: ' + JSON.stringify(randomCard);\n}\n</script>\n</body>\n</html>"
+    }
+}

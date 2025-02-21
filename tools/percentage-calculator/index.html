@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>Best Online Percentage Calculator Tool | Calculate Percentages Easily - 52tools</title>
+    <meta name="description" content="Use our best online Percentage Calculator tool for quick and accurate calculations. It helps to calculate percentages without any hassle. Ideal for students, professionals, and anyone needing to calculate percentages.">
+    <meta name="keywords" content="percentage calculator, online percentage calculator, calculate percentages, percentage calculation tool, math tool">
+    <link rel="canonical" href="https://tool52.com/tools/percentage-calculator/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="Best Online Percentage Calculator Tool | Calculate Percentages Easily - 52tools">
+    <meta property="og:description" content="Use our best online Percentage Calculator tool for quick and accurate calculations. It helps to calculate percentages without any hassle. Ideal for students, professionals, and anyone needing to calculate percentages.">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/percentage-calculator/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,37 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>Best Online Percentage Calculator Tool | Calculate Percentages Easily</h1>
+        <p>Use our best online Percentage Calculator tool for quick and accurate calculations. It helps to calculate percentages without any hassle. Ideal for students, professionals, and anyone needing to calculate percentages.</p>
+        <!DOCTYPE html>
+<html>
+<head>
+<title>Percentage Calculator</title>
+</head>
+<body>
+
+<h2>Percentage Calculator</h2>
+
+<label for="num1">Number 1:</label><br>
+<input type="text" id="num1" name="num1"><br>
+<label for="num2">Number 2:</label><br>
+<input type="text" id="num2" name="num2"><br>
+<button type="button" onclick="calculate()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+function calculate() {
+  var num1 = document.getElementById("num1").value;
+  var num2 = document.getElementById("num2").value;
+  var percent = (num1 / num2) * 100;
+
+  document.getElementById("result").innerHTML = 'The percentage is: ' + percent.toFixed(2) + '%';
+}
+</script>
+
+</body>
+</html>
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Pomodoro Timer: Boost Your Productivity Today!",
+        "description": "Pomodoro Timer is the perfect tool for productivity improvement. Try our easy-to-use, online timer and manage your time effectively with the Pomodoro Technique today!",
+        "keywords": "Pomodoro Timer, Productivity Tool, Time Management, Online Timer, Pomodoro Technique",
+        "long_tail_content": "https://www.pomodorotimer.com"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Pomodoro Timer</title>\n    <style>\n        #timer {\n            font-size: 60px;\n            text-align: center;\n            margin-top: 20%;\n        }\n    </style>\n</head>\n<body>\n    <div id='timer'></div>\n\n    <script>\n        var seconds = 1500, countdown;\n        function startTimer() {\n            countdown = setInterval(function() {\n                seconds--;\n                document.getElementById('timer').innerHTML = seconds;\n                if (seconds <= 0) clearInterval(countdown);\n            }, 1000);\n        }\n        window.onload = startTimer;\n    </script>\n</body>\n</html>"
+    }
+}

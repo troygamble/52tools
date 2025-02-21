@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "HTML Formatter: Free Online Tool for Code Beautification",
+        "description": "HTML Formatter is a free online tool that beautifies your code to make it clean and readable. Ideal for developers, it supports multiple features and languages.",
+        "keywords": "HTML Formatter, Code Beautifier, Online HTML Formatter, Web Developer Tools, Free Formatter, Code Cleaner, HTML Tools, Web Development",
+        "long_tail_content": "Use our HTML Formatter tool for efficient and high-quality code beautification. Ideal for professional developers, coding enthusiasts, and web designers who want to clean and format their HTML code effortlessly."
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <title>HTML Formatter</title>\n    <style>\n        .formatter {\n            width: 100%;\n            height: 500px;\n        }\n    </style>\n</head>\n<body>\n    <textarea id='input' class='formatter'></textarea>\n    <button onclick='formatHtml()'>Format HTML</button>\n    <textarea id='output' class='formatter'></textarea>\n    <script>\n        function formatHtml() {\n            var input = document.getElementById('input').value;\n            var output = html_beautify(input);\n            document.getElementById('output').value = output;\n        }\n    </script>\n    <script src='https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.11.0/beautify-html.min.js'></script>\n</body>\n</html>"
+    }
+}

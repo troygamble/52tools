@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Best Free Online Currency Converter - Instant Conversion",
+        "description": "Convert any currency instantly with our Currency Converter. Stay updated with live exchange rates for over 180 currencies across the world. Reliable and Easy to use.",
+        "keywords": "Currency Converter, Free Currency Converter, Online Currency Converter, Live Exchange Rates, Currency Conversion",
+        "long_tail_content": "https://www.currencyconverter.com"
+    },
+    "html": {
+        "html": "<div id='currencyConverter'>\n<label for='amount'>Amount:</label>\n<input type='number' id='amount' />\n<br>\n<label for='from'>From:</label>\n<select id='from'>\n<option value='USD'>USD</option>\n<option value='EUR'>EUR</option>\n</select>\n<br>\n<label for='to'>To:</label>\n<select id='to'>\n<option value='USD'>USD</option>\n<option value='EUR'>EUR</option>\n</select>\n<br>\n<button id='convert'>Convert</button>\n<p id='result'></p>\n</div>\n\n<script>\nvar btn = document.getElementById('convert');\nbtn.addEventListener('click', function() {\nvar amount = document.getElementById('amount').value;\nvar from = document.getElementById('from').value;\nvar to = document.getElementById('to').value;\nvar result = document.getElementById('result');\n\n// Conversion rates\nvar rates = {\nUSD: {EUR: 0.82},\nEUR: {USD: 1.22}\n};\n\nif (from === to) {\nresult.innerHTML = 'Same currency selected, no conversion needed.';\n} else if (!rates[from] || !rates[from][to]) {\nresult.innerHTML = 'No conversion rates available.';\n} else {\n// Perform the conversion\nvar converted = amount * rates[from][to];\nresult.innerHTML = amount + ' ' + from + ' = ' + converted + ' ' + to;\n}\n});\n</script>"
+    }
+}

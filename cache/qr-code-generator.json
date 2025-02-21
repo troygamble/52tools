@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "QR Code Generator - Fast and Free Custom QR Codes",
+        "description": "Create your own custom QR codes with our free and easy-to-use QR Code Generator. Perfect for setting up quick access to websites, apps, or business promotion.",
+        "keywords": "QR code generator, free QR code generator, custom QR code, QR code creator, QR code maker, create QR code, generate QR code",
+        "long_tail_content": "Looking for an effective, swift, and custom QR code generator? Our tool allows you to design and generate QR codes absolutely free. Ideal for promoting your app, website, or business quickly and conveniently. Try it now!"
+    },
+    "html": {
+        "html": "<div>\r\n    <h1>QR Code Generator</h1>\r\n    <input id='qr-input' type='text' placeholder='Enter text or link here'/>\r\n    <button id='generate-btn'>Generate QR Code</button>\r\n    <div id='qr-output'></div>\r\n</div>\r\n<script>\r\n    document.getElementById('generate-btn').onclick = function() {\r\n        let qrInput = document.getElementById('qr-input').value;\r\n        let qrOutput = document.getElementById('qr-output');\r\n        qrOutput.innerHTML = '';\r\n        if(qrInput !== '') {\r\n            let qrCode = new QRious({\r\n                element: qrOutput,\r\n                value: qrInput,\r\n                size: 200\r\n            });\r\n        }\r\n    }\r\n</script>"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Fast & Free Image to Base64 Converter Online - Convert JPG, PNG, GIF Easily",
+        "description": "Our Image to Base64 Converter is a fast & easy online tool to convert images like JPG, PNG, and GIF into a Base64 encoded string. Save time & hassle with this free tool.",
+        "keywords": "Image to Base64, Base64 converter, online Base64 converter, JPG to Base64, PNG to Base64, GIF to Base64, free Base64 converter",
+        "canonical_url": "https://www.example.com/tools/image-to-base64-converter"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>Image to Base64 Converter</title>\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>\n</head>\n<body>\n<h1>Image to Base64 Converter</h1>\n<input type=\"file\" id=\"inputFile\">\n<br>\n<button onclick=\"convertToBase64()\">Convert</button>\n<br>\n<p id=\"base64\"></p>\n<script>\n    function convertToBase64() {\n        var file = document.getElementById('inputFile').files[0];\n        var reader = new FileReader();\n        reader.onloadend = function() {\n            document.getElementById('base64').innerHTML = reader.result;\n        }\n        reader.readAsDataURL(file);\n    }\n</script>\n</body>\n</html>"
+    }
+}

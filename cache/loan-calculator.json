@@ -1,0 +1,12 @@
+{
+    "seo": {
+        "title": "Loan Calculator - Calculate Your Loans Easily & Fast",
+        "description": "Our Loan Calculator tool offers quick, accurate, and easy to understand calculations on your loan. Ideal for both personal and home loans calculations. Get started now!",
+        "keywords": "loan calculator, home loan calculator, loan interest calculator, personal loan calculator, calculate loan interest, loan payment calculator",
+        "canonical_url": "https://www.loan-calculator.com/"
+    },
+    "html": {
+        "html": "<div id=\"loanCalculator\">\n    <h2>Loan Calculator</h2>\n    <form id=\"loanForm\">\n        <div class=\"form-group\">\n            <label for=\"loanAmount\">Loan Amount</label>\n            <input type=\"number\" id=\"loanAmount\" class=\"form-control\" placeholder=\"Enter loan amount\">\n        </div>\n        <div class=\"form-group\">\n            <label for=\"interestRate\">Interest Rate</label>\n            <input type=\"number\" id=\"interestRate\" class=\"form-control\" placeholder=\"Enter interest rate\">\n        </div>\n        <div class=\"form-group\">\n            <label for=\"loanPeriod\">Loan Period</label>\n            <input type=\"number\" id=\"loanPeriod\" class=\"form-control\" placeholder=\"Enter loan period in months\">\n        </div>\n        <button type=\"submit\" class=\"btn btn-primary\" id=\"calculate\">Calculate</button>\n    </form>\n    <div id=\"result\"></div>\n</div>",
+        "js": "document.getElementById('loanForm').addEventListener('submit', function(event) {\n    event.preventDefault();\n    var loanAmount = document.getElementById('loanAmount').value;\n    var interestRate = document.getElementById('interestRate').value;\n    var loanPeriod = document.getElementById('loanPeriod').value;\n    var monthlyInterestRate = (interestRate / 100) / period;\n    var monthlyPayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -loanPeriod));\n    document.getElementById('result').textContent = 'Monthly Payment: ' + monthlyPayment;\n})"
+    }
+}

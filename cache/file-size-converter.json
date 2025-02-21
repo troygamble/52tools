@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "File Size Converter - Convert Bytes, KB, MB, GB, TB Online",
+        "description": "Use our free online File Size Converter to easily convert your files between bytes, kilobytes, megabytes, gigabytes, and terabytes instantly. Customizable settings for accurate conversions.",
+        "keywords": "File Size Converter, Convert KB to MB, Convert MB to GB, Convert GB to TB, Online File Size Converter, Byte Converter, Kilobyte Converter, Megabyte Converter, Gigabyte Converter, Terabyte Converter",
+        "long_tail_content": "https://www.filesizeconverter.com"
+    },
+    "html": {
+        "html": "<div id='file-size-converter'>\n    <label for='input-size'>File size to Convert:</label>\n    <input id='input-size' type='text'>\n    <select id='input-unit'>\n        <option value='byte'>Byte</option>\n        <option value='kilobyte'>Kilobyte</option>\n        <option value='megabyte'>Megabyte</option>\n        <option value='gigabyte'>Gigabyte</option>\n        <option value='terabyte'>Terabyte</option>\n    </select>\n    <button id='convert-button'>Convert</button>\n    <div id='output-container'>\n        <p id='output-text'></p>\n    </div>\n</div>\n<script>\n    document.getElementById('convert-button').addEventListener('click', function() {\n        var unitMap = {\n            byte: 1,\n            kilobyte: 1024,\n            megabyte: 1048576,\n            gigabyte: 1073741824,\n            terabyte: 1099511627776\n        };\n        var inputSize = document.getElementById('input-size').value;\n        var inputUnit = document.getElementById('input-unit').value;\n        var outputText = document.getElementById('output-text');\n        if(isNaN(inputSize) || inputSize < 0) {\n            outputText.textContent = 'Invalid input! File size must be a non-negative number.';\n        } else {\n            var sizeInBytes = inputSize * unitMap[inputUnit];\n            outputText.textContent = 'File size in bytes: ' + sizeInBytes;\n        }\n    });\n</script>"
+    }
+}

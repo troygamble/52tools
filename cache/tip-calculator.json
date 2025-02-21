@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Free Online Tip Calculator | Calculate Tips Quickly & Accurately",
+        "description": "Use our free, efficient Tip Calculator to quickly and accurately calculate your tip amount for any percentage. Perfect for any dining or service experience!",
+        "keywords": "Tip Calculator, Online Tip Calculator, Free Tip Calculator, Calculate Tips, Tips Calculation Tool, Service Tips, Dining Tips, Tip Percentage Calculator",
+        "long_tail_content": "https://www.tipcalculator.com"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>Tip Calculator</title>\n<style>\nbody {\n text-align: center;\n}\ninput {\n width: 100px;\n height: 40px;\n font-size: 18px;\n}\nbutton {\n width: 100px;\n height: 40px;\n font-size: 18px;\n cursor: pointer;\n}\n</style>\n</head>\n<body>\n<h2>Tip Calculator</h2>\n<label for='bill'>Bill:</label>\n<input type='number' id='bill' placeholder='Enter Bill Amount'>\n<br>\n<label for='service'>Service Quality:</label>\n<select id='service'>\n<option value='0.3'>Excellent - 30%</option>\n<option value='0.2'>Good - 20%</option>\n<option value='0.15'>Average - 15%</option>\n<option value='0.1'>Poor - 10%</option>\n</select>\n<br>\n<label for='people'>Number of People:</label>\n<input type='number' id='people' placeholder='Enter Number of People'>\n<br>\n<button onclick='calculateTip()'>Calculate</button>\n<h3 id='totalTip'></h3>\n<script>\nfunction calculateTip() {\n let bill = document.getElementById('bill').value;\n let service = document.getElementById('service').value;\n let people = document.getElementById('people').value;\n if (bill === '' || service == 0 || people === '') {\n alert('Please fill in all the fields.');\n return;\n }\n let total = (bill * service) / people;\n total = Math.round(total * 100) / 100;\n total = total.toFixed(2);\n document.getElementById('totalTip').innerHTML = 'Each Person Owes: $' + total;\n}\n</script>\n</body>\n</html>"
+    }
+}

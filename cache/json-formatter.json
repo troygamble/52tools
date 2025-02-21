@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Fast, reliable JSON Formatter online",
+        "description": "Organize and beautify your JSON data with our online JSON Formatter. Ideal for editing, validating, and producing readable JSON structure instantly.",
+        "keywords": "JSON, online JSON formatter, JSON beautifier, JSON editor, JSON tools, JSON validation, JSON structure, readable JSON",
+        "long_tail_content": "https://www.jsonformatter.com"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>JSON Formatter</title>\n<script src=\"https://cdn.jsdelivr.net/npm/vue\"></script>\n</head>\n<body>\n<div id=\"app\">\n<textarea v-model=\"jsonInput\" @input=\"formatJSON()\"></textarea>\n<pre v-html=\"formattedJSON\"></pre>\n</div>\n<script>\nnew Vue({\n  el: '#app',\n  data: {\n    jsonInput: '',\n    formattedJSON: ''\n  },\n  methods: {\n    formatJSON() {\n      try {\n        this.formattedJSON = JSON.stringify(JSON.parse(this.jsonInput), null, 2);\n      } catch (e) {\n        this.formattedJSON = 'Invalid JSON';\n      }\n    }\n  }\n});\n</script>\n</body>\n</html>"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Free Online Age Calculator - Calculate Your Age Precisely",
+        "description": "Our free online Age Calculator tool accurately calculates your age in years, months, and days. Discover the number of days you've been alive with our precise tool.",
+        "keywords": "online age calculator, calculate age, free age calculator, age calculating tool, precise age identifier, calculate your age, age calculator tool",
+        "canonical_url": "https://www.agecalculator.com"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>Age Calculator</title>\n<script>\nfunction calculateAge() {\nconst dateOfBirth = document.getElementById('dob').value;\nconst dob = new Date(dateOfBirth);\nconst today = new Date();\nconst ageInMilliseconds = today - dob;\nconst ageInSeconds = ageInMilliseconds / 1000;\nconst ageInMinutes = ageInSeconds / 60;\nconst ageInHours = ageInMinutes / 60;\nconst ageInDays = ageInHours / 24;\nconst ageInYears = ageInDays / 365;\nreturn Math.floor(ageInYears);\n}\ndocument.getElementById('age').innerHTML = calculateAge();\n</script>\n</head>\n<body>\n<h2>Age Calculator</h2>\n<p>Enter your Date of Birth:</p>\n<input type='date' id='dob'>\n<button onclick='calculateAge()'>Calculate Age</button>\n<p id='age'></p>\n</body>\n</html>"
+    }
+}

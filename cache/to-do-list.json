@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "To-Do List - Organize Your Tasks Efficiently Online",
+        "description": "Manage your daily tasks easily with our To-Do List tool. Stay organized with task prioritization, customizable widgets, and categorized to-do lists. Sign up for free today.",
+        "keywords": "to-do list, task management, online organization tool, efficient tasking, daily planners, digital note-taking",
+        "long_tail_content": "https://www.todolist.com/"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>To-Do List</title>\n</head>\n<body>\n\n<h3>TO-DO LIST</h3>\n<input id='taskInput' type='text' placeholder='New Task'>\n<button id='addTaskBtn'>Add Task</button>\n\n<ul id='taskList'></ul>\n\n<script>\n\nlet addTaskBtn = document.getElementById('addTaskBtn');\nlet taskInput = document.getElementById('taskInput');\nlet taskList = document.getElementById('taskList');\n\naddTaskBtn.onclick = function() {\nlet task = taskInput.value;\nif (task.trim() == '') { alert('Please write something for task'); return false; }\nlet listItem = document.createElement('li');\nlistItem.textContent = task;\nlet deleteBtn = document.createElement('button');\ndeleteBtn.textContent = 'Delete';\nlistItem.appendChild(deleteBtn);\ntaskList.appendChild(listItem);\n\n  deleteBtn.onclick = function(e) {\ntaskList.removeChild(listItem);\n};\n\ntaskInput.value = '';\n};\n</script>\n\n</body>\n</html>"
+    }
+}

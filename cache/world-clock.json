@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "World Clock - Accurate Live Local Time Zones Tracker",
+        "description": "Discover and track accurate global time zones with our World Clock tool. Conveniently view the current time in different parts of the world at a glance.",
+        "keywords": "World Clock, Time zones, Global time, Accurate time, Current time, Real-time clock, Live clock",
+        "canonical_url": "https://www.worldclock.com"
+    },
+    "html": {
+        "html": "<html>\\n<head>\\n<title>World Clock</title>\\n<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>\\n<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>\\n</head>\\n<body>\\n<div id='worldClock'>\\n</div>\\n<script>\\n$(document).ready(function(){\\nfunction updateClock(){\\nvar now = moment(),\\nsecond = now.seconds() * 6,\\nminute = now.minutes() * 6 + second / 60,\\nhour = now.hours() % 12 / 12 * 360 + 90 + minute / 12;\\n$('#worldClock').html('Current Time: ' + now.format('HH:mm:ss'));\\nsetTimeout(updateClock, 1000);\\n} updateClock();\\n});\\n</script>\\n</body>\\n</html>"
+    }
+}

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>Text Diff Tool - Quick & Accurate Text Difference Checker - 52tools</title>
+    <meta name="description" content="Text Diff Tool lets you easily compare and find differences between two texts. Whether for code, documents, or any text files, we provide a fast, accurate and efficient solution.">
+    <meta name="keywords" content="Text Diff Tool, Text Difference Checker, Compare text, Compare two texts online, find text differences, online text comparison tool">
+    <link rel="canonical" href="https://tool52.com/tools/text-diff-tool/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="Text Diff Tool - Quick & Accurate Text Difference Checker - 52tools">
+    <meta property="og:description" content="Text Diff Tool lets you easily compare and find differences between two texts. Whether for code, documents, or any text files, we provide a fast, accurate and efficient solution.">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/text-diff-tool/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,37 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>Text Diff Tool - Quick & Accurate Text Difference Checker</h1>
+        <p>Text Diff Tool lets you easily compare and find differences between two texts. Whether for code, documents, or any text files, we provide a fast, accurate and efficient solution.</p>
+        <!DOCTYPE html>
+<html>
+<head>
+<title>Text Diff Tool</title>
+<script src="https://cdn.jsdelivr.net/npm/diff@3.5.0"></script>
+</head>
+<body>
+<h2>Text Diff Tool</h2>
+<textarea id="text1" placeholder="Enter first text here..."></textarea>
+<textarea id="text2" placeholder="Enter second text here..."></textarea>
+<button onclick="findDiff()">Find Difference</button>
+<h3>Difference:</h3>
+<pre id="difference"></pre>
+<script>
+function findDiff() {
+var text1 = document.getElementById('text1').value;
+var text2 = document.getElementById('text2').value;
+var diff = Diff.diffChars(text1, text2);
+var display = '';
+diff.forEach(function(part){
+var color = part.added ? 'green' :
+part.removed ? 'red' : 'grey';
+display += '<span style="color:' + color + '">' + part.value + '</span>';
+});
+document.getElementById('difference').innerHTML = display;
+}
+</script>
+</body>
+</html>
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

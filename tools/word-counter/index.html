@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>Word Counter - Accurate Word Counting Tool Online - 52tools</title>
+    <meta name="description" content="Try our efficient Word Counter tool for quick and accurate word, character, and sentence counts. Ideal for content writers, SEO professionals, students, and educators.">
+    <meta name="keywords" content="word counter, word count tool, character counter, sentence counter, content length, SEO tool, word counter online, accurate word counter, online tool">
+    <link rel="canonical" href="https://tool52.com/tools/word-counter/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="Word Counter - Accurate Word Counting Tool Online - 52tools">
+    <meta property="og:description" content="Try our efficient Word Counter tool for quick and accurate word, character, and sentence counts. Ideal for content writers, SEO professionals, students, and educators.">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/word-counter/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,35 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>Word Counter - Accurate Word Counting Tool Online</h1>
+        <p>Try our efficient Word Counter tool for quick and accurate word, character, and sentence counts. Ideal for content writers, SEO professionals, students, and educators.</p>
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>Word Counter</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <textarea id="wordInput" rows="6" cols="50" placeholder="Type or paste your text..." style="width: 100%;"></textarea>
+        <button id="countBtn" style="margin-top: 10px;">Count Words</button>
+        <p id="wordCount">Word count: 0</p>
+    </div>
+    <script>
+        document.querySelector('#countBtn').addEventListener('click', function() {
+            var text = document.querySelector('#wordInput').value;
+            var wordCount = text.trim().split(/\s+/).length;
+            document.querySelector('#wordCount').innerHTML = 'Word count: ' + (text.length > 0 ? wordCount : 0);
+        });
+    </script>
+</body>
+</html>https://wordcounter.com
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Online Regex Tester: Effective Tool for Regular Expressions Testing",
+        "description": "Our 'Regex Tester' is a versatile online tool designed to test and debug your regular expressions. Perfect for developers and programmers to make their workflow seamless.",
+        "keywords": "Regex Tester, Regular Expressions Tester, Online Regex Tool, Regex Check, Debug Regular Expressions",
+        "long_tail_content": "https://www.toolswebsite.com/regex-tester"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>Regex Tester</title>\n</head>\n<body>\n<h2>REGEX TESTER</h2>\n<form>\nRegex pattern:<br>\n<input type=\"text\" id=\"pattern\" name=\"pattern\"><br>\nTest string:<br>\n<input type=\"text\" id=\"testString\" name=\"testString\"><br><br>\n<input type=\"button\" value=\"Test\" onclick=\"testRegex()\">\n</form>\n<p id=\"result\"></p>\n<script>\nfunction testRegex() {\nlet pattern = document.getElementById('pattern').value;\nlet testString = document.getElementById('testString').value;\ntry {\npattern = new RegExp(pattern);\ndocument.getElementById('result').innerText = pattern.test(testString) ? 'Match Found.': 'No match.';\n} catch(e) {\ndocument.getElementById('result').innerText = 'Invalid regular expression.';\n}\n}\n</script>\n</body>\n</html>"
+    }
+}

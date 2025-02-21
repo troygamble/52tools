@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Free Online XML Formatter Tool | XML Formatter",
+        "description": "XML Formatter is a free online tool that easily formats your XML data. Optimized for speed and efficiency, XML Formatter helps streamline your XML editing and troubleshooting needs.",
+        "keywords": "XML, formatter, tool, online, data, gratis, efficient, troubleshooting",
+        "canonical URL": "https://www.xmlformatter.com"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>XML Formatter</title>\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/beautify/0.0.8/beautify.min.js\"></script>\n</head>\n<body>\n<textarea id=\"xmlInput\" rows=\"15\" cols=\"50\"></textarea>\n<br>\n<button id=\"formatButton\">Format XML</button>\n<br>\n<textarea id=\"xmlOutput\" rows=\"15\" cols=\"50\" readonly></textarea>\n<script type=\"text/javascript\">\nfunction formatXML(input) {\nvar xml = $.parseXML(input);\nreturn window.vkbeautify.xml(new XMLSerializer().serializeToString(xml));\n}\n$('#formatButton').click(function() {\nvar input = $('#xmlInput').val();\nvar output = formatXML(input);\n$('#xmlOutput').val(output);\n});\n</script>\n</body>\n</html>"
+    }
+}

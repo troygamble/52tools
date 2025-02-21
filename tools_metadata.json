@@ -1,0 +1,1073 @@
+{
+    "JSON Formatter": "Format and beautify JSON data easily for better readability.",
+    "Word Counter": "Count words, characters, and reading time instantly.",
+    "IBAN Validator": {
+        "description": "IBAN Validator is a powerful tool designed to verify and check International Bank Account Numbers for accuracy, minimizing human errors and simplifying financial transactions.",
+        "keywords": [
+            "IBAN",
+            "validator",
+            "tool",
+            "online",
+            "check",
+            "verify",
+            "bank",
+            "account",
+            "numbers",
+            "finance",
+            "transaction"
+        ],
+        "long_tail_keywords": [
+            "online IBAN validator tool",
+            "verify IBAN number online",
+            "check bank account number",
+            "financial transaction validation",
+            "online banking tools"
+        ],
+        "meta_title": "IBAN Validator: Online Tool to Verify Your Bank Account Numbers",
+        "meta_description": "Ensure the accuracy of your International Bank Account Numbers with our IBAN Validator. Perfect for secure financial transactions and minimizing errors. Verify your IBAN now."
+    },
+    "Credit Card Validator": {
+        "description": "Credit Card Validator is an online web-based tool that allows you to easily and securely verify the validity of any credit card number.",
+        "keywords": [
+            "credit card validator",
+            "online credit card check",
+            "secure credit card verification",
+            "credit card number validation",
+            "credit card security",
+            "debit card validator"
+        ],
+        "long_tail_keywords": [
+            "comprehensive credit card number validator",
+            "secure online credit card checker",
+            "reliable credit and debit card validator tool",
+            "quick online validation of credit card numbers",
+            "easily check the security of credit cards"
+        ],
+        "meta_title": "Credit Card Validator - Comprehensive Online Credit Card Verification Tool",
+        "meta_description": "Ensure the security of your credit card with Credit Card Validator - an online tool that helps you to verify and validate any credit card number instantly and securely. No card is too difficult for our tool to analyze."
+    },
+    "URL Validator": {
+        "description": "URL Validator is an advanced web tool designed to verify the legitimacy and accuracy of any URL, helping businesses and individuals maintain a safe online presence.",
+        "keywords": [
+            "URL Validator",
+            "URL verification",
+            "Web tool",
+            "Website checker",
+            "URL safety",
+            "Link validation",
+            "Invalid URL",
+            "Online safety",
+            "SEO",
+            "Website development"
+        ],
+        "long_tail_keywords": [
+            "best URL verification tool",
+            "check the validity of a web link",
+            "online website safety tool",
+            "accuracy of a URL checker",
+            "effective link validation online",
+            "detecting invalid URL",
+            "assuring secure internet safety",
+            "improving SEO with URL validation"
+        ],
+        "meta_title": "URL Validator: Your Number One Solution for URL Verification and Safety",
+        "meta_description": "Benefit from the most reliable URL Validator, a web tool that verifies the legitimacy and accuracy of URLs, contributing to a safer and more secure online environment. Improve your SEO performance by avoiding broken links or invalid URLs."
+    },
+    "Image Resizer": {
+        "description": "Image Resizer is an online tool which helps in resizing, compressing, or transforming the shape of your images. This tool is particularly handy for digital marketing, web designers, photographers, and various graphics-related professionals.",
+        "keywords": [
+            "image resizing",
+            "online tool",
+            "image compression",
+            "photo editing",
+            "digital marketing",
+            "web design",
+            "photo resizing",
+            "optimize images"
+        ],
+        "long_tail_keywords": [
+            "online photo resizing tool",
+            "image compression software",
+            "easiest image resizing",
+            "professional image editing online",
+            "high quality image resizer",
+            "bulk image compression",
+            "web design image optimization"
+        ],
+        "meta_title": "Image Resizer - Online Tool for Photo Resizing and Compression",
+        "meta_description": "Get high quality, easy and efficient image resizing with Image Resizer. This online tool is perfect for digital marketing professionals, web designers, and photographers looking to compress and resize images quickly and efficiently."
+    },
+    "To-Do List": {
+        "description": "Our tool 'To-Do List' provides a user-friendly and organized way to manage your tasks and improve productivity. Create your digital checklist and monitor your progress efficiently with ease.",
+        "keywords": [
+            "To-Do List",
+            "Task Management",
+            "Digital Checklist",
+            "Productivity Tool",
+            "Online Planner"
+        ],
+        "long_tail_keywords": [
+            "Efficient task management tool",
+            "User-friendly To-Do List",
+            "Improve productivity with To-Do List",
+            "Digital checklist for task tracking",
+            "Online planner for personal tasks"
+        ],
+        "meta_title": "To-Do List \u2013 Your Online Digital Checklist and Organized Task Management Tool",
+        "meta_description": "Make task management effortless with our online tool 'To-Do List'. Create your digital checklist, increase your efficiency, and take control of your productivity. An organized sense of achievement is just a click away."
+    },
+    "Time Zone Converter": {
+        "description": "Time Zone Converter is a convenient online tool designed to accurately convert time from one zone to another. Ideal for both personal and business use, our tool simplifies the process of keeping track of international timezones.",
+        "keywords": [
+            "Time Zone Converter",
+            "timezone",
+            "time conversion",
+            "global time",
+            "international clock",
+            "timezone tool",
+            "world clock",
+            "international timezones"
+        ],
+        "long_tail_keywords": [
+            "online time zone converter",
+            "accurate time conversion",
+            "convenient international time tool",
+            "business time zone converter",
+            "personal time zone calculator",
+            "simplifying global time tracking"
+        ],
+        "meta_title": "Time Zone Converter | Trusted Online Tool for Accurate Timezone Conversion",
+        "meta_description": "Stay connected globally without time confusion using Time Zone Converter. Our reliable tool provides accurate conversions between all worldwide time zones. Perfect for personal use, jet setters, frequent travelers and global businesses. Easily calculate and convert time with just a few clicks."
+    },
+    "UUID Generator": {
+        "description": "UUID Generator is a versatile web-based tool designed to quickly and efficiently provide unique universal identifiers.",
+        "keywords": [
+            "UUID",
+            "generator",
+            "online tool",
+            "unique identifier",
+            "web tool",
+            "random UUID",
+            "UUID creator"
+        ],
+        "long_tail_keywords": [
+            "online UUID generator",
+            "UUID generation tool",
+            "secure UUID creator",
+            "efficient UUID maker"
+        ],
+        "meta_title": "UUID Generator - Easy and Secure Online UUID Creation Tool",
+        "meta_description": "Use our efficient and easy-to-use UUID Generator for quick, secure generation of universally unique identifiers. Perfect for developers and businesses in need of reliable random UUIDs. Try it now!"
+    },
+    "YAML Formatter": {
+        "description": "YAML Formatter is an innovative, user-friendly online tool designed for the seamless and efficient formatting of YAML data files. With this superior web tool, you can easily validate, beautify, minify, edit, and convert your YAML files swiftly and accurately!",
+        "keywords": [
+            "YAML Formatter",
+            "YAML Beautifier",
+            "Online YAML Validator",
+            "YAML Minifier",
+            "YAML Editor",
+            "Convert YAML",
+            "Data Files"
+        ],
+        "long_tail_keywords": [
+            "efficient YAML formatting tool",
+            "online YAML validator",
+            "fast YAML beautifier",
+            "YAML data files converter",
+            "with precise YAML minifier"
+        ],
+        "meta_title": "YAML Formatter - Your Reliable Tool for Fast and Efficient YAML Formatting Online",
+        "meta_description": "Get state-of-the-art YAML formatting with YAML Formatter! A highly reliable tool for validating, beautifying, minifying, editing, and converting YAML data files. Experience a quick and error-free YAML formatting session anytime, anywhere!"
+    },
+    "Color Palette Generator": {
+        "description": "Color Palette Generator is a powerful online tool for creating or generating custom color palettes. Make your graphics pop with unlimited color combinations, ideal for designers, artists, and digital marketers.",
+        "keywords": [
+            "color palette generator",
+            "color combination",
+            "color schemes",
+            "web color tool",
+            "graphic design tool",
+            "Palette creator",
+            "Design tool"
+        ],
+        "long_tail_keywords": [
+            "online color palette generator",
+            "free color palette generator",
+            "digital design color tool",
+            "custom color scheme creator",
+            "easy color palette generator",
+            "user friendly palette creator",
+            "multifunctional design tool"
+        ],
+        "meta_title": "Color Palette Generator | The Ultimate Tool for Designers and Marketers",
+        "meta_description": "Color Palette Generator: Generate stunning custom color schemes for your designs in seconds. Ideal for web designers, graphic artists and marketers seeking the perfect color combination."
+    },
+    "File Size Converter": {
+        "description": "File Size Converter - A useful tool on Tool52.",
+        "keywords": [
+            "File Size Converter",
+            "online tool",
+            "Tool52"
+        ],
+        "long_tail_keywords": [
+            "how to use file size converter online"
+        ],
+        "meta_title": "File Size Converter | Tool52",
+        "meta_description": "Learn about File Size Converter, a free and powerful online tool available at Tool52."
+    },
+    "API Tester": {
+        "description": "API Tester is an innovative web tool designed to simplify testing and debugging of your API. Perfect for developers, QA teams, and software testers, it enhances productivity by ensuring optimal API performance.",
+        "keywords": [
+            "API testing",
+            "API debugging",
+            "web tool",
+            "software testing",
+            "QA",
+            "developers",
+            "programming",
+            "productivity",
+            "API performance",
+            "API Tester"
+        ],
+        "long_tail_keywords": [
+            "API testing web tool",
+            "API performance improvement",
+            "web tool for developers",
+            "software testing and debugging",
+            "high productivity API Tester"
+        ],
+        "meta_title": "API Tester - Your Ultimate Web Tool for Simplified API Testing & Debugging",
+        "meta_description": "Boost your productivity with our API Tester - A comprehensive web tool designed to aid developers, QA teams, and software testers in testing and debugging API for optimal performance."
+    },
+    "Password Generator": {
+        "description": "Password Generator is a robust and secure web tool designed to generate strong, random, and customizable passwords that enhance online security.",
+        "keywords": [
+            "password generator",
+            "secure passwords",
+            "online security",
+            "random passwords",
+            "strong passwords"
+        ],
+        "long_tail_keywords": [
+            "best online password generator",
+            "free secure password generator",
+            "random secure password generator",
+            "online password creation tool",
+            "strong password generating tool"
+        ],
+        "meta_title": "Password Generator - Most Secure Online Password Creation Tool",
+        "meta_description": "Password Generator helps you create highly secure, random and customizable passwords, enhancing overall web safety. Choose our tool for a significantly stronger online security."
+    },
+    "Git Cheat Sheet": {
+        "description": "Git Cheat Sheet is your ultimate guide and web tool that provides you with comprehensive, easy-to-read information, and quick commands for Git. Enhance your productivity by exploring and understanding Git more efficiently.",
+        "keywords": [
+            "Git Cheat Sheet",
+            "Git commands",
+            "Git guide",
+            "web tool for Git",
+            "Git cheat commands",
+            "understand Git"
+        ],
+        "long_tail_keywords": [
+            "comprehensive Git Cheat Sheet",
+            "web tool for Git commands",
+            "easy-to-read Git guide",
+            "improve productivity with Git Cheat Sheet",
+            "quick Git command guide"
+        ],
+        "meta_title": "Git Cheat Sheet: Your Ultimate Guide to Understand and Master Git Commands Efficiently",
+        "meta_description": "Explore our Git Cheat Sheet, a comprehensive web tool that provides easy-to-read and understand Git commands. Improve your productivity, enhance your coding, and master Git implementation with less effort."
+    },
+    "Tip Calculator": {
+        "description": "Tip Calculator is a user-friendly, online tool for calculating tips accurately and quickly. It helps in splitting restaurant bills among friends or figuring out how much to tip service providers. Using this tool can save you the hassle of mathematics and makes settling the bills a breeze.",
+        "keywords": [
+            "Tip Calculator",
+            "Online Tool",
+            "Calculate Tips",
+            "Restaurant Bill",
+            "Service Tip",
+            "Service Providers",
+            "Bill Splitting",
+            "Accurate Calculation",
+            "Quick Tabulation"
+        ],
+        "long_tail_keywords": [
+            "Online Tip Calculator",
+            "Quick Tip Calculation",
+            "Easy Bill Splitting Tool",
+            "Efficient Service Tip Calculation",
+            "Accurate Restaurant Bill Calculator"
+        ],
+        "meta_title": "Tip Calculator - The Ultimate Online Tool for Real-Time Tip Calculation",
+        "meta_description": "Say goodbye to the stress of calculating tips and splitting bills. Use our online Tip Calculator to settle your bills quickly and accurately. This tool is perfect for evaluating service tips and for splitting restaurant bills amongst groups. Improve your tipping etiquette with Tip Calculator."
+    },
+    "Pomodoro Timer": {
+        "description": "Pomodoro Timer is a productivity-enhancing web tool designed to utilize the Pomodoro Technique \u2014 breaking your workday into 25-minute focused work blocks followed by short breaks. This time-management tool is ideal for individuals looking to alleviate burnout, minimize distractions and maximize productivity.",
+        "keywords": [
+            "Pomodoro Timer",
+            "Productivity Tool",
+            "Pomodoro Technique",
+            "Time Management",
+            "Work Efficiency",
+            "Focus Enhancement"
+        ],
+        "long_tail_keywords": [
+            "Pomodoro timer online",
+            "Time management tools",
+            "Improve work efficiency with Pomodoro",
+            "Productivity enhancement timer"
+        ],
+        "meta_title": "Pomodoro Timer - Boost Your Productivity & Enhance Focus",
+        "meta_description": "Leverage the Pomodoro Technique with our Pomodoro Timer. This efficient tool will revolutionize your approach to work by maximizing productivity, enhancing focus, reducing fatigue, and eliminating distractions."
+    },
+    "Lorem Ipsum Generator": {
+        "description": "Lorem Ipsum Generator is an effective tool to create random, industry-standard Lorem Ipsum text for use in your design and development projects. Whether you're crafting a portfolio, setting up a mockup, or coding an entire website, our generator effortlessly completes these tasks with maximum efficiency.",
+        "keywords": [
+            "Lorem Ipsum Generator",
+            "random text generator",
+            "Lorem Ipsum",
+            "web design tool",
+            "web development tool",
+            "typography",
+            "mockup",
+            "dummy text",
+            "placeholder text",
+            "sample text"
+        ],
+        "long_tail_keywords": [
+            "free online Lorem Ipsum Generator",
+            "random text Lorem Ipsum Generator",
+            "web development Lorem Ipsum tool",
+            "design project placeholder text",
+            "user-friendly Lorem Ipsum generator"
+        ],
+        "meta_title": "Lorem Ipsum Generator | Free Online Placeholder Text Generator",
+        "meta_description": "Use Lorem Ipsum Generator to produce industry-standard dummy text. Ideal for designing mockups, coding websites, or creating portfolios. Try this hassle-free tool today for your web design and development tasks."
+    },
+    "Percentage Calculator": {
+        "description": "Percentage Calculator is an easy-to-use online tool that helps you calculate percentages in a jiffy. Great for students, teachers, and anyone needing to figure out percentage-related calculations quickly.",
+        "keywords": [
+            "Percentage Calculator",
+            "online calculator",
+            "percentage calculations",
+            "online percentage calculator",
+            "percent calculator",
+            "free calculator"
+        ],
+        "long_tail_keywords": [
+            "calculate percentage online for free",
+            "online percentage calculator tool",
+            "how to calculate percentages quickly",
+            "easy percentage calculator online",
+            "free online tool for calculating percentages"
+        ],
+        "meta_title": "Percentage Calculator - Free Online Tool to Calculate Percentages",
+        "meta_description": "Need to calculate percentages quickly and accurately? Use our free Percentage Calculator. Perfect for homework, grading, or financial calculations. Start calculating today!"
+    },
+    "Character Counter": {
+        "description": "Character Counter is an efficient web tool offering accurate count of characters, words, spaces, and lines in a text. Ideal for digital marketers, writers, and SEO analysts.",
+        "keywords": [
+            "Character Counter",
+            "Word Counter",
+            "Online Text Tool",
+            "Digital Marketing",
+            "SEO"
+        ],
+        "long_tail_keywords": [
+            "Online character counter",
+            "Free word count tool",
+            "Accurate character counter",
+            "SEO text analysis tool",
+            "Digital marketing text tools"
+        ],
+        "meta_title": "Character Counter - Accurate Online Text Analysis Tool",
+        "meta_description": "Maximize productivity with Character Counter, an accurate online text tool for counting characters, words, spaces, and lines. Perfect for effective text management in digital marketing and SEO."
+    },
+    "World Clock": {
+        "description": "World Clock is an online tool that lets you check the current local time in any timezone worldwide, providing accurate and timely information anywhere, at any time.",
+        "keywords": [
+            "World Clock",
+            "clock",
+            "time",
+            "timezone",
+            "world time",
+            "online clock",
+            "international time",
+            "world time conversion",
+            "current time",
+            "free online tool"
+        ],
+        "long_tail_keywords": [
+            "World Clock online tool",
+            "check current local time",
+            "accurate world time information",
+            "free online world clock",
+            "international time zone conversion",
+            "up-to-date timezone data",
+            "quick current time zone checker"
+        ],
+        "meta_title": "World Clock - Accurate & Free Online Tool for Time Zones",
+        "meta_description": "Monitor accurate time across time zones with World Clock, your reliable online tool for current local time in any place around the globe. Maximize your scheduling efficiency with our free, easy-to-use time conversion tool."
+    },
+    "Cron Job Scheduler": {
+        "description": "Cron Job Scheduler is an advanced online tool that allows users to schedule and automate tasks on servers and websites with utmost precision and efficiency. Designed for both experienced developers and beginners, it offers extensive control over the scheduling of jobs, improves productivity and ensures an optimal state of server health.",
+        "keywords": [
+            "Cron Job Scheduler",
+            "Cron Scheduling",
+            "Server Automation",
+            "Automated Tasks",
+            "Server Health",
+            "Task Scheduling",
+            "Server Management"
+        ],
+        "long_tail_keywords": [
+            "Efficient Cron Job Scheduling",
+            "Advanced Server Automation Tool",
+            "Automated Task Scheduling Software",
+            "Reliable Server Health Management",
+            "Web-Based Cron Scheduler"
+        ],
+        "meta_title": "Cron Job Scheduler: Advanced Server Automation & Task Scheduling Tool",
+        "meta_description": "Streamline your server's tasks with Cron Job Scheduler, your web-based tool for efficient automation and scheduling. Equipped for both novice and expert use for optimal server health management."
+    },
+    "Text Diff Tool": {
+        "description": "Text Diff Tool is an efficient web tool for comparing and analyzing text differences. Perfect for programmers, editors and anyone who needs to identify changes in text documents quickly and accurately.",
+        "keywords": [
+            "text comparison tool",
+            "text diff tool",
+            "code comparison",
+            "text analyzer",
+            "document comparison",
+            "string comparison",
+            "text diff checker"
+        ],
+        "long_tail_keywords": [
+            "best text diff tool online",
+            "efficient text comparison tool",
+            "text differences checking tool",
+            "quick text analyzer",
+            "online document comparison tool",
+            "real-time string comparison tool",
+            "accurate text diff checker"
+        ],
+        "meta_title": "Text Diff Tool: Quick, Efficient & Accurate for Text Comparisons",
+        "meta_description": "Discover the best tool for text comparisons - Text Diff Tool. Quickly identify text differences, analyze code changes, compare documents, and more. Try it now for fast, accurate results!"
+    },
+    "BMI Calculator": {
+        "description": "Calculate your Body Mass Index quickly and easily with our free online BMI Calculator tool. Assess your weight health status instantly and accurately with our BMI tool.",
+        "keywords": [
+            "BMI Calculator",
+            "online BMI Calculator",
+            "BMI Calculator tool",
+            "Body Mass Index",
+            "online BMI tool",
+            "weight assessment",
+            "free online tool"
+        ],
+        "long_tail_keywords": [
+            "Best online BMI Calculator",
+            "Free BMI Calculator tool",
+            "BMI assessment online tool",
+            "Accurate Body Mass Index calculator",
+            "Free online BMI assessment",
+            "Weight health status checker"
+        ],
+        "meta_title": "BMI Calculator - Quick and Easy Online Body Mass Index Calculator Tool",
+        "meta_description": "Check your Body Mass Index in seconds with our user-friendly BMI Calculator. Determine your weight health status for free with the ease of our online tool. Offering accurate and rapid results for all your BMI calculation needs."
+    },
+    "IP Address Lookup": {
+        "description": "IP Address Lookup is an essential web tool for identifying, geocoding, and obtaining detailed information about any given IP address with accuracy and speed.",
+        "keywords": [
+            "IP Address Lookup",
+            "IP Geolocation",
+            "IP Tracker",
+            "IP Lookup",
+            "Find My IP",
+            "IP Checker",
+            "IP Locator",
+            "IP Finder",
+            "Track IP",
+            "Geolocate IP",
+            "IP Search",
+            "IP Information",
+            "Whois Lookup"
+        ],
+        "long_tail_keywords": [
+            "accurate IP Locator service",
+            "how to track an IP address",
+            "identify geographic location of an IP",
+            "online IP address Lookup",
+            "comprehensive IP Tracker tool",
+            "advanced IP Finder service",
+            "check IP location online",
+            "best IP address Lookup tool",
+            "info about my IP address",
+            "whois IP address lookup"
+        ],
+        "meta_title": "IP Address Lookup: Fast, Accurate and User Friendly | Track, Geolocate and Get Info about any IP Address",
+        "meta_description": "Discover the best tool for hassle-free IP Address Lookup. Track or Geolocate any IP address promptly! Explore details like ISP, physical location, and more with our comprehensive web tool."
+    },
+    "Browser Details Detector": {
+        "description": "Browser Details Detector provides a comprehensive inspection tool to explore details of your web browser, including version, JavaScript status, cookies status, and more.",
+        "keywords": [
+            "browser detector",
+            "browser details",
+            "web tool",
+            "online browser tester",
+            "JavaScript status detector",
+            "cookies status detector"
+        ],
+        "long_tail_keywords": [
+            "web browser detail inspection tool",
+            "detecting browser version tool",
+            "detecting JavaScript status",
+            "checking cookies status in web browser",
+            "online browser identification tools"
+        ],
+        "meta_title": "Browser Details Detector | Your Comprehensive Online Tool for Browser Inspection",
+        "meta_description": "Get insights about your web browser with our Browser Details Detector. This tool allows you to check details like browser version, JavaScript status, cookies status, and more, aiding you in troubleshooting or optimizing for better browsing experience."
+    },
+    "Currency Converter": {
+        "description": "Currency Converter is an innovative online tool designed for quick and accurate currency exchange calculations. Get real-time foreign exchange rates for more than 150 currencies worldwide. Ideal for travelers, businesses, and traders.",
+        "keywords": [
+            "Currency Converter",
+            "online currency converter",
+            "currency exchange",
+            "foreign exchange rates",
+            "currency calculator",
+            "real-time exchange rates"
+        ],
+        "long_tail_keywords": [
+            "currency conversion tool online",
+            "best online currency converter",
+            "real-time currency conversion rates",
+            "foreign currency exchange calculator",
+            "trade currency exchange rates"
+        ],
+        "meta_title": "Currency Converter | Real-time Exchange Rates | Online Currency Calculator",
+        "meta_description": "Unleash the power of real-time data with our online Currency Converter tool. Perfect for travelers, traders, or anyone needing quick, accurate foreign exchange calculations. Convert +150 global currencies effortlessly."
+    },
+    "Email Validator": {
+        "description": "Email Validator is a powerful online tool designed for checking the validity and deliverability of email addresses. Avoid bounces, protect your sender reputation, and increase your email sending success rate with our cutting-edge Email Validator tool.",
+        "keywords": [
+            "email validator",
+            "check email validity",
+            "validate email",
+            "verify email deliverability",
+            "email checker",
+            "clean email list",
+            "email list cleaning",
+            "online validator tool",
+            "email verification service",
+            "email bounce prevention"
+        ],
+        "long_tail_keywords": [
+            "online email validator tool",
+            "email deliverability checker",
+            "easy email verification service",
+            "fast email validity check",
+            "email list cleaning service",
+            "prevent email bounce with email validator",
+            "protect sender reputation with email check"
+        ],
+        "meta_title": "Email Validator: Check Email Validity & Deliverability Online",
+        "meta_description": "Use Email Validator to verify the validity of your email lists. Our online tool ensures increased success rates while protecting your sender reputation. Say goodbye to email bounces and sky-rocket your email deliverability with our reliable Email Validator."
+    },
+    "Text Case Converter": {
+        "description": "Text Case Converter is a web tool that converts any text to different cases, such as uppercase, lowercase, title case, sentence case, and more, making it convenient and effortless for writers, editors, developers and all professionals who deal with written content.",
+        "keywords": [
+            "text case converter",
+            "text transformation tool",
+            "change text case",
+            "uppercase converter",
+            "lowercase converter",
+            "title case converter",
+            "sentence case converter",
+            "online text converter",
+            "free text case converter",
+            "easy text case conversion"
+        ],
+        "long_tail_keywords": [
+            "best online text case converter",
+            "free tool to switch text case",
+            "convert text to uppercase online",
+            "change text to lowercase",
+            "free text transformation tool",
+            "efficient title case converter online",
+            "quick sentence case conversion tool"
+        ],
+        "meta_title": "Text Case Converter - Free Online Tool to Change Text Case",
+        "meta_description": "Transform your text effortlessly with Text Case Converter. Convert to uppercase, lowercase, title case, sentence case, and more. Ideal for writers, editors, and professionals. Start converting for free!"
+    },
+    "CSV to JSON Converter": {
+        "description": "CSV to JSON Converter is a fast, free, & efficient web tool that allows you to convert CSV files to JSON format. Ideal for developers, data scientists, & anyone needing to work with JSON data types.",
+        "keywords": [
+            "CSV to JSON",
+            "file converter",
+            "data conversion",
+            "JSON converter",
+            "CSV file",
+            "JSON data",
+            "web tool",
+            "free converter"
+        ],
+        "long_tail_keywords": [
+            "Convert CSV to JSON",
+            "Free CSV to JSON Converter Tool",
+            "Data File Conversion to JSON",
+            "Online web tool for JSON Conversion",
+            "Instant CSV to JSON Conversion"
+        ],
+        "meta_title": "CSV to JSON Converter \u2013 Free & Efficient Online Conversion Tool",
+        "meta_description": "Convert your CSV files to JSON quickly and easily with our free online CSV to JSON Converter. No signup required. Trusted by developers and data professionals worldwide."
+    },
+    "XML Formatter": {
+        "description": "XML Formatter is a simple and efficient web tool that helps you to format or beautify your XML data for better readability and understandability.",
+        "keywords": [
+            "XML Formatter",
+            "XML Beautifier",
+            "XML Tool",
+            "Online XML Format",
+            "XML Converter",
+            "XML Editor"
+        ],
+        "long_tail_keywords": [
+            "Online XML Formatter tool",
+            "XML data formatting tool",
+            "Easy XML Beautifier",
+            "XML Editor for developers",
+            "XML code conversion"
+        ],
+        "meta_title": "XML Formatter - A Fast & Efficient Online XML Beautifier & Editor",
+        "meta_description": "Explore XML Formatter, an easy-to-use online tool perfect for developers to beautify, format, and edit XML data with utmost efficiency. Streamline your coding experience today."
+    },
+    "Fake Data Generator": {
+        "description": "Fake Data Generator is an incredible web tool that allows its users to generate realistic yet fake data for testing, development, and presentation purposes. Ideal for software developers, testers, and data analysts.",
+        "keywords": [
+            "Fake Data Generator",
+            "Data Generator",
+            "Test Data Generator",
+            "Mockup Data",
+            "Fictitious Data Generator",
+            "Fake Data",
+            "Data Tool"
+        ],
+        "long_tail_keywords": [
+            "Online Fake Data Generator",
+            "Best Fake Data Generation Tool",
+            "Free Data Mockup Tool",
+            "Fast Fake Data Generator",
+            "Reliable Testing Data Generator",
+            "Generate Fictitious Data Online"
+        ],
+        "meta_title": "Fake Data Generator: Your Go-To Tool For Generating Realistic Data!",
+        "meta_description": "Generate realistic but entirely fictitious data sets on the fly with Fake Data Generator. Perfect for data testing, software development, and data-driven presentations. Discover the best fake data generation tool online, and level up your data preparation with Fake Data Generator!"
+    },
+    "Mortgage Calculator": {
+        "description": "Mortgage Calculator is an advanced online tool assisting buyers in determining their financial capacity by providing precise estimates of mortgage payments, interest rates, and loan terms. Efficiently turn mortgage-based calculations into an effortless task with this user-friendly web-based solution.",
+        "keywords": [
+            "mortgage calculator",
+            "property loan",
+            "loan calculator",
+            "mortgage repayment",
+            "home purchase",
+            "interest rates",
+            "financial calculator",
+            "online tool",
+            "mortgage payment calculator",
+            "loan term calculator"
+        ],
+        "long_tail_keywords": [
+            "online mortgage calculator tool",
+            "property loan calculator",
+            "best financial calculator for home buying",
+            "mortgage repayment estimator",
+            "real-time interest rates calculator",
+            "advanced mortgage payment calculator"
+        ],
+        "meta_title": "Mortgage Calculator: Online Tool for Accurate Mortgage and Loan Calculations",
+        "meta_description": "Simplify complex calculations with Mortgage Calculator, a reliable online tool for potential home buyers. Accurately calculate your mortgage repayments, understand loan terms, and get real-time interest rates all with this user-friendly web tool. Find what's financially ideal for your property dreams."
+    },
+    "Hex to RGB Converter": {
+        "description": "The Hex to RGB Converter is a simple, user-friendly tool for designers, developers and digital artists that allows you to convert hexadecimal color codes into Red, Green, and Blue (RGB) values. Make color conversions a hassle-free process now!",
+        "keywords": [
+            "hex to RGB",
+            "color converter",
+            "color tool",
+            "hexadecimal converter",
+            "web tool",
+            "RGB values",
+            "web designers",
+            "web developers",
+            "digital artists"
+        ],
+        "long_tail_keywords": [
+            "Hex to RGB color converter",
+            "hexadecimal to RGB tool",
+            "online hex to RGB converter",
+            "free Hex to RGB conversion",
+            "RGB color value finder",
+            "hexadecimal color code converter",
+            "Hexadecimal to RGB online conversion"
+        ],
+        "meta_title": "Hex to RGB Converter - Accurate & Easy Hexadecimal to RGB Conversion",
+        "meta_description": "Make your color conversions effortless with the Hex to RGB Converter. This powerful online tool lets you turn your hexadecimal color codes into RGB values accurately and quickly. Ideal for web designers, developers and digital artists. Try it now!"
+    },
+    "Loan Calculator": {
+        "description": "Loan Calculator is a highly efficient and user-friendly online tool designed to simplify the complex process of understanding your potential loan repayments. Calculate advanced mortgage and auto loan payments with ease, and understand the financial impact on a monthly and yearly basis.",
+        "keywords": [
+            "loan calculator",
+            "auto loan",
+            "mortgage calculator",
+            "payment calculator",
+            "online calculator"
+        ],
+        "long_tail_keywords": [
+            "calculate mortgage payments online",
+            "auto loan payment calculator",
+            "online loan calculator tool",
+            "user-friendly loan calculator",
+            "calculate monthly loan payments"
+        ],
+        "meta_title": "Loan Calculator: Simplifying Your Loan Repayment Calculations",
+        "meta_description": "Explore Loan Calculator, a powerful tool to help you navigate your financial journey. Calculate and compare auto and mortgage loans, understand your monthly and yearly payments, and make informed decisions about your finances."
+    },
+    "Image to Base64 Converter": {
+        "description": "Image to Base64 Converter is an online tool that converts your images to Base64 code instantly. Perfect for developers seeking to optimize their websites or apps with Base64 images.",
+        "keywords": [
+            "Base64",
+            "Image converter",
+            "Online tool",
+            "Images to Base64",
+            "Convert to Base64",
+            "Web optimization",
+            "App development",
+            "Data URI scheme"
+        ],
+        "long_tail_keywords": [
+            "Convert images to Base64 online",
+            "Free online image to Base64 converter",
+            "Base64 image conversion tool",
+            "Data URI scheme conversion",
+            "Online tool for developers",
+            "Website optimization with Base64 images",
+            "Enhance app performance with Base64 images"
+        ],
+        "meta_title": "Image to Base64 Converter - Free Online Image Conversion Tool | Optimize Web & App Performance",
+        "meta_description": "Looking for a quick and easy way to convert your images to Base64? Use our free Image to Base64 Converter to optimize your websites and apps. Instant conversion, easy to use, suitable for developers of all skill levels."
+    },
+    "SQL Query Builder": {
+        "description": "SQL Query Builder is an advanced yet user-friendly online tool designed to effortlessly generate complex SQL queries, offering a seamless experience in managing your databases.",
+        "keywords": [
+            "SQL",
+            "Query Builder",
+            "Database Management",
+            "SQL generator",
+            "Structured Query Language",
+            "Online SQL tool",
+            "Database tool",
+            "SQL Query tool",
+            "Query management"
+        ],
+        "long_tail_keywords": [
+            "Easy SQL Query Builder",
+            "Advanced Database management tool",
+            "Online SQL generator tool",
+            "Efficient structure query language utility",
+            "User-friendly SQL Query tool"
+        ],
+        "meta_title": "SQL Query Builder - Powerful Online SQL Generator and Database Management Tool",
+        "meta_description": "Maximize your database management efficiency with SQL Query Builder. A user-friendly yet advanced tool specifically designed to generate sophisticated SQL queries. An essential tool for managing databases, improving productivity, and ensuring top-notch performance."
+    },
+    "Color Picker": {
+        "description": "Color Picker is an online tool designed to help web developers, designers, and digital artists choose and create their perfect color. It seamlessly converts RGB, Hex, and HSL values to create any color you dream of.",
+        "keywords": [
+            "color picker",
+            "color tool",
+            "RGB",
+            "Hex",
+            "HSL",
+            "web design",
+            "graphic design"
+        ],
+        "long_tail_keywords": [
+            "online color picker tool",
+            "RGB to Hex color conversion",
+            "Hex to HSL color conversion",
+            "best tool for web designers",
+            "graphic design color tool",
+            "color selection tool"
+        ],
+        "meta_title": "Color Picker - An Ultimate Tool for Web Designers & Digital Artists",
+        "meta_description": "With Color Picker, select any color of your choice! Explore the world of colors with our exclusive tool perfect for web developers, designers, and digital artists. Convert RGB, Hex, & HSL values instantly."
+    },
+    "Weather Widget": {
+        "description": "Weather Widget is an innovative web tool that provides real-time weather forecasts for your location. With accurate temperature readings, reliable forecasts, and custom settings, stay ahead of the weather at all times.",
+        "keywords": [
+            "Weather",
+            "Forecast",
+            "Real-time weather",
+            "Temperature",
+            "Web Tool",
+            "Weather Widget",
+            "Location-based weather"
+        ],
+        "long_tail_keywords": [
+            "Custom weather tool",
+            "Accurate weather predictions",
+            "Innovative weather web tool",
+            "Temperature tracking web tool",
+            "Weather widget forecast",
+            "Real-time location-based weather widget",
+            "Weather forecast web app"
+        ],
+        "meta_title": "Weather Widget: Real-Time, Accurate Weather Tracking Web Tool",
+        "meta_description": "Explore the most reliable, real-time weather forecasts with Weather Widget. Our web tool provides weather forecasts, accurate temperature readings, and more for any location. Stay updated with Weather Widget."
+    },
+    "Regex Tester": {
+        "description": "The 'Regex Tester' is an online tool designed to test and validate regular expressions quickly and easily. It provides an interface for experimenting with regex patterns in a live environment. It's an invaluable resource for programmers, web developers, and anyone else working with text data.",
+        "keywords": [
+            "regex tester",
+            "regular expression",
+            "regex validator",
+            "regex engine",
+            "pattern checker",
+            "expression evaluator",
+            "programming",
+            "coding tool",
+            "web development",
+            "string manipulations"
+        ],
+        "long_tail_keywords": [
+            "regex tester online",
+            "free online regex validator",
+            "web-based regex engine",
+            "regex pattern checker tool",
+            "online coding tool for regex",
+            "expression evaluator online",
+            "live programming helper regex"
+        ],
+        "meta_title": "Regex Tester - Your Go-To Online Regular Expression Testing and Validation Tool",
+        "meta_description": "Need to test or validate regex patterns? Use our free, online Regex Tester. Perfect for web developers, programmers, data scientists and anyone else who values efficient, reliable text data management. Try Regex Tester today for your pattern deciphering needs."
+    },
+    "Text to Speech": {
+        "description": "Text to Speech is a top-rated online tool allowing text conversion into natural-sounding audio. Perfect for anyone with dyslexia, learning languages, multitaskers, and people continually on the move who need to consume text content audibly.",
+        "keywords": [
+            "Text to Speech",
+            "audio conversion",
+            "text conversion",
+            "audio tool",
+            "speech synthesis",
+            "text reader",
+            "online TTS tool"
+        ],
+        "long_tail_keywords": [
+            "best online Text to Speech tool",
+            "free audio conversion from text",
+            "top Text to Speech software",
+            "convert text into audio",
+            "online text reader for dyslexia"
+        ],
+        "meta_title": "Text to Speech - Online Tool for Text-to-Audio Conversion | Free and High Quality",
+        "meta_description": "Experience a top-rated online Text to Speech tool that converts any written text into high-quality audio in seconds. Ideal for assisting with dyslexia, language learning, multitasking, and more. Try it for free today."
+    },
+    "Age Calculator": {
+        "description": "Age Calculator is an easy-to-use online tool that helps you calculate your exact age in years, months, days, hours, and exact second with utmost accuracy. This handy tool can be a fun way to calculate your age or even compare age difference between you and your friends, family, or colleagues. Useful for special occasions, business, or for curious minds.",
+        "keywords": [
+            "Age Calculator",
+            "Calculate Age",
+            "Age Computation",
+            "Days Old Calculator",
+            "Online Calculator",
+            "Age Comparison",
+            "Birthday Calculator"
+        ],
+        "long_tail_keywords": [
+            "Easy Age Calculator",
+            "Exact Age Calculation",
+            "Online Birthday Calculator",
+            "Calculate Your Age Online",
+            "Age Difference Calculator",
+            "Calculate Age in Seconds",
+            "Age Calculator Tool",
+            "Free Age Calculator"
+        ],
+        "meta_title": "Age Calculator - Calculate Your Age with Precision",
+        "meta_description": "Age Calculator is the ultimate tool for calculating your exact age down to the second. Whether you need to compare ages, find out your age for legal or business purposes, or you're just simply curious, our Age Calculator is the perfect solution for you. Try it for free today."
+    },
+    "HTML Formatter": {
+        "description": "The 'HTML Formatter' is a reliable web tool that helps coders effortlessly format their HTML codes. It provides a simple and efficient way of beautifying your HTML scripts and increasing their readability. Perfect for both beginners and professionals.",
+        "keywords": [
+            "HTML Formatter",
+            "Web Tool",
+            "Code Beautifier",
+            "Code formatting",
+            "HTML tool",
+            "Coding helper"
+        ],
+        "long_tail_keywords": [
+            "Online HTML formatter",
+            "Free HTML beautifier tool",
+            "Web based HTML code formatting",
+            "HTML script beautifier",
+            "Improve HTML readability"
+        ],
+        "meta_title": "HTML Formatter - Online HTML Beautifier Tool | Code Formatting Made Easy!",
+        "meta_description": "Get cleaner and well-organized HTML codes using the HTML Formatter, a free online tool designed to enhance your coding efficiency. Suitable for beginners and experts alike. Simplify your HTML code formatting process with us today."
+    },
+    "QR Code Generator": {
+        "description": "QR Code Generator is a cutting-edge web tool offering free and easy-to-use QR code creation services. Generate QR codes for urls, text, email, wifi, vcard, phone number, sms, and geographical location within seconds.",
+        "keywords": [
+            "QR Code Generator",
+            "Free QR Code Generator",
+            "Online QR Code Maker",
+            "QR code for URL",
+            "QR code for text",
+            "QR Code for Email",
+            "QR Code for wifi",
+            "QR Code for vcard",
+            "QR code for phone number",
+            "QR code for sms",
+            "QR code for location"
+        ],
+        "long_tail_keywords": [
+            "Free Online QR Code Generator",
+            "QR Code Generator for URL",
+            "Generate QR Code for text",
+            "Easy to use QR Code Generator",
+            "QR Code Maker for Email",
+            "Create QR Code for wifi",
+            "QR Code Generator for vcard",
+            "Generate QR Code for Phone Number"
+        ],
+        "meta_title": "QR Code Generator: Create Free QR Codes For URLs, Texts & More",
+        "meta_description": "Experience the simplicity of generating QR codes with our free tool, QR Code Generator. Instantly create QR codes for different data types like urls, texts, emails, and more. Start creating your QR codes now!"
+    },
+    "Notes App": {
+        "description": "The Notes App is your perfect online solution for recording, managing, syncing, and sharing all your notes, thoughts, and ideas.",
+        "keywords": [
+            "Notes App",
+            "note taking",
+            "online notes",
+            "note management",
+            "note syncing",
+            "sharing notes",
+            "ideas",
+            "thoughts",
+            "digital notebook"
+        ],
+        "long_tail_keywords": [
+            "online note taking app",
+            "note syncing tool",
+            "digital notebook online",
+            "sharing thoughts with Notes App",
+            "managing ideas with Notes App"
+        ],
+        "meta_title": "Notes App | Your Online Digital Notebook for Note Management and Sharing",
+        "meta_description": "Experience the future of note management with Notes App. Record, manage, sync and share all your thoughts and ideas effortlessly. Unlock limitless possibilities with the best online digital notebook."
+    },
+    "Markdown Editor": {
+        "description": "Markdown Editor is an efficient and user-friendly tool used to write and preview markdown documents in real-time. It features a variety of formatting options and supports export to PDF and HTML formats.",
+        "keywords": [
+            "Markdown Editor",
+            "Markdown tool",
+            "Real-time Markdown Preview",
+            "Markdown to HTML",
+            "Markdown to PDF",
+            "Online Markdown Editor",
+            "Markdown Converter"
+        ],
+        "long_tail_keywords": [
+            "Best Online Markdown Editor",
+            "Comprehensive Markdown tool",
+            "Efficient Markdown rendering tool",
+            "Free Markdown Editor Online",
+            "Top Markdown to HTML converter"
+        ],
+        "meta_title": "Markdown Editor - Efficient, Easy to use, Free Online Tool for Markdown Editing",
+        "meta_description": "Explore Markdown Editor - the ideal tool for flawless and real-time editing & preview of your markdown files. Convert markdown to HTML and PDF with ease. Start using for free today."
+    },
+    "Image Compressor": {
+        "description": "Image Compressor is an online tool that allows users to reduce the size of their images without compromising quality. Ideal for bloggers, web designers, photographers, and businesses looking to optimize their site performance and improve loading speed.",
+        "keywords": [
+            "Image Compressor",
+            "Image Compression",
+            "Online Image Compressor",
+            "Reduce image size",
+            "Image optimisation",
+            "Image quality preservation"
+        ],
+        "long_tail_keywords": [
+            "Quality image compression online",
+            "Best online image compressor",
+            "Free image compressor tool",
+            "Image size reduction tool"
+        ],
+        "meta_title": "Image Compressor | High-Quality Online Image Compression Tool",
+        "meta_description": "Efficiently compress your images online with Image Compressor. Optimise your website's performance and improve loading speeds. Perfect for photographers, bloggers, web designers and businesses"
+    },
+    "Binary to Decimal Converter": {
+        "description": "The 'Binary to Decimal Converter' is a powerful web tool designed to streamline the conversion process from binary numbers to their decimal counterparts instantly. Ideal for programmers, codicologists, and tech enthusiasts who frequently operate across numeric systems.",
+        "keywords": [
+            "Binary to Decimal converter",
+            "convert binary",
+            "bin to dec converter",
+            "binary conversion",
+            "decimal conversion",
+            "programming tools",
+            "binary numbers",
+            "decimal numbers",
+            "numeric systems"
+        ],
+        "long_tail_keywords": [
+            "convert binary numbers to decimal",
+            "binary to decimal conversion calculator",
+            "online binary to decimal converter tool",
+            "easy conversion of binary to decimal numbers",
+            "binary number system to decimal"
+        ],
+        "meta_title": "Use the Binary to Decimal Converter | An Efficient and User-Friendly Online Tool",
+        "meta_description": "Swiftly convert binary to decimal with our online Binary to Decimal Converter. Ideal for codicologists, programmers, and tech enthusiasts seeking a hassle-free transition between numeric systems. Try it now!"
+    },
+    "Random Number Generator": {
+        "description": "Random Number Generator is an easy-to-use web tool that produces random numbers in a snap. Perfect for statistical sampling, simulations, data analysis, and more.",
+        "keywords": [
+            "random number generator",
+            "online tool",
+            "statistics",
+            "data analysis",
+            "simulation",
+            "number generator",
+            "digital numbers"
+        ],
+        "long_tail_keywords": [
+            "random number generator online",
+            "free number generator",
+            "random number generation for data analysis",
+            "online statistical simulation tool",
+            "quick random number generator"
+        ],
+        "meta_title": "Random Number Generator | Free and Easy-to-use Online Tool",
+        "meta_description": "Need random numbers instantly? Use our Random Number Generator, the best online tool for statistics, data analysis, and simulations. Free and easy to use. Generate your numbers now!"
+    },
+    "Unit Converter": {
+        "description": "Unit Converter is an online tool designed to provide quick and accurate conversions of different units of measurement. Our tool supports conversions for weight, length, area, volume, temperature, and more.",
+        "keywords": [
+            "unit conversion",
+            "measurement converter",
+            "online unit converter",
+            "easy unit converter",
+            "free unit converter"
+        ],
+        "long_tail_keywords": [
+            "unit converter for measurements",
+            "metric to imperial unit converter",
+            "time unit converter",
+            "convert weight measurements",
+            "convert length measurements"
+        ],
+        "meta_title": "Unit Converter - Quick & Accurate Online Measurement Conversions",
+        "meta_description": "Easily convert units of measurement using our free online Unit Converter tool. Supports weight, length, area, volume, temperature, and more. Fast and user-friendly tool to make unit conversions simple."
+    }
+}

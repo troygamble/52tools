@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>API Tester - Efficient and Reliable Tool for API Testing - 52tools</title>
+    <meta name="description" content="API Tester is an intuitive, robust, and highly reliable tool designed to make API testing faster, easier, and more efficient. Designed to cater to both beginners and experts.">
+    <meta name="keywords" content="API testing, API tester, Web API Testing, REST API testing tool, Automated API testing, API Testing Software, API endpoint tester">
+    <link rel="canonical" href="https://tool52.com/tools/api-tester/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="API Tester - Efficient and Reliable Tool for API Testing - 52tools">
+    <meta property="og:description" content="API Tester is an intuitive, robust, and highly reliable tool designed to make API testing faster, easier, and more efficient. Designed to cater to both beginners and experts.">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/api-tester/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,41 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>API Tester - Efficient and Reliable Tool for API Testing</h1>
+        <p>API Tester is an intuitive, robust, and highly reliable tool designed to make API testing faster, easier, and more efficient. Designed to cater to both beginners and experts.</p>
+        <html>
+<head>
+    <title>API Tester</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>API Tester</h1>
+    <form id='api-tester-form'>
+        <label for='url'>URL:</label><br>
+        <input type='text' id='url' name='url'><br>
+        <input type='submit' value='Test API'>
+    </form>
+    <pre id='result'></pre>
+    <script>
+        $(document).ready(function(){
+            $('#api-tester-form').submit(function(e){
+                e.preventDefault();
+                var url = $('#url').val();
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    success: function(data) {
+                        $('#result').text(JSON.stringify(data, null, 2));
+                    },
+                    error: function(error) {
+                        $('#result').text('Error: ' + error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Best Online Percentage Calculator Tool | Calculate Percentages Easily",
+        "description": "Use our best online Percentage Calculator tool for quick and accurate calculations. It helps to calculate percentages without any hassle. Ideal for students, professionals, and anyone needing to calculate percentages.",
+        "keywords": "percentage calculator, online percentage calculator, calculate percentages, percentage calculation tool, math tool",
+        "canonicalURL": "https://www.example.com/percentage-calculator"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>Percentage Calculator</title>\n</head>\n<body>\n\n<h2>Percentage Calculator</h2>\n\n<label for=\"num1\">Number 1:</label><br>\n<input type=\"text\" id=\"num1\" name=\"num1\"><br>\n<label for=\"num2\">Number 2:</label><br>\n<input type=\"text\" id=\"num2\" name=\"num2\"><br>\n<button type=\"button\" onclick=\"calculate()\">Calculate</button>\n\n<p id=\"result\"></p>\n\n<script>\nfunction calculate() {\n  var num1 = document.getElementById(\"num1\").value;\n  var num2 = document.getElementById(\"num2\").value;\n  var percent = (num1 / num2) * 100;\n\n  document.getElementById(\"result\").innerHTML = 'The percentage is: ' + percent.toFixed(2) + '%';\n}\n</script>\n\n</body>\n</html>"
+    }
+}

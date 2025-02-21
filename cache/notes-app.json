@@ -1,0 +1,12 @@
+{
+    "seo": {
+        "title": "Notes App - Best Online Note Taking App",
+        "description": "Use Notes App for easy, organized, and accessible note-taking. Perfect for work, school, or personal use, our tool brings your ideas and tasks together in one place.",
+        "keywords": "notes app, online note taking, best note taking app, productivity tool, organization, tasks, note management",
+        "long_tail_content": "https://www.notesapp.com"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>Notes App</title>\n</head>\n<body>\n<div id='app'>\n<input id='noteInput' type='text' placeholder='Enter note here'/>\n<button id='addNote'>Add Note</button>\n<ul id='notes'>\n</ul>\n</div>\n<script src='app.js'></script>\n</body>\n</html>",
+        "js": "window.onload = function() {\nvar addNoteButton = document.getElementById('addNote');\nvar noteInput = document.getElementById('noteInput');\nvar notesList = document.getElementById('notes');\n\naddNoteButton.onclick = function() {\nvar li = document.createElement('li');\nli.textContent = noteInput.value;\nnotesList.appendChild(li);\nnoteInput.value = '';\n}\n}"
+    }
+}

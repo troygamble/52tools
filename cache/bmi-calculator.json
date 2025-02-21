@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Online BMI Calculator | Calculate Your Body Mass Index Easily",
+        "description": "Use our free online BMI Calculator to easily calculate your Body Mass Index. Understand your health status based on your BMI score. Quick, accurate & user-friendly.",
+        "keywords": "BMI Calculator, Online BMI Calculator, Body Mass Index Calculator, Health Calculator, BMI Score, Calculate BMI",
+        "canonical_url": "https://www.example.com/bmi-calculator"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>BMI Calculator</title>\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\nfunction calculateBMI() {\nlet weight = document.getElementById('weight').value;\nlet height = document.getElementById('height').value;\nlet bmi = weight/(height/100*height/100);\ndocument.getElementById('bmiResult').innerHTML = `Your BMI is ${bmi.toFixed(2)}`;\n}\ndocument.getElementById('calculate').addEventListener('click', calculateBMI);\n});\n</script>\n</head>\n<body>\n<h1>BMI Calculator</h1>\n<label for=\"weight\">Weight(kg): </label><input type=\"number\" id=\"weight\" required><br>\n<label for=\"height\">Height(cm): </label><input type=\"number\" id=\"height\" required><br>\n<button id=\"calculate\">Calculate</button>\n<p id=\"bmiResult\"></p>\n</body>\n</html>"
+    }
+}

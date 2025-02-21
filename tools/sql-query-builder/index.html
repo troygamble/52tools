@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>SQL Query Builder: Streamline Your Database Queries - 52tools</title>
+    <meta name="description" content="Easily construct, test, and optimize MySQL, Oracle, and SQL Server queries with our intuitive SQL Query Builder. No coding skills required. Tune your queries and boost efficiency today!">
+    <meta name="keywords" content="SQL Query Builder, Oracle, MySQL, SQL Server, Database Queries, Query Optimizer">
+    <link rel="canonical" href="https://tool52.com/tools/sql-query-builder/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="SQL Query Builder: Streamline Your Database Queries - 52tools">
+    <meta property="og:description" content="Easily construct, test, and optimize MySQL, Oracle, and SQL Server queries with our intuitive SQL Query Builder. No coding skills required. Tune your queries and boost efficiency today!">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/sql-query-builder/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,40 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>SQL Query Builder: Streamline Your Database Queries</h1>
+        <p>Easily construct, test, and optimize MySQL, Oracle, and SQL Server queries with our intuitive SQL Query Builder. No coding skills required. Tune your queries and boost efficiency today!</p>
+        &lt;div id=&#34;sql-query-builder&#34;&gt;
+  &lt;div class=&#34;query-container&#34;&gt;
+    &lt;div class=&#34;input-group&#34;&gt;
+      &lt;label for=&#34;table-select&#34;&gt;Select Table:&lt;/label&gt;
+      &lt;select id=&#34;table-select&#34;&gt;&lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;input-group&#34;&gt;
+      &lt;label for=&#34;column-select&#34;&gt;Select Column:&lt;/label&gt;
+      &lt;select id=&#34;column-select&#34;&gt;&lt;/select&gt;
+    &lt;/div&gt;
+    &lt;button id=&#34;add-condition-btn&#34;&gt;Add Condition&lt;/button&gt;
+    &lt;div id=&#34;conditions-container&#34;&gt;&lt;/div&gt;
+    &lt;button id=&#34;generate-query-btn&#34;&gt;Generate Query&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div id=&#34;query-output&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+  // Initializing variables
+  let tables = [];
+  let columns = [];
+  let conditions = [];
+
+  // Event handlers
+  document.getElementById('add-condition-btn').addEventListener('click', addCondition);
+  document.getElementById('generate-query-btn').addEventListener('click', generateQuery);
+
+  // Function to add condition
+  function addCondition() {}
+
+  // Function to generate query
+  function generateQuery() {}
+&lt;/script&gt;
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

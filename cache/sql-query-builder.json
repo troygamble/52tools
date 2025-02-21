@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "SQL Query Builder: Streamline Your Database Queries",
+        "description": "Easily construct, test, and optimize MySQL, Oracle, and SQL Server queries with our intuitive SQL Query Builder. No coding skills required. Tune your queries and boost efficiency today!",
+        "keywords": "SQL Query Builder, Oracle, MySQL, SQL Server, Database Queries, Query Optimizer",
+        "canonical_url": "https://www.sqlquerybuilder.com"
+    },
+    "html": {
+        "html": "&lt;div id=&#34;sql-query-builder&#34;&gt;\n  &lt;div class=&#34;query-container&#34;&gt;\n    &lt;div class=&#34;input-group&#34;&gt;\n      &lt;label for=&#34;table-select&#34;&gt;Select Table:&lt;/label&gt;\n      &lt;select id=&#34;table-select&#34;&gt;&lt;/select&gt;\n    &lt;/div&gt;\n    &lt;div class=&#34;input-group&#34;&gt;\n      &lt;label for=&#34;column-select&#34;&gt;Select Column:&lt;/label&gt;\n      &lt;select id=&#34;column-select&#34;&gt;&lt;/select&gt;\n    &lt;/div&gt;\n    &lt;button id=&#34;add-condition-btn&#34;&gt;Add Condition&lt;/button&gt;\n    &lt;div id=&#34;conditions-container&#34;&gt;&lt;/div&gt;\n    &lt;button id=&#34;generate-query-btn&#34;&gt;Generate Query&lt;/button&gt;\n  &lt;/div&gt;\n  &lt;div id=&#34;query-output&#34;&gt;&lt;/div&gt;\n&lt;/div&gt;\n&lt;script type=&#34;text/javascript&#34;&gt;\n  // Initializing variables\n  let tables = [];\n  let columns = [];\n  let conditions = [];\n\n  // Event handlers\n  document.getElementById('add-condition-btn').addEventListener('click', addCondition);\n  document.getElementById('generate-query-btn').addEventListener('click', generateQuery);\n\n  // Function to add condition\n  function addCondition() {}\n\n  // Function to generate query\n  function generateQuery() {}\n&lt;/script&gt;"
+    }
+}

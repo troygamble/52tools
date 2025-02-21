@@ -1,0 +1,12 @@
+{
+    "seo": {
+        "title": "Best Online Image Compressor Utility - Free to Use | Image Compressor",
+        "description": "Image Compressor is a free online tool providing the best quality image compression without distorting the visual quality. Compress your photos, designs, and artworks within seconds.",
+        "keywords": "Image compressor, online image compressor, free image compression, compress photo, jpeg compressor, png compressor, reduce image size",
+        "long_tail_content": "Use our Image Compressor for optimal and lossless photo compression. It's perfect for jpeg, png, and other formats. Best and free online image compression tool."
+    },
+    "html": {
+        "html": "<div id='image_compressor' style='width: 100%; height: 100%;'>\n<input type='file' id='upload_image'/>\n<button id='compress_button'>Compress</button>\n<canvas id='canvas_image' style='display: none;'></canvas>\n</div>\n",
+        "js": "var button = document.getElementById('compress_button');\nvar fileUpload = document.getElementById('upload_image');\nvar canvas = document.getElementById('canvas_image');\n\nbutton.addEventListener('click', function() {\n  var reader = new FileReader();\n  reader.onload = function(event) {\n    var img = new Image();\n    img.onload = function() {\n      canvas.width = img.width;\n      canvas.height = img.height;\n      var ctx = canvas.getContext('2d');\n      ctx.drawImage(img, 0, 0, img.width, img.height);\n      var dataURL = canvas.toDataURL('image/jpeg', 0.8);\n      console.log('Compressed image:', dataURL);\n    };\n    img.src = event.target.result;\n  };\n  reader.readAsDataURL(fileUpload.files[0]);\n});\n"
+    }
+}

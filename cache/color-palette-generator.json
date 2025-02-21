@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Color Palette Generator - Creativity Boost For Modern Designs",
+        "description": "Unlock endless color possibilities with our Color Palette Generator. Perfect tool for artists, designers, digital creators, and everyone in need of fresh color combinations. Start generating unique color palettes now!",
+        "keywords": "color palette generator, color combinations, design tool, color scheme creator, artist tool, designer tool",
+        "long_tail_content": "https://www.colorpalettegenerator.com"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n\t<title>Color Palette Generator</title>\n\t<style>\n\t\tbody {\n\t\t\tfont-family: Arial, sans-serif;\n\t\t}\n\t\t.container {\n\t\t\tmargin: 0 auto;\n\t\t\twidth: 50%;\n\t\t\ttext-align: center;\n\t\t}\n\t\t.color-card {\n\t\t\tmargin: 10px;\n\t\t\twidth: 100px;\n\t\t\theight: 100px;\n\t\t\tborder: 2px solid;\n\t\t}\n\t</style>\n\t<script>\n\t\tfunction generateColor() {\n\t\t\tvar letters = '0123456789ABCDEF';\n\t\t\tvar color = '#';\n\t\t\tfor (var i = 0; i < 6; i++) {\n\t\t\t\tcolor += letters[Math.floor(Math.random() * 16)];\n\t\t\t}\n\t\t\treturn color;\n\t\t};\n\t\tfunction generatePalette() {\n\t\t\tdocument.getElementById('palette').innerHTML = '';\n\t\t\tfor (var i = 0; i < 5; i++) {\n\t\t\t\tvar colorCard = document.createElement('div');\n\t\t\t\tcolorCard.className = 'color-card';\n\t\t\t\tcolorCard.style.backgroundColor = generateColor();\n\t\t\t\tdocument.getElementById('palette').appendChild(colorCard);\n\t\t\t}\n\t\t};\n\t</script>\n</head>\n<body>\n\t<div class='container'>\n\t\t<h1>Color Palette Generator</h1>\n\t\t<button onclick='generatePalette()'>Generate Palette</button>\n\t\t<div id='palette'></div>\n\t</div>\n</body>\n</html>"
+    }
+}

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>Fast & Free Image to Base64 Converter Online - Convert JPG, PNG, GIF Easily - 52tools</title>
+    <meta name="description" content="Our Image to Base64 Converter is a fast & easy online tool to convert images like JPG, PNG, and GIF into a Base64 encoded string. Save time & hassle with this free tool.">
+    <meta name="keywords" content="Image to Base64, Base64 converter, online Base64 converter, JPG to Base64, PNG to Base64, GIF to Base64, free Base64 converter">
+    <link rel="canonical" href="https://tool52.com/tools/image-to-base64-converter/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="Fast & Free Image to Base64 Converter Online - Convert JPG, PNG, GIF Easily - 52tools">
+    <meta property="og:description" content="Our Image to Base64 Converter is a fast & easy online tool to convert images like JPG, PNG, and GIF into a Base64 encoded string. Save time & hassle with this free tool.">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/image-to-base64-converter/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,33 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>Fast & Free Image to Base64 Converter Online - Convert JPG, PNG, GIF Easily</h1>
+        <p>Our Image to Base64 Converter is a fast & easy online tool to convert images like JPG, PNG, and GIF into a Base64 encoded string. Save time & hassle with this free tool.</p>
+        <!DOCTYPE html>
+<html>
+<head>
+<title>Image to Base64 Converter</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Image to Base64 Converter</h1>
+<input type="file" id="inputFile">
+<br>
+<button onclick="convertToBase64()">Convert</button>
+<br>
+<p id="base64"></p>
+<script>
+    function convertToBase64() {
+        var file = document.getElementById('inputFile').files[0];
+        var reader = new FileReader();
+        reader.onloadend = function() {
+            document.getElementById('base64').innerHTML = reader.result;
+        }
+        reader.readAsDataURL(file);
+    }
+</script>
+</body>
+</html>
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

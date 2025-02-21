@@ -1,0 +1,12 @@
+{
+    "seo": {
+        "title": "URL Validator - Efficient Tool for URL Verification",
+        "description": "Introducing URL Validator, the ultimate tool for verifying and ensuring the correctness of your URLs. Conveniently check, analyze, and validate URLs in real time at absolutely no cost.",
+        "keywords": "URL Validator, URL Verification Tool, Check URL, Validate URL, URL Validation, Analyze URL, URL checker",
+        "long_tail_content": "This is the best and most efficient online tool for real-time URL verification and validation for ensuring the correctness and quality of your URLs."
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>URL Validator</title>\n</head>\n<body>\n<form id='url_form'>\n<label for='url_input'>URL:</label>\n<input type='text' id='url_input' name='url_input'>\n<input type='submit'>\n</form>\n<p id='validity'></p>\n<script src='validator.js'></script>\n</body>\n</html>",
+        "js": "document.getElementById('url_form').addEventListener('submit', function(e) {\n  e.preventDefault();\n  var url = document.getElementById('url_input').value;\n  try {\n    new URL(url);\n    document.getElementById('validity').innerText = 'Valid URL.';\n  } catch (_) {\n    document.getElementById('validity').innerText = 'Invalid URL.';\n  }\n});"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Git Cheat Sheet: Essential Commands & Tips - Free Web Tool",
+        "description": "Unlock the power of Git! Learn essential commands and tips with our free Git Cheat Sheet web tool. Ideal for beginners and experts wanting to streamline their workflows.",
+        "keywords": "Git Cheat Sheet, Git commands, Git tips, Free Git Tool, Git workflow, Git beginners, Git experts, Git tutorial",
+        "long_tail_content": "https://www.website.com/git-cheat-sheet"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>Git Cheat Sheet</title>\n<style>\nbody { font-family: Arial, sans-serif; }\ntable { border-collapse: collapse; width: 100%; }\nth, td { border: 1px solid black; padding: 8px; text-align: left; }\nth { background-color: #f2f2f2; }\n</style>\n</head>\n<body>\n<h1>Git Cheat Sheet</h1>\n<table>\n<tr>\n<th>Command</th>\n<th>Description</th>\n</tr>\n<tr>\n<td>git status</td>\n<td>Check status</td>\n</tr>\n<tr>\n<td>git add</td>\n<td>Add files to staging area</td>\n</tr>\n<tr>\n<td>git commit</td>\n<td>Commit changes</td>\n</tr>\n<tr>\n<td>git push</td>\n<td>Push changes to remote</td>\n</tr>\n</table>\n<script type='text/javascript'>\n(function() {\nvar tableItems = document.querySelectorAll('table tr td:first-child');\nfor (var i = 0; i < tableItems.length; i++) {\ntableItems[i].addEventListener('click', function(e) {\nalert('You clicked on ' + e.target.textContent);\n});\n}\n})();\n</script>\n</body>\n</html>"
+    }
+}

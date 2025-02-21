@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>Credit Card Validator - Validate Your Card Number Instantly - 52tools</title>
+    <meta name="description" content="Use our free online tool, Credit Card Validator, to instantly validate your credit card number. Perfect for checking the authenticity of credit card numbers before transactions.">
+    <meta name="keywords" content="credit card validator, validate credit card, check credit card number, online credit card checker, credit card validation tool">
+    <link rel="canonical" href="https://tool52.com/tools/credit-card-validator/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="Credit Card Validator - Validate Your Card Number Instantly - 52tools">
+    <meta property="og:description" content="Use our free online tool, Credit Card Validator, to instantly validate your credit card number. Perfect for checking the authenticity of credit card numbers before transactions.">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/credit-card-validator/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,39 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>Credit Card Validator - Validate Your Card Number Instantly</h1>
+        <p>Use our free online tool, Credit Card Validator, to instantly validate your credit card number. Perfect for checking the authenticity of credit card numbers before transactions.</p>
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Validator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Credit Card Validator</h2>
+        <form>
+            <label for="ccNumber">Credit Card Number:</label>
+            <input type="text" id="ccNumber" name="ccNumber">
+            <input type="submit" id="submit" value="Validate">
+        </form>
+        <div id="result"></div>
+    </div>
+    <script>
+       $(document).ready(function(){
+            $('#submit').click(function(e){
+                e.preventDefault();
+                var ccNumber = $('#ccNumber').val();
+                if(!/^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9]{2})[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$/.test(ccNumber)) {
+                    $('#result').html('Invalid credit card number.').css('color', 'red');
+                } else {
+                    $('#result').html('Valid credit card number.').css('color', 'green');
+                }
+            })
+        });
+    </script>
+</body>
+</html>
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

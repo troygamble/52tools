@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "URL Encoder/Decoder - Free Online Tool for Encoding and Decoding URLs",
+        "description": "Use our fast and secure URL Encoder/Decoder tool to encode or decode any URL easily. Ideal for web developers, programmers, SEO experts, and digital marketers.",
+        "keywords": "URL encoder, URL decoder, decode URL, encode URL, SEO tool, free online tool, digital marketing, web development, programming",
+        "long_tail_content": "Embrace the simplicity and accuracy of our URL Encoder/Decoder. Our tool assists in converting (encoding/decoding) URLs into a format that can be transmitted over the internet and can then be easily read by web servers and browsers."
+    },
+    "html": {
+        "html": "<div class=\"url-converter\">\n        <h2>URL Encoder/Decoder</h2>\n        <textarea id=\"inputArea\" placeholder=\"Paste URL here\" rows=\"4\" cols=\"50\"></textarea>\n        <button id=\"encodeBtn\">Encode</button>\n        <button id=\"decodeBtn\">Decode</button>\n        <h3>Output</h3>\n        <textarea id=\"outputArea\" placeholder=\"Output will appear here\" rows=\"4\" cols=\"50\" readonly></textarea>\n</div>\n<script>\n    document.getElementById('encodeBtn').addEventListener('click', function() {\n        var input = document.getElementById('inputArea').value;\n        var output = encodeURIComponent(input);\n        document.getElementById('outputArea').value = output;\n    });\n    document.getElementById('decodeBtn').addEventListener('click', function() {\n        var input = document.getElementById('inputArea').value;\n        var output = decodeURIComponent(input);\n        document.getElementById('outputArea').value = output;\n    });\n</script>"
+    }
+}

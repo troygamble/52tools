@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>Best Online Time Zone Converter | Convert Time Zones Quickly - 52tools</title>
+    <meta name="description" content="Effortlessly convert time zones with our easy-to-use online Time Zone Converter - perfect for business meetings, travel planning & international communication.">
+    <meta name="keywords" content="Time Zone Converter, time conversion tool, global time zones, world time converter, timezone calculator, international time conversion">
+    <link rel="canonical" href="https://tool52.com/tools/time-zone-converter/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="Best Online Time Zone Converter | Convert Time Zones Quickly - 52tools">
+    <meta property="og:description" content="Effortlessly convert time zones with our easy-to-use online Time Zone Converter - perfect for business meetings, travel planning & international communication.">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/time-zone-converter/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,36 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>Best Online Time Zone Converter | Convert Time Zones Quickly</h1>
+        <p>Effortlessly convert time zones with our easy-to-use online Time Zone Converter - perfect for business meetings, travel planning & international communication.</p>
+        <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.31/moment-timezone-with-data.min.js"></script>
+</head>
+<body>
+<h2>Time Zone Converter</h2>
+<label for="time">Time (24-hour format):</label><br>
+<input type="text" id="time" name="time" value="12:00"><br>
+<label for="fromZone">From Time Zone:</label><br>
+<input type="text" id="fromZone" name="fromZone" value="America/New_York"><br>
+<label for="toZone">To Time Zone:</label><br>
+<input type="text" id="toZone" name="toZone" value="Asia/Kolkata"><br>
+<button id="convert" onclick="convertTime()">Convert</button>
+<p id="output"></p>
+<script>
+function convertTime() {
+    var time = $('#time').val();
+    var fromZone = $('#fromZone').val();
+    var toZone = $('#toZone').val();
+    var result = moment.tz(time, 'HH:mm', fromZone).tz(toZone).format('HH:mm');
+    $('#output').text('Converted Time: '+result);
+}
+</script>
+</body>
+</html>https://www.example.com/time-zone-converter
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

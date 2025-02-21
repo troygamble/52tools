@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Word Counter - Accurate Word Counting Tool Online",
+        "description": "Try our efficient Word Counter tool for quick and accurate word, character, and sentence counts. Ideal for content writers, SEO professionals, students, and educators.",
+        "keywords": "word counter, word count tool, character counter, sentence counter, content length, SEO tool, word counter online, accurate word counter, online tool",
+        "long_tail_content": "https://wordcounter.com"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Word Counter</title>\n    <style>\n        .container {\n            width: 50%;\n            margin: 0 auto;\n            padding: 20px;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <textarea id=\"wordInput\" rows=\"6\" cols=\"50\" placeholder=\"Type or paste your text...\" style=\"width: 100%;\"></textarea>\n        <button id=\"countBtn\" style=\"margin-top: 10px;\">Count Words</button>\n        <p id=\"wordCount\">Word count: 0</p>\n    </div>\n    <script>\n        document.querySelector('#countBtn').addEventListener('click', function() {\n            var text = document.querySelector('#wordInput').value;\n            var wordCount = text.trim().split(/\\s+/).length;\n            document.querySelector('#wordCount').innerHTML = 'Word count: ' + (text.length > 0 ? wordCount : 0);\n        });\n    </script>\n</body>\n</html>"
+    }
+}

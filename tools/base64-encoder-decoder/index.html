@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>Free Online Base64 Encoder/Decoder - Convert Text & Files - 52tools</title>
+    <meta name="description" content="Use our free online Base64 Encoder/Decoder to easily convert your text or files to and from Base64 format. Accurate, fast, and secure!">
+    <meta name="keywords" content="base64 encoder, base64 decoder, online base64 converter, convert to base64, convert from base64, text to base64, file to base64, base64 to text, base64 to file">
+    <link rel="canonical" href="https://tool52.com/tools/base64-encoder-decoder/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="Free Online Base64 Encoder/Decoder - Convert Text & Files - 52tools">
+    <meta property="og:description" content="Use our free online Base64 Encoder/Decoder to easily convert your text or files to and from Base64 format. Accurate, fast, and secure!">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/base64-encoder-decoder/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,35 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>Free Online Base64 Encoder/Decoder - Convert Text & Files</h1>
+        <p>Use our free online Base64 Encoder/Decoder to easily convert your text or files to and from Base64 format. Accurate, fast, and secure!</p>
+        <!DOCTYPE html>
+<html>
+<head>
+<title>Base64 Encoder/Decoder</title>
+<script>
+function base64Encode() {
+var val = document.getElementById('input').value;
+var base64 = window.btoa(val);
+document.getElementById('output').value = base64;
+}
+function base64Decode() {
+var val = document.getElementById('output').value;
+var text = window.atob(val);
+document.getElementById('input').value = text;
+}
+</script>
+</head>
+<body>
+<h2>Base64 Encoder/Decoder</h2>
+<div>
+<textarea id='input' placeholder='Input'></textarea>
+<button onclick='base64Encode()'>Encode</button>
+<button onclick='base64Decode()'>Decode</button>
+<textarea id='output' placeholder='Output'></textarea>
+</div>
+</body>
+</html>
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

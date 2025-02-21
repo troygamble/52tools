@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Free Online CSV to JSON Converter | Fast & Efficient",
+        "description": "Transform your CSV files into JSON format quickly and efficiently with our free CSV to JSON converter. No installation required. Perfect for data analysis, web development, and more!",
+        "keywords": "CSV to JSON, CSV converter, JSON converter, online CSV converter, CSV converter online, CSV to JSON converter, free CSV converter, data conversion tool, web development tool",
+        "canonical": "https://www.example.com/tools/csv-to-json-converter"
+    },
+    "html": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<title>CSV to JSON Converter</title>\n</head>\n<body>\n<h1>CSV to JSON Converter</h1>\n<br>\n<input id='csv' type='file'>\n<button id='convert'>Convert</button>\n<pre id='json'></pre>\n<script>\ndocument.getElementById('convert').addEventListener('click', function () {\nvar file = document.getElementById('csv').files[0];\nvar reader = new FileReader();\nreader.onload = function(e) {\nvar text = e.target.result;\nvar rows = text.split('\\n');\nvar json = [];\nvar headers = rows[0].split(',');\nfor (var i = 1; i < rows.length; i++) {\nvar obj = {};\nvar currentline = rows[i].split(',');\nfor (var j = 0; j < headers.length; j++) {\nobj[headers[j].trim()] = currentline[j];\n}\njson.push(obj);\n}\ndocument.getElementById('json').textContent = JSON.stringify(json, null, 2);\n};\nreader.readAsText(file);\n});\n</script>\n</body>\n</html>"
+    }
+}

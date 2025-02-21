@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>Color Palette Generator - Creativity Boost For Modern Designs - 52tools</title>
+    <meta name="description" content="Unlock endless color possibilities with our Color Palette Generator. Perfect tool for artists, designers, digital creators, and everyone in need of fresh color combinations. Start generating unique color palettes now!">
+    <meta name="keywords" content="color palette generator, color combinations, design tool, color scheme creator, artist tool, designer tool">
+    <link rel="canonical" href="https://tool52.com/tools/color-palette-generator/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="Color Palette Generator - Creativity Boost For Modern Designs - 52tools">
+    <meta property="og:description" content="Unlock endless color possibilities with our Color Palette Generator. Perfect tool for artists, designers, digital creators, and everyone in need of fresh color combinations. Start generating unique color palettes now!">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/color-palette-generator/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,56 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>Color Palette Generator - Creativity Boost For Modern Designs</h1>
+        <p>Unlock endless color possibilities with our Color Palette Generator. Perfect tool for artists, designers, digital creators, and everyone in need of fresh color combinations. Start generating unique color palettes now!</p>
+        <!DOCTYPE html>
+<html>
+<head>
+	<title>Color Palette Generator</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			margin: 0 auto;
+			width: 50%;
+			text-align: center;
+		}
+		.color-card {
+			margin: 10px;
+			width: 100px;
+			height: 100px;
+			border: 2px solid;
+		}
+	</style>
+	<script>
+		function generateColor() {
+			var letters = '0123456789ABCDEF';
+			var color = '#';
+			for (var i = 0; i < 6; i++) {
+				color += letters[Math.floor(Math.random() * 16)];
+			}
+			return color;
+		};
+		function generatePalette() {
+			document.getElementById('palette').innerHTML = '';
+			for (var i = 0; i < 5; i++) {
+				var colorCard = document.createElement('div');
+				colorCard.className = 'color-card';
+				colorCard.style.backgroundColor = generateColor();
+				document.getElementById('palette').appendChild(colorCard);
+			}
+		};
+	</script>
+</head>
+<body>
+	<div class='container'>
+		<h1>Color Palette Generator</h1>
+		<button onclick='generatePalette()'>Generate Palette</button>
+		<div id='palette'></div>
+	</div>
+</body>
+</html>https://www.colorpalettegenerator.com
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

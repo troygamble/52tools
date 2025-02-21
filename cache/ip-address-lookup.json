@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "IP Address Lookup - Find, Check & Trace Your IP Address Instantly",
+        "description": "Our IP Address Lookup tool provides information about your IP address details. Trace your IP location, find out domains linked to it, and much more with our advanced tool.",
+        "keywords": "IP address, IP lookup, check IP, trace IP, locate IP, IP finder, IP address search, IP location",
+        "canonical_url": "https://www.website.com/ip-address-lookup"
+    },
+    "html": {
+        "html": "<div id='ip-lookup'>\n<h2>IP Address Lookup</h2>\n<input type='text' id='ip-address' placeholder='Enter IP Address'>\n<button id='lookup-button'>Lookup</button>\n<div id='ip-info'></div>\n<script>\n    document.getElementById('lookup-button').addEventListener('click', function() {\n        var ip = document.getElementById('ip-address').value;\n        fetch('https://freegeoip.app/json/' + ip)\n        .then(response => response.json())\n        .then(data => {\n            var output = 'Country: ' + data.country_name + '<br>' +\n                         'Region: ' + data.region_name + '<br>' +\n                         'City: ' + data.city + '<br>' +\n                         'Zip Code: ' + data.zip_code + '<br>' +\n                         'Latitude: ' + data.latitude + '<br>' +\n                         'Longitude: ' + data.longitude;\n            document.getElementById('ip-info').innerHTML = output;\n        }).catch(error => {\n            document.getElementById('ip-info').innerHTML = 'An error occurred.';\n        });\n    });\n</script>\n</div>"
+    }
+}

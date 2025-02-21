@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>IP Address Lookup - Find, Check & Trace Your IP Address Instantly - 52tools</title>
+    <meta name="description" content="Our IP Address Lookup tool provides information about your IP address details. Trace your IP location, find out domains linked to it, and much more with our advanced tool.">
+    <meta name="keywords" content="IP address, IP lookup, check IP, trace IP, locate IP, IP finder, IP address search, IP location">
+    <link rel="canonical" href="https://tool52.com/tools/ip-address-lookup/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="IP Address Lookup - Find, Check & Trace Your IP Address Instantly - 52tools">
+    <meta property="og:description" content="Our IP Address Lookup tool provides information about your IP address details. Trace your IP location, find out domains linked to it, and much more with our advanced tool.">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/ip-address-lookup/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,32 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>IP Address Lookup - Find, Check & Trace Your IP Address Instantly</h1>
+        <p>Our IP Address Lookup tool provides information about your IP address details. Trace your IP location, find out domains linked to it, and much more with our advanced tool.</p>
+        <div id='ip-lookup'>
+<h2>IP Address Lookup</h2>
+<input type='text' id='ip-address' placeholder='Enter IP Address'>
+<button id='lookup-button'>Lookup</button>
+<div id='ip-info'></div>
+<script>
+    document.getElementById('lookup-button').addEventListener('click', function() {
+        var ip = document.getElementById('ip-address').value;
+        fetch('https://freegeoip.app/json/' + ip)
+        .then(response => response.json())
+        .then(data => {
+            var output = 'Country: ' + data.country_name + '<br>' +
+                         'Region: ' + data.region_name + '<br>' +
+                         'City: ' + data.city + '<br>' +
+                         'Zip Code: ' + data.zip_code + '<br>' +
+                         'Latitude: ' + data.latitude + '<br>' +
+                         'Longitude: ' + data.longitude;
+            document.getElementById('ip-info').innerHTML = output;
+        }).catch(error => {
+            document.getElementById('ip-info').innerHTML = 'An error occurred.';
+        });
+    });
+</script>
+</div>
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

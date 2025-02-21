@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>Best Free Online Image Resizer | Resize Your Images Instantly - 52tools</title>
+    <meta name="description" content="Use 'Image Resizer' for quick and easy online resizing of your images. Perfect for reducing size, adjusting dimensions, or creating custom sizes. No software download required, resize images from your browser directly.">
+    <meta name="keywords" content="Image Resizer, Resize Image online, Free Image Resizer, Photo Resizer, JPEG Resizer, PNG Resizer, WebP Resizer, Image Resizer tool">
+    <link rel="canonical" href="https://tool52.com/tools/image-resizer/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="Best Free Online Image Resizer | Resize Your Images Instantly - 52tools">
+    <meta property="og:description" content="Use 'Image Resizer' for quick and easy online resizing of your images. Perfect for reducing size, adjusting dimensions, or creating custom sizes. No software download required, resize images from your browser directly.">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/image-resizer/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,9 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>Best Free Online Image Resizer | Resize Your Images Instantly</h1>
+        <p>Use 'Image Resizer' for quick and easy online resizing of your images. Perfect for reducing size, adjusting dimensions, or creating custom sizes. No software download required, resize images from your browser directly.</p>
+        <div id='imageResizer'><input type='file' id='image_upload' /><button id='resize_button'>Resize</button><canvas id='resize_canvas'></canvas></div><script>document.getElementById('resize_button').addEventListener('click', function(){ var canvas = document.getElementById('resize_canvas'); var context = canvas.getContext('2d'); var img = new Image(); img.onload = function(){ canvas.width = img.width / 2; canvas.height = img.height / 2; context.drawImage(img, 0, 0, img.width / 2, img.height / 2); }; img.src = URL.createObjectURL(document.getElementById('image_upload').files[0]);});</script>https://www.imageresizer.com/online-tool
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

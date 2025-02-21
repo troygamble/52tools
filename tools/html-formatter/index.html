@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>HTML Formatter: Free Online Tool for Code Beautification - 52tools</title>
+    <meta name="description" content="HTML Formatter is a free online tool that beautifies your code to make it clean and readable. Ideal for developers, it supports multiple features and languages.">
+    <meta name="keywords" content="HTML Formatter, Code Beautifier, Online HTML Formatter, Web Developer Tools, Free Formatter, Code Cleaner, HTML Tools, Web Development">
+    <link rel="canonical" href="https://tool52.com/tools/html-formatter/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="HTML Formatter: Free Online Tool for Code Beautification - 52tools">
+    <meta property="og:description" content="HTML Formatter is a free online tool that beautifies your code to make it clean and readable. Ideal for developers, it supports multiple features and languages.">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/html-formatter/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,33 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>HTML Formatter: Free Online Tool for Code Beautification</h1>
+        <p>HTML Formatter is a free online tool that beautifies your code to make it clean and readable. Ideal for developers, it supports multiple features and languages.</p>
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Formatter</title>
+    <style>
+        .formatter {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <textarea id='input' class='formatter'></textarea>
+    <button onclick='formatHtml()'>Format HTML</button>
+    <textarea id='output' class='formatter'></textarea>
+    <script>
+        function formatHtml() {
+            var input = document.getElementById('input').value;
+            var output = html_beautify(input);
+            document.getElementById('output').value = output;
+        }
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.11.0/beautify-html.min.js'></script>
+</body>
+</html>Use our HTML Formatter tool for efficient and high-quality code beautification. Ideal for professional developers, coding enthusiasts, and web designers who want to clean and format their HTML code effortlessly.
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

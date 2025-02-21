@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
-    <meta name="description" content="{{ tool_description }}">
-    <meta name="keywords" content="{{ tool_keywords }}">
-    <link rel="canonical" href="{{ canonical_url }}">
+    <title>Best HTML Entity Encoder/Decoder - Convert Special Characters Online - 52tools</title>
+    <meta name="description" content="Use our online HTML Entity Encoder/Decoder tool to quickly encode and decode special characters in your HTML code. It's free, fast, and browser-based.">
+    <meta name="keywords" content="HTML Encoder, HTML Decoder, HTML Entity Encoder/Decoder, Online HTML Encoder, Online HTML Decoder, Convert Special Characters, Encode HTML, Decode HTML">
+    <link rel="canonical" href="https://tool52.com/tools/html-entity-encoder-decoder/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="{{ tool_title }} - 52tools">
-    <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
-    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="Best HTML Entity Encoder/Decoder - Convert Special Characters Online - 52tools">
+    <meta property="og:description" content="Use our online HTML Entity Encoder/Decoder tool to quickly encode and decode special characters in your HTML code. It's free, fast, and browser-based.">
+    <meta property="og:image" content="/shared/images/default_og.png">
+    <meta property="og:url" content="https://tool52.com/tools/html-entity-encoder-decoder/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
@@ -48,9 +48,33 @@
         </nav>
     </header>
     <main>
-        <h1>{{ tool_title }}</h1>
-        <p>{{ tool_description }}</p>
-        {{ tool_content }}
+        <h1>Best HTML Entity Encoder/Decoder - Convert Special Characters Online</h1>
+        <p>Use our online HTML Entity Encoder/Decoder tool to quickly encode and decode special characters in your HTML code. It's free, fast, and browser-based.</p>
+        <!DOCTYPE html>
+<html>
+<head>
+<title>HTML Entity Encoder/Decoder</title>
+<script>
+function encodeHTML() {
+var htmlInput = document.getElementById('htmlInput').value;
+var encodedHTML = encodeURIComponent(htmlInput);
+document.getElementById('output').innerHTML = encodedHTML;
+} 
+function decodeHTML() {
+var encodedHTML = document.getElementById('htmlInput').value;
+var decodedHTML = decodeURIComponent(encodedHTML);
+document.getElementById('output').innerHTML = decodedHTML;
+}
+</script>
+</head>
+<body>
+<h1>HTML Entity Encoder/Decoder</h1>
+<textarea id='htmlInput' rows='10' cols='50'></textarea><br>
+<button onclick='encodeHTML()'>Encode</button>
+<button onclick='decodeHTML()'>Decode</button>
+<p id='output'></p>
+</body>
+</html>
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

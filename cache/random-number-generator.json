@@ -1,0 +1,11 @@
+{
+    "seo": {
+        "title": "Random Number Generator | Fast, Free & Reliable Online Tool",
+        "description": "Use our free online Random Number Generator to produce a lightning-fast, reliable randomized number within your specified parameters. Perfect for lotteries, data-testing, giveaways and more!",
+        "keywords": "Random Number Generator, Online Number Generator, Randomized Number Tool, Lottery Number Generator",
+        "long_tail_content": "Experience the best-in-class online Random Number Generator, built to provide randomness within specified ranges quickly and effectively. Discover the efficiency of our tool whether you're setting up a lottery, testing software, conducting a giveaway or more!"
+    },
+    "html": {
+        "html": "<html>\n<head>\n<title>Random Number Generator</title>\n</head>\n<body>\n<header><h1>Random Number Generator</h1></header>\n<label>Min: </label><input type='number' id='minVal' value='0'>\n<label>Max: </label><input type='number' id='maxVal' value='100'>\n<button id='generate'>Generate</button>\n<p id='output'></p>\n<script>\ndocument.getElementById('generate').addEventListener('click', function() {\nvar min = document.getElementById('minVal').value;\nvar max = document.getElementById('maxVal').value;\nvar randomNum = Math.floor(Math.random() * (max - min + 1)) + min;\ndocument.getElementById('output').innerText = 'Random Number: ' + randomNum;\n});\n</script>\n</body>\n</html>"
+    }
+}
