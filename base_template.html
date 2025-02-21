@@ -1,0 +1,49 @@
+### Updated `base_template.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ tool_title }} - 52tools</title>
+    <meta name="description" content="{{ tool_description }}">
+    <meta name="keywords" content="{{ tool_keywords }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="{{ tool_title }} - 52tools">
+    <meta property="og:description" content="{{ tool_description }}">
+    <meta property="og:image" content="{{ tool_image }}">
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="shared/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">52tools</div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">☰</label>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                {{ navigation }}
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle theme">Toggle Theme</button>
+        </nav>
+    </header>
+    <main>
+        <h1>{{ tool_title }}</h1>
+        <p>{{ tool_description }}</p>
+        {{ tool_content }}
+    </main>
+    <footer>
+        <p>© 2023 52tools. All rights reserved.</p>
+        {{ adsense_code }}
+    </footer>
+    <script src="shared/js/scripts.js"></script>
+</body>
+</html>
+```

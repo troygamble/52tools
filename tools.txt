@@ -1,0 +1,53 @@
+JSON Formatter
+XML Formatter
+CSV to JSON Converter
+HTML Formatter
+YAML Formatter
+Word Counter
+Character Counter
+Text Case Converter
+Text Diff Tool
+Lorem Ipsum Generator
+Markdown Editor
+Text to Speech
+Password Generator
+QR Code Generator
+UUID Generator
+Random Number Generator
+Color Palette Generator
+Fake Data Generator
+Unit Converter
+Currency Converter
+Time Zone Converter
+File Size Converter
+Binary to Decimal Converter
+Hex to RGB Converter
+Age Calculator
+Percentage Calculator
+Tip Calculator
+BMI Calculator
+Loan Calculator
+Mortgage Calculator
+Email Validator
+URL Validator
+Credit Card Validator
+IBAN Validator
+Base64 Encoder/Decoder
+URL Encoder/Decoder
+HTML Entity Encoder/Decoder
+Image Compressor
+Image Resizer
+Image to Base64 Converter
+Color Picker
+Regex Tester
+API Tester
+Cron Job Scheduler
+SQL Query Builder
+Git Cheat Sheet
+Pomodoro Timer
+To-Do List
+Notes App
+World Clock
+Weather Widget
+IP Address Lookup
+Browser Details Detector
