@@ -120,3 +120,8 @@
 2025-02-22 09:37:47,838 - INFO - Loaded metadata for 50 tools.
 2025-02-22 09:37:47,838 - CRITICAL - Critical failure in generate_index_page: 'str' object has no attribute 'get'
 2025-02-22 09:37:47,838 - INFO - Index page generation script completed.
+2025-02-22 10:12:50,886 - INFO - Jinja2 environment and template loaded successfully.
+2025-02-22 10:12:50,887 - INFO - Loaded 53 tools from tools_list.json.
+2025-02-22 10:12:50,887 - INFO - Loaded metadata for 50 tools.
+2025-02-22 10:12:50,888 - CRITICAL - Critical failure in generate_index_page: 'str' object has no attribute 'get'
+2025-02-22 10:12:50,888 - INFO - Index page generation script completed.

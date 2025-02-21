@@ -34,7 +34,6 @@ client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 # ===============================================
 base_url = os.getenv("BASE_URL", "https://troygamble.github.io/52tools")
 
-
 # ===============================================
 # ✅ Utility: Slugify tool names for safe filenames
 # ===============================================
@@ -184,15 +183,14 @@ async def generate_tool_page(tool_name, log_file, semaphore, force_regenerate=Fa
                 logging.error(f"Missing required SEO fields for {tool_name}: {seo_content}")
                 return
 
-            import re  # (add this at the top if not already there)
-
-            # Extract only the <body> content from the HTML
+            # ✅ Extract only the <body> content from the HTML
             full_html = tool_content.get("html", "")
             body_match = re.search(r"<body.*?>(.*?)</body>", full_html, re.DOTALL)
             tool_html_content = body_match.group(1) if body_match else full_html
 
-
+            # ✅ Updated: Pass base_url to the template for dynamic path handling
             rendered_page = template.render(
+                base_url=base_url,
                 tool_title=seo_content.get("title", "Untitled Tool"),
                 tool_description=seo_content.get("description", "No description available."),
                 tool_keywords=seo_content.get("keywords", ""),
@@ -201,7 +199,6 @@ async def generate_tool_page(tool_name, log_file, semaphore, force_regenerate=Fa
                 tool_content=tool_html_content + seo_content.get("long_tail_content", ""),
                 depth=2
             )
-
 
             os.makedirs(tool_dir, exist_ok=True)
             async with aiofiles.open(f"{tool_dir}/index.html", "w", encoding="utf-8") as f:
@@ -213,39 +210,8 @@ async def generate_tool_page(tool_name, log_file, semaphore, force_regenerate=Fa
             async with aiofiles.open(f"{tool_dir}/tool_code.html", "w", encoding="utf-8") as f:
                 await f.write(full_html)
 
-
         except Exception as e:
             logging.error(f"[ERROR] Failed {tool_name}: {e}")
-
-# ===============================================
-# ✅ Regenerate page from metadata (async file handling)
-# ===============================================
-async def regenerate_page_from_metadata(tool, metadata):
-    slug = slugify(tool["name"])
-    tool_dir = f"tools/{slug}"
-    os.makedirs(tool_dir, exist_ok=True)
-
-    if not isinstance(metadata, dict):
-        logging.error(f"⚠️ Metadata for {tool['name']} is invalid. Expected dict, got {type(metadata)}.")
-        return
-
-    try:
-        rendered_page = template.render(
-            tool_title=metadata.get("meta_title", tool["name"]),
-            tool_description=metadata.get("meta_description", "No description available."),
-            tool_keywords=", ".join(metadata.get("keywords", [])),
-            canonical_url=f"{base_url}/tools/{slug}/index.html",
-            navigation=[],
-            tool_content=metadata.get("html_content", "<p>Content coming soon.</p>"),
-            depth=2
-        )
-
-        async with aiofiles.open(f"{tool_dir}/index.html", "w", encoding="utf-8") as f:
-            await f.write(rendered_page)
-        logging.info(f"♻️ Refreshed page for: {tool['name']}")
-
-    except Exception as e:
-        logging.error(f"⚠️ Failed refreshing {tool['name']}: {e}")
 
 # ===============================================
 # ✅ Set up Jinja2 environment with validation
@@ -268,7 +234,7 @@ async def main(force_regenerate=False, refresh_only=False):
     if refresh_only:
         logging.info("🔄 Refreshing pages without API calls...")
         await asyncio.gather(*[
-            regenerate_page_from_metadata(tool, tools_metadata.get(tool["name"], {}))
+            generate_tool_page(tool["name"], "generation_log.txt", asyncio.Semaphore(5), force_regenerate=False)
             for tool in tools_list
         ])
     else:

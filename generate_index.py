@@ -114,13 +114,14 @@ def generate_index_page():
         # ✅ Render the final index.html page using enriched SEO data
         try:
             rendered_index = template.render(
+                base_url=base_url,  # ✅ Passing base_url for dynamic path handling
                 tool_title="52tools - The Ultimate Collection of Online Tools",
                 tool_description="Explore 52 powerful and free online tools designed for your daily needs.",
                 tool_keywords=", ".join(set(all_keywords)),
                 canonical_url=f"{base_url}/index.html",
                 navigation=tools_list,
                 tool_content=long_tail_content + f'<ul>{tools_list_html}</ul>',
-                depth=0 #added depth for main index
+                depth=0  # added depth for main index
             )
             logging.info("Template rendered successfully.")
         except TemplateError as e:
