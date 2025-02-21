@@ -1,4 +1,4 @@
-### Updated `base_template.html`
+### ✅ **Full Updated `base_template.html`**
 
 ```html
 <!DOCTYPE html>
@@ -6,14 +6,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ tool_title }} - 52tools</title>
+    <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
     <meta name="description" content="{{ tool_description }}">
     <meta name="keywords" content="{{ tool_keywords }}">
     <link rel="canonical" href="{{ canonical_url }}">
     <!-- Open Graph Meta Tags for Social Sharing -->
     <meta property="og:title" content="{{ tool_title }} - 52tools">
     <meta property="og:description" content="{{ tool_description }}">
-    <meta property="og:image" content="{{ tool_image }}">
+    <meta property="og:image" content="{{ tool_image | default('/shared/images/default_og.png') }}">
     <meta property="og:url" content="{{ canonical_url }}">
     <meta property="og:type" content="website">
     <!-- Favicon -->
