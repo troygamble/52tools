@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IP Address Lookup - Find, Check & Trace Your IP Address Instantly - 52tools</title>
-    <meta name="description" content="Our IP Address Lookup tool provides information about your IP address details. Trace your IP location, find out domains linked to it, and much more with our advanced tool.">
-    <meta name="keywords" content="IP address, IP lookup, check IP, trace IP, locate IP, IP finder, IP address search, IP location">
+    <title>IP Address Lookup: Fast, Accurate and User Friendly | Track, Geolocate and Get Info about any IP Address - 52tools</title>
+    <meta name="description" content="Discover the best tool for hassle-free IP Address Lookup. Track or Geolocate any IP address promptly! Explore details like ISP, physical location, and more with our comprehensive web tool.">
+    <meta name="keywords" content="IP Address Lookup, IP Geolocation, IP Tracker, IP Lookup, Find My IP, IP Checker, IP Locator, IP Finder, Track IP, Geolocate IP, IP Search, IP Information, Whois Lookup">
     <link rel="canonical" href="https://tool52.com/tools/ip-address-lookup/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="IP Address Lookup - Find, Check & Trace Your IP Address Instantly - 52tools">
-    <meta property="og:description" content="Our IP Address Lookup tool provides information about your IP address details. Trace your IP location, find out domains linked to it, and much more with our advanced tool.">
+    <meta property="og:title" content="IP Address Lookup: Fast, Accurate and User Friendly | Track, Geolocate and Get Info about any IP Address - 52tools">
+    <meta property="og:description" content="Discover the best tool for hassle-free IP Address Lookup. Track or Geolocate any IP address promptly! Explore details like ISP, physical location, and more with our comprehensive web tool.">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="https://tool52.com/tools/ip-address-lookup/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="shared/css/styles.css">
+    <link rel="stylesheet" href="../../shared/css/styles.css">
     <style>
         @keyframes pulse {
             0% { opacity: 0.6; }
@@ -48,32 +48,9 @@
         </nav>
     </header>
     <main>
-        <h1>IP Address Lookup - Find, Check & Trace Your IP Address Instantly</h1>
-        <p>Our IP Address Lookup tool provides information about your IP address details. Trace your IP location, find out domains linked to it, and much more with our advanced tool.</p>
-        <div id='ip-lookup'>
-<h2>IP Address Lookup</h2>
-<input type='text' id='ip-address' placeholder='Enter IP Address'>
-<button id='lookup-button'>Lookup</button>
-<div id='ip-info'></div>
-<script>
-    document.getElementById('lookup-button').addEventListener('click', function() {
-        var ip = document.getElementById('ip-address').value;
-        fetch('https://freegeoip.app/json/' + ip)
-        .then(response => response.json())
-        .then(data => {
-            var output = 'Country: ' + data.country_name + '<br>' +
-                         'Region: ' + data.region_name + '<br>' +
-                         'City: ' + data.city + '<br>' +
-                         'Zip Code: ' + data.zip_code + '<br>' +
-                         'Latitude: ' + data.latitude + '<br>' +
-                         'Longitude: ' + data.longitude;
-            document.getElementById('ip-info').innerHTML = output;
-        }).catch(error => {
-            document.getElementById('ip-info').innerHTML = 'An error occurred.';
-        });
-    });
-</script>
-</div>
+        <h1>IP Address Lookup: Fast, Accurate and User Friendly | Track, Geolocate and Get Info about any IP Address</h1>
+        <p>Discover the best tool for hassle-free IP Address Lookup. Track or Geolocate any IP address promptly! Explore details like ISP, physical location, and more with our comprehensive web tool.</p>
+        <p>Content coming soon.</p>
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>
@@ -160,6 +137,6 @@
             });
         });
     </script>
-    <script src="shared/js/scripts.js"></script>
+    <script src="../../shared/js/scripts.js"></script>
 </body>
 </html>

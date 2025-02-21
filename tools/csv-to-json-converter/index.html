@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Online CSV to JSON Converter | Fast & Efficient - 52tools</title>
-    <meta name="description" content="Transform your CSV files into JSON format quickly and efficiently with our free CSV to JSON converter. No installation required. Perfect for data analysis, web development, and more!">
-    <meta name="keywords" content="CSV to JSON, CSV converter, JSON converter, online CSV converter, CSV converter online, CSV to JSON converter, free CSV converter, data conversion tool, web development tool">
+    <title>CSV to JSON Converter – Free & Efficient Online Conversion Tool - 52tools</title>
+    <meta name="description" content="Convert your CSV files to JSON quickly and easily with our free online CSV to JSON Converter. No signup required. Trusted by developers and data professionals worldwide.">
+    <meta name="keywords" content="CSV to JSON, file converter, data conversion, JSON converter, CSV file, JSON data, web tool, free converter">
     <link rel="canonical" href="https://tool52.com/tools/csv-to-json-converter/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Free Online CSV to JSON Converter | Fast & Efficient - 52tools">
-    <meta property="og:description" content="Transform your CSV files into JSON format quickly and efficiently with our free CSV to JSON converter. No installation required. Perfect for data analysis, web development, and more!">
+    <meta property="og:title" content="CSV to JSON Converter – Free & Efficient Online Conversion Tool - 52tools">
+    <meta property="og:description" content="Convert your CSV files to JSON quickly and easily with our free online CSV to JSON Converter. No signup required. Trusted by developers and data professionals worldwide.">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="https://tool52.com/tools/csv-to-json-converter/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="shared/css/styles.css">
+    <link rel="stylesheet" href="../../shared/css/styles.css">
     <style>
         @keyframes pulse {
             0% { opacity: 0.6; }
@@ -48,43 +48,9 @@
         </nav>
     </header>
     <main>
-        <h1>Free Online CSV to JSON Converter | Fast & Efficient</h1>
-        <p>Transform your CSV files into JSON format quickly and efficiently with our free CSV to JSON converter. No installation required. Perfect for data analysis, web development, and more!</p>
-        <!DOCTYPE html>
-<html>
-<head>
-<title>CSV to JSON Converter</title>
-</head>
-<body>
-<h1>CSV to JSON Converter</h1>
-<br>
-<input id='csv' type='file'>
-<button id='convert'>Convert</button>
-<pre id='json'></pre>
-<script>
-document.getElementById('convert').addEventListener('click', function () {
-var file = document.getElementById('csv').files[0];
-var reader = new FileReader();
-reader.onload = function(e) {
-var text = e.target.result;
-var rows = text.split('\n');
-var json = [];
-var headers = rows[0].split(',');
-for (var i = 1; i < rows.length; i++) {
-var obj = {};
-var currentline = rows[i].split(',');
-for (var j = 0; j < headers.length; j++) {
-obj[headers[j].trim()] = currentline[j];
-}
-json.push(obj);
-}
-document.getElementById('json').textContent = JSON.stringify(json, null, 2);
-};
-reader.readAsText(file);
-});
-</script>
-</body>
-</html>
+        <h1>CSV to JSON Converter – Free & Efficient Online Conversion Tool</h1>
+        <p>Convert your CSV files to JSON quickly and easily with our free online CSV to JSON Converter. No signup required. Trusted by developers and data professionals worldwide.</p>
+        <p>Content coming soon.</p>
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>
@@ -171,6 +137,6 @@ reader.readAsText(file);
             });
         });
     </script>
-    <script src="shared/js/scripts.js"></script>
+    <script src="../../shared/js/scripts.js"></script>
 </body>
 </html>

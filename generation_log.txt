@@ -51,3 +51,60 @@
 [SUCCESS] Generated page for IP Address Lookup
 [SUCCESS] Generated page for Browser Details Detector
 [SUCCESS] Generated page for Weather Widget
+2025-02-22 00:05:23,128 - INFO - Loaded 53 tools from tools_list.json.
+2025-02-22 00:05:23,129 - INFO - Loaded metadata for 50 tools.
+2025-02-22 00:05:23,129 - INFO - \U0001f504 Refreshing pages without API calls...
+2025-02-22 00:05:23,138 - ERROR - \u26a0\ufe0f Metadata for Word Counter is invalid. Expected dict, got <class 'str'>.
+2025-02-22 00:05:23,141 - ERROR - \u26a0\ufe0f Metadata for JSON Formatter is invalid. Expected dict, got <class 'str'>.
+2025-02-22 00:05:23,155 - INFO - \u267b\ufe0f Refreshed page for: Pomodoro Timer
+2025-02-22 00:05:23,155 - INFO - \u267b\ufe0f Refreshed page for: Regex Tester
+2025-02-22 00:05:23,156 - INFO - \u267b\ufe0f Refreshed page for: Color Palette Generator
+2025-02-22 00:05:23,156 - INFO - \u267b\ufe0f Refreshed page for: CSV to JSON Converter
+2025-02-22 00:05:23,156 - INFO - \u267b\ufe0f Refreshed page for: Image to Base64 Converter
+2025-02-22 00:05:23,156 - INFO - \u267b\ufe0f Refreshed page for: HTML Formatter
+2025-02-22 00:05:23,156 - INFO - \u267b\ufe0f Refreshed page for: World Clock
+2025-02-22 00:05:23,157 - INFO - \u267b\ufe0f Refreshed page for: BMI Calculator
+2025-02-22 00:05:23,157 - INFO - \u267b\ufe0f Refreshed page for: SQL Query Builder
+2025-02-22 00:05:23,157 - INFO - \u267b\ufe0f Refreshed page for: Text Case Converter
+2025-02-22 00:05:23,157 - INFO - \u267b\ufe0f Refreshed page for: Tip Calculator
+2025-02-22 00:05:23,157 - INFO - \u267b\ufe0f Refreshed page for: UUID Generator
+2025-02-22 00:05:23,158 - INFO - \u267b\ufe0f Refreshed page for: Loan Calculator
+2025-02-22 00:05:23,158 - INFO - \u267b\ufe0f Refreshed page for: Mortgage Calculator
+2025-02-22 00:05:23,158 - INFO - \u267b\ufe0f Refreshed page for: Weather Widget
+2025-02-22 00:05:23,158 - INFO - \u267b\ufe0f Refreshed page for: URL Encoder/Decoder
+2025-02-22 00:05:23,158 - INFO - \u267b\ufe0f Refreshed page for: Git Cheat Sheet
+2025-02-22 00:05:23,159 - INFO - \u267b\ufe0f Refreshed page for: Notes App
+2025-02-22 00:05:23,159 - INFO - \u267b\ufe0f Refreshed page for: Random Number Generator
+2025-02-22 00:05:23,159 - INFO - \u267b\ufe0f Refreshed page for: IP Address Lookup
+2025-02-22 00:05:23,159 - INFO - \u267b\ufe0f Refreshed page for: Lorem Ipsum Generator
+2025-02-22 00:05:23,159 - INFO - \u267b\ufe0f Refreshed page for: Image Resizer
+2025-02-22 00:05:23,160 - INFO - \u267b\ufe0f Refreshed page for: QR Code Generator
+2025-02-22 00:05:23,160 - INFO - \u267b\ufe0f Refreshed page for: Email Validator
+2025-02-22 00:05:23,160 - INFO - \u267b\ufe0f Refreshed page for: Age Calculator
+2025-02-22 00:05:23,160 - INFO - \u267b\ufe0f Refreshed page for: Base64 Encoder/Decoder
+2025-02-22 00:05:23,161 - INFO - \u267b\ufe0f Refreshed page for: URL Validator
+2025-02-22 00:05:23,161 - INFO - \u267b\ufe0f Refreshed page for: Credit Card Validator
+2025-02-22 00:05:23,161 - INFO - \u267b\ufe0f Refreshed page for: API Tester
+2025-02-22 00:05:23,161 - INFO - \u267b\ufe0f Refreshed page for: Percentage Calculator
+2025-02-22 00:05:23,161 - INFO - \u267b\ufe0f Refreshed page for: HTML Entity Encoder/Decoder
+2025-02-22 00:05:23,162 - INFO - \u267b\ufe0f Refreshed page for: Text to Speech
+2025-02-22 00:05:23,162 - INFO - \u267b\ufe0f Refreshed page for: Fake Data Generator
+2025-02-22 00:05:23,162 - INFO - \u267b\ufe0f Refreshed page for: XML Formatter
+2025-02-22 00:05:23,163 - INFO - \u267b\ufe0f Refreshed page for: IBAN Validator
+2025-02-22 00:05:23,163 - INFO - \u267b\ufe0f Refreshed page for: Currency Converter
+2025-02-22 00:05:23,163 - INFO - \u267b\ufe0f Refreshed page for: Cron Job Scheduler
+2025-02-22 00:05:23,163 - INFO - \u267b\ufe0f Refreshed page for: Browser Details Detector
+2025-02-22 00:05:23,163 - INFO - \u267b\ufe0f Refreshed page for: Password Generator
+2025-02-22 00:05:23,163 - INFO - \u267b\ufe0f Refreshed page for: File Size Converter
+2025-02-22 00:05:23,163 - INFO - \u267b\ufe0f Refreshed page for: Time Zone Converter
+2025-02-22 00:05:23,164 - INFO - \u267b\ufe0f Refreshed page for: To-Do List
+2025-02-22 00:05:23,164 - INFO - \u267b\ufe0f Refreshed page for: Text Diff Tool
+2025-02-22 00:05:23,164 - INFO - \u267b\ufe0f Refreshed page for: Color Picker
+2025-02-22 00:05:23,164 - INFO - \u267b\ufe0f Refreshed page for: Binary to Decimal Converter
+2025-02-22 00:05:23,164 - INFO - \u267b\ufe0f Refreshed page for: YAML Formatter
+2025-02-22 00:05:23,164 - INFO - \u267b\ufe0f Refreshed page for: Image Compressor
+2025-02-22 00:05:23,164 - INFO - \u267b\ufe0f Refreshed page for: Character Counter
+2025-02-22 00:05:23,164 - INFO - \u267b\ufe0f Refreshed page for: Unit Converter
+2025-02-22 00:05:23,164 - INFO - \u267b\ufe0f Refreshed page for: Hex to RGB Converter
+2025-02-22 00:05:23,165 - INFO - \u267b\ufe0f Refreshed page for: Markdown Editor
+2025-02-22 00:05:23,167 - INFO - \U0001f389 All pages processed! Check 'generation_log.txt' for details.

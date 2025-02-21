@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Free Online Currency Converter - Instant Conversion - 52tools</title>
-    <meta name="description" content="Convert any currency instantly with our Currency Converter. Stay updated with live exchange rates for over 180 currencies across the world. Reliable and Easy to use.">
-    <meta name="keywords" content="Currency Converter, Free Currency Converter, Online Currency Converter, Live Exchange Rates, Currency Conversion">
+    <title>Currency Converter | Real-time Exchange Rates | Online Currency Calculator - 52tools</title>
+    <meta name="description" content="Unleash the power of real-time data with our online Currency Converter tool. Perfect for travelers, traders, or anyone needing quick, accurate foreign exchange calculations. Convert +150 global currencies effortlessly.">
+    <meta name="keywords" content="Currency Converter, online currency converter, currency exchange, foreign exchange rates, currency calculator, real-time exchange rates">
     <link rel="canonical" href="https://tool52.com/tools/currency-converter/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Best Free Online Currency Converter - Instant Conversion - 52tools">
-    <meta property="og:description" content="Convert any currency instantly with our Currency Converter. Stay updated with live exchange rates for over 180 currencies across the world. Reliable and Easy to use.">
+    <meta property="og:title" content="Currency Converter | Real-time Exchange Rates | Online Currency Calculator - 52tools">
+    <meta property="og:description" content="Unleash the power of real-time data with our online Currency Converter tool. Perfect for travelers, traders, or anyone needing quick, accurate foreign exchange calculations. Convert +150 global currencies effortlessly.">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="https://tool52.com/tools/currency-converter/index.html">
     <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="shared/css/styles.css">
+    <link rel="stylesheet" href="../../shared/css/styles.css">
     <style>
         @keyframes pulse {
             0% { opacity: 0.6; }
@@ -48,53 +48,9 @@
         </nav>
     </header>
     <main>
-        <h1>Best Free Online Currency Converter - Instant Conversion</h1>
-        <p>Convert any currency instantly with our Currency Converter. Stay updated with live exchange rates for over 180 currencies across the world. Reliable and Easy to use.</p>
-        <div id='currencyConverter'>
-<label for='amount'>Amount:</label>
-<input type='number' id='amount' />
-<br>
-<label for='from'>From:</label>
-<select id='from'>
-<option value='USD'>USD</option>
-<option value='EUR'>EUR</option>
-</select>
-<br>
-<label for='to'>To:</label>
-<select id='to'>
-<option value='USD'>USD</option>
-<option value='EUR'>EUR</option>
-</select>
-<br>
-<button id='convert'>Convert</button>
-<p id='result'></p>
-</div>
-
-<script>
-var btn = document.getElementById('convert');
-btn.addEventListener('click', function() {
-var amount = document.getElementById('amount').value;
-var from = document.getElementById('from').value;
-var to = document.getElementById('to').value;
-var result = document.getElementById('result');
-
-// Conversion rates
-var rates = {
-USD: {EUR: 0.82},
-EUR: {USD: 1.22}
-};
-
-if (from === to) {
-result.innerHTML = 'Same currency selected, no conversion needed.';
-} else if (!rates[from] || !rates[from][to]) {
-result.innerHTML = 'No conversion rates available.';
-} else {
-// Perform the conversion
-var converted = amount * rates[from][to];
-result.innerHTML = amount + ' ' + from + ' = ' + converted + ' ' + to;
-}
-});
-</script>https://www.currencyconverter.com
+        <h1>Currency Converter | Real-time Exchange Rates | Online Currency Calculator</h1>
+        <p>Unleash the power of real-time data with our online Currency Converter tool. Perfect for travelers, traders, or anyone needing quick, accurate foreign exchange calculations. Convert +150 global currencies effortlessly.</p>
+        <p>Content coming soon.</p>
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>
@@ -181,6 +137,6 @@ result.innerHTML = amount + ' ' + from + ' = ' + converted + ' ' + to;
             });
         });
     </script>
-    <script src="shared/js/scripts.js"></script>
+    <script src="../../shared/js/scripts.js"></script>
 </body>
 </html>

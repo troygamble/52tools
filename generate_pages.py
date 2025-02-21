@@ -7,11 +7,22 @@ from openai import AsyncOpenAI
 from dotenv import load_dotenv
 import aiofiles
 import random
+import argparse
+import logging
 
 # ===============================================
 # ✅ Load environment variables from .env file
 # ===============================================
 load_dotenv()
+
+# ===============================================
+# ✅ Set up logging
+# ===============================================
+logging.basicConfig(
+    filename="generation_log.txt",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 # ===============================================
 # ✅ Set up Async OpenAI client
@@ -31,43 +42,24 @@ def slugify(name):
     return re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')
 
 # ===============================================
-# ✅ Read successful tools from generation_log.txt
-# ===============================================
-completed_tools = set()
-if os.path.exists("generation_log.txt"):
-    with open("generation_log.txt", "r", encoding="utf-8") as log_file:
-        for line in log_file:
-            if line.startswith("[SUCCESS]"):
-                tool_name = line.split(" for ")[-1].strip()
-                completed_tools.add(tool_name)
-
-# ===============================================
-# ✅ Read tool names from tools.txt (excluding completed)
-# ===============================================
-with open("tools.txt", "r", encoding="utf-8") as f:
-    tools = [line.strip() for line in f if line.strip() and line.strip() not in completed_tools]
-
-# ===============================================
-# ✅ Set up Jinja2 environment for HTML rendering
-# ===============================================
-env = Environment(loader=FileSystemLoader("."))
-template = env.get_template("base_template.html")
-
-# ===============================================
-# ✅ Utility: Retry logic with exponential backoff
+# ✅ Utility: Retry logic with exponential backoff and rate limit handling
 # ===============================================
 async def call_with_retry(func, retries=3):
     for attempt in range(retries):
         try:
             return await func()
         except Exception as e:
-            if attempt < retries - 1:
+            if hasattr(e, 'status_code') and e.status_code == 429:
+                logging.warning(f"Rate limit reached. Retrying... ({attempt + 1}/{retries})")
+                await asyncio.sleep(10)
+            elif attempt < retries - 1:
                 await asyncio.sleep(random.uniform(1, 3) * (attempt + 1))
             else:
+                logging.error(f"API call failed after {retries} attempts: {e}")
                 raise e
 
 # ===============================================
-# ✅ Utility: Save JSON data asynchronously
+# ✅ Save JSON asynchronously
 # ===============================================
 async def save_json_async(path, data):
     os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -75,7 +67,7 @@ async def save_json_async(path, data):
         await f.write(json.dumps(data, indent=4))
 
 # ===============================================
-# ✅ Attempt flexible JSON parsing from raw response
+# ✅ Flexible JSON parsing
 # ===============================================
 def parse_json_flexibly(raw_content):
     try:
@@ -90,33 +82,75 @@ def parse_json_flexibly(raw_content):
         return {"html": raw_content.strip()}
 
 # ===============================================
-# ✅ Improved prompt generation with strict JSON formatting instructions
+# ✅ Prompt generation for SEO and content
 # ===============================================
 def generate_seo_prompt(tool_name):
     return f"""
     Generate an SEO-optimized title, description, keywords, and canonical URL for a web tool named '{tool_name}'.
     Return the output strictly in valid JSON format without any extra text or explanations.
-    The JSON must have the following structure:
     {{
         "title": "...",
         "description": "...",
         "keywords": "...",
         "long_tail_content": "..."
     }}
-    Ensure all values are properly escaped and the JSON is valid.
     """
 
 def generate_content_prompt(tool_name):
     return f"""
-    Generate functional HTML and JS for the tool '{tool_name}'. Return the output strictly in valid JSON format with this structure:
+    Generate functional HTML and JS for the tool '{tool_name}'. Return the output strictly in valid JSON format:
     {{
         "html": "..."
     }}
-    Ensure all content is escaped properly and the JSON is valid. Do not include any explanations.
     """
 
 # ===============================================
-# ✅ Function: generate_tool_page with enhanced parsing and improved prompts
+# ✅ Load tools list with fallback
+# ===============================================
+def load_tools_list():
+    try:
+        if os.path.exists("tools/tools_list.json"):
+            with open("tools/tools_list.json", "r", encoding="utf-8") as f:
+                tools = json.load(f).get("tools", [])
+                logging.info(f"Loaded {len(tools)} tools from tools_list.json.")
+                return tools
+        elif os.path.exists("tools.txt"):
+            with open("tools.txt", "r", encoding="utf-8") as f:
+                tools = [{"name": line.strip()} for line in f if line.strip()]
+                logging.info(f"Loaded {len(tools)} tools from tools.txt.")
+                return tools
+        logging.warning("No tools found. Returning empty list.")
+        return []
+    except Exception as e:
+        logging.error(f"Failed to load tools list: {e}")
+        return []
+
+# ===============================================
+# ✅ Load tools metadata
+# ===============================================
+def load_tools_metadata():
+    try:
+        if os.path.exists("tools_metadata.json"):
+            with open("tools_metadata.json", "r", encoding="utf-8") as f:
+                metadata = json.load(f)
+                logging.info(f"Loaded metadata for {len(metadata)} tools.")
+                return metadata
+        logging.warning("tools_metadata.json not found.")
+        return {}
+    except Exception as e:
+        logging.error(f"Failed to load tools metadata: {e}")
+        return {}
+
+# ===============================================
+# ✅ Generate navigation JSON
+# ===============================================
+async def generate_navigation_json(tools_list):
+    nav_list = [{"name": tool["name"], "slug": slugify(tool["name"])} for tool in tools_list]
+    os.makedirs("tools", exist_ok=True)
+    await save_json_async("tools/tools_list.json", {"tools": nav_list})
+
+# ===============================================
+# ✅ Generate individual tool pages with async file handling
 # ===============================================
 async def generate_tool_page(tool_name, log_file, semaphore, force_regenerate=False):
     tool_slug = slugify(tool_name)
@@ -125,13 +159,11 @@ async def generate_tool_page(tool_name, log_file, semaphore, force_regenerate=Fa
 
     async with semaphore:
         try:
-            # Check cache unless force_regenerate is True
             if os.path.exists(cache_file) and not force_regenerate:
                 async with aiofiles.open(cache_file, 'r', encoding="utf-8") as cache_f:
                     cached_data = json.loads(await cache_f.read())
                 seo_content, tool_content = cached_data.get("seo", {}), cached_data.get("html", {})
             else:
-                # Fetch SEO and HTML content from OpenAI with enhanced prompts
                 seo_response = await call_with_retry(lambda: client.chat.completions.create(
                     model="gpt-4",
                     messages=[{"role": "user", "content": generate_seo_prompt(tool_name)}]
@@ -146,68 +178,102 @@ async def generate_tool_page(tool_name, log_file, semaphore, force_regenerate=Fa
 
                 await save_json_async(cache_file, {"seo": seo_content, "html": tool_content})
 
-            # Validate critical fields before rendering
             required_fields = ["title", "description", "keywords"]
             if not all(field in seo_content for field in required_fields):
-                async with aiofiles.open(log_file, "a", encoding="utf-8") as log:
-                    await log.write(f"[ERROR] Missing required SEO fields for {tool_name}: {seo_content}\n")
-                print(f"[ERROR] Missing required SEO fields for {tool_name}: {seo_content}")
+                logging.error(f"Missing required SEO fields for {tool_name}: {seo_content}")
                 return
 
-            # Render final HTML
             rendered_page = template.render(
                 tool_title=seo_content.get("title", "Untitled Tool"),
                 tool_description=seo_content.get("description", "No description available."),
                 tool_keywords=seo_content.get("keywords", ""),
                 canonical_url=f"{base_url}/tools/{tool_slug}/index.html",
                 navigation="",
-                tool_content=tool_content.get("html", "") + seo_content.get("long_tail_content", "")
+                tool_content=tool_content.get("html", "") + seo_content.get("long_tail_content", ""),
+                depth=2
             )
 
             os.makedirs(tool_dir, exist_ok=True)
             async with aiofiles.open(f"{tool_dir}/index.html", "w", encoding="utf-8") as f:
                 await f.write(rendered_page)
 
-            async with aiofiles.open(log_file, "a", encoding="utf-8") as log:
-                await log.write(f"[SUCCESS] Generated page for {tool_name}\n")
-
-            print(f"[SUCCESS] Generated page for {tool_name}")
+            logging.info(f"[SUCCESS] Generated page for {tool_name}")
 
         except Exception as e:
-            async with aiofiles.open(log_file, "a", encoding="utf-8") as log:
-                await log.write(f"[ERROR] Failed {tool_name}: {e}\n")
-            print(f"[ERROR] Failed {tool_name}: {e}")
+            logging.error(f"[ERROR] Failed {tool_name}: {e}")
 
 # ===============================================
-# ✅ Generate navigation JSON for dynamic loading (only successful tools)
+# ✅ Regenerate page from metadata (async file handling)
 # ===============================================
-async def generate_navigation_json():
-    nav_list = [{"name": tool, "slug": slugify(tool)} for tool in completed_tools]
-    os.makedirs("tools", exist_ok=True)
-    await save_json_async("tools/tools_list.json", {"tools": nav_list})
+async def regenerate_page_from_metadata(tool, metadata):
+    slug = slugify(tool["name"])
+    tool_dir = f"tools/{slug}"
+    os.makedirs(tool_dir, exist_ok=True)
+
+    if not isinstance(metadata, dict):
+        logging.error(f"⚠️ Metadata for {tool['name']} is invalid. Expected dict, got {type(metadata)}.")
+        return
+
+    try:
+        rendered_page = template.render(
+            tool_title=metadata.get("meta_title", tool["name"]),
+            tool_description=metadata.get("meta_description", "No description available."),
+            tool_keywords=", ".join(metadata.get("keywords", [])),
+            canonical_url=f"{base_url}/tools/{slug}/index.html",
+            navigation=[],
+            tool_content=metadata.get("html_content", "<p>Content coming soon.</p>"),
+            depth=2
+        )
+
+        async with aiofiles.open(f"{tool_dir}/index.html", "w", encoding="utf-8") as f:
+            await f.write(rendered_page)
+        logging.info(f"♻️ Refreshed page for: {tool['name']}")
+
+    except Exception as e:
+        logging.error(f"⚠️ Failed refreshing {tool['name']}: {e}")
+
+# ===============================================
+# ✅ Set up Jinja2 environment with validation
+# ===============================================
+try:
+    env = Environment(loader=FileSystemLoader("."))
+    template = env.get_template("base_template.html")
+except Exception as e:
+    logging.critical(f"Template loading failed: {e}")
+    raise
 
 # ===============================================
 # ✅ Main async function with concurrency control
 # ===============================================
-async def main(force_regenerate=False):
-    os.makedirs("cache", exist_ok=True)
+async def main(force_regenerate=False, refresh_only=False):
     os.makedirs("tools", exist_ok=True)
-    log_file = "generation_log.txt"
+    tools_list = load_tools_list()
+    tools_metadata = load_tools_metadata()
 
-    semaphore = asyncio.Semaphore(5)  # Max 5 concurrent tasks
-    await generate_navigation_json()
-    await asyncio.gather(*(generate_tool_page(tool, log_file, semaphore, force_regenerate) for tool in tools))
+    if refresh_only:
+        logging.info("🔄 Refreshing pages without API calls...")
+        await asyncio.gather(*[
+            regenerate_page_from_metadata(tool, tools_metadata.get(tool["name"], {}))
+            for tool in tools_list
+        ])
+    else:
+        logging.info("🚀 Generating pages with full processing...")
+        semaphore = asyncio.Semaphore(5)
+        await asyncio.gather(*[
+            generate_tool_page(tool["name"], "generation_log.txt", semaphore, force_regenerate)
+            for tool in tools_list
+        ])
 
-    print("🎉 All pages generated! Check 'generation_log.txt' for details.")
+    await generate_navigation_json(tools_list)
+    logging.info("🎉 All pages processed! Check 'generation_log.txt' for details.")
 
 # ===============================================
 # ✅ Script Entry Point
 # ===============================================
 if __name__ == "__main__":
-    import argparse
-
-    parser = argparse.ArgumentParser(description="Generate tool pages with optional force regeneration.")
-    parser.add_argument("--force", action="store_true", help="Force regeneration of all tools, ignoring cache.")
+    parser = argparse.ArgumentParser(description="Generate or refresh tool pages.")
+    parser.add_argument("--force", action="store_true", help="Force regenerate all pages (costly).")
+    parser.add_argument("--refresh", action="store_true", help="Refresh pages without API calls.")
     args = parser.parse_args()
 
-    asyncio.run(main(force_regenerate=args.force))
+    asyncio.run(main(force_regenerate=args.force, refresh_only=args.refresh))

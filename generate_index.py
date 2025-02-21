@@ -118,7 +118,8 @@ def generate_index_page():
                 tool_keywords=", ".join(set(all_keywords)),
                 canonical_url=f"{base_url}/index.html",
                 navigation=tools_list,
-                tool_content=long_tail_content + f'<ul>{tools_list_html}</ul>'
+                tool_content=long_tail_content + f'<ul>{tools_list_html}</ul>',
+                depth=0 #added depth for main index
             )
             logging.info("Template rendered successfully.")
         except TemplateError as e:
