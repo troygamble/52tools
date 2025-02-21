@@ -106,7 +106,7 @@
             // ✅ Dynamic navigation loading with retry logic and user feedback
             const loadNavigation = async (retries = 3) => {
                 try {
-                    const response = await fetch('/tools/tools_list.json');
+                    const response = await fetch('tools/tools_list.json');                    ;
                     if (!response.ok) throw new Error('Failed to load navigation data.');
                     const data = await response.json();
                     navContainer.innerHTML = '';
