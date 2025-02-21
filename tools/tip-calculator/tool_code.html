@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tip Calculator</title>
+<style>
+body {
+ text-align: center;
+}
+input {
+ width: 100px;
+ height: 40px;
+ font-size: 18px;
+}
+button {
+ width: 100px;
+ height: 40px;
+ font-size: 18px;
+ cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h2>Tip Calculator</h2>
+<label for='bill'>Bill:</label>
+<input type='number' id='bill' placeholder='Enter Bill Amount'>
+<br>
+<label for='service'>Service Quality:</label>
+<select id='service'>
+<option value='0.3'>Excellent - 30%</option>
+<option value='0.2'>Good - 20%</option>
+<option value='0.15'>Average - 15%</option>
+<option value='0.1'>Poor - 10%</option>
+</select>
+<br>
+<label for='people'>Number of People:</label>
+<input type='number' id='people' placeholder='Enter Number of People'>
+<br>
+<button onclick='calculateTip()'>Calculate</button>
+<h3 id='totalTip'></h3>
+<script>
+function calculateTip() {
+ let bill = document.getElementById('bill').value;
+ let service = document.getElementById('service').value;
+ let people = document.getElementById('people').value;
+ if (bill === '' || service == 0 || people === '') {
+ alert('Please fill in all the fields.');
+ return;
+ }
+ let total = (bill * service) / people;
+ total = Math.round(total * 100) / 100;
+ total = total.toFixed(2);
+ document.getElementById('totalTip').innerHTML = 'Each Person Owes: $' + total;
+}
+</script>
+</body>
+</html>

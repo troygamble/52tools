@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Text Diff Tool</title>
+<script src="https://cdn.jsdelivr.net/npm/diff@3.5.0"></script>
+</head>
+<body>
+<h2>Text Diff Tool</h2>
+<textarea id="text1" placeholder="Enter first text here..."></textarea>
+<textarea id="text2" placeholder="Enter second text here..."></textarea>
+<button onclick="findDiff()">Find Difference</button>
+<h3>Difference:</h3>
+<pre id="difference"></pre>
+<script>
+function findDiff() {
+var text1 = document.getElementById('text1').value;
+var text2 = document.getElementById('text2').value;
+var diff = Diff.diffChars(text1, text2);
+var display = '';
+diff.forEach(function(part){
+var color = part.added ? 'green' :
+part.removed ? 'red' : 'grey';
+display += '<span style="color:' + color + '">' + part.value + '</span>';
+});
+document.getElementById('difference').innerHTML = display;
+}
+</script>
+</body>
+</html>

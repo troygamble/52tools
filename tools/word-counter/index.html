@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Counter - Accurate Word Counting Tool Online - 52tools</title>
@@ -50,19 +51,7 @@
     <main>
         <h1>Word Counter - Accurate Word Counting Tool Online</h1>
         <p>Try our efficient Word Counter tool for quick and accurate word, character, and sentence counts. Ideal for content writers, SEO professionals, students, and educators.</p>
-        <!DOCTYPE html>
-<html>
-<head>
-    <title>Word Counter</title>
-    <style>
-        .container {
-            width: 50%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-    </style>
-</head>
-<body>
+        
     <div class="container">
         <textarea id="wordInput" rows="6" cols="50" placeholder="Type or paste your text..." style="width: 100%;"></textarea>
         <button id="countBtn" style="margin-top: 10px;">Count Words</button>
@@ -75,8 +64,7 @@
             document.querySelector('#wordCount').innerHTML = 'Word count: ' + (text.length > 0 ? wordCount : 0);
         });
     </script>
-</body>
-</html>https://wordcounter.com
+https://wordcounter.com
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>
@@ -132,7 +120,7 @@
                     data.tools.forEach(tool => {
                         const li = document.createElement('li');
                         const link = document.createElement('a');
-                        link.href = `/tools/${tool.slug}/index.html`;
+                        link.href = `tools/${tool.slug}/index.html`;
                         link.textContent = tool.name;
                         link.setAttribute('aria-label', `Access ${tool.name} tool page`);
                         li.appendChild(link);

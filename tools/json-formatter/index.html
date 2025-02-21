@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast, reliable JSON Formatter online - 52tools</title>
@@ -50,13 +51,7 @@
     <main>
         <h1>Fast, reliable JSON Formatter online</h1>
         <p>Organize and beautify your JSON data with our online JSON Formatter. Ideal for editing, validating, and producing readable JSON structure instantly.</p>
-        <!DOCTYPE html>
-<html>
-<head>
-<title>JSON Formatter</title>
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-</head>
-<body>
+        
 <div id="app">
 <textarea v-model="jsonInput" @input="formatJSON()"></textarea>
 <pre v-html="formattedJSON"></pre>
@@ -79,8 +74,7 @@ new Vue({
   }
 });
 </script>
-</body>
-</html>https://www.jsonformatter.com
+https://www.jsonformatter.com
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>
@@ -136,7 +130,7 @@ new Vue({
                     data.tools.forEach(tool => {
                         const li = document.createElement('li');
                         const link = document.createElement('a');
-                        link.href = `/tools/${tool.slug}/index.html`;
+                        link.href = `tools/${tool.slug}/index.html`;
                         link.textContent = tool.name;
                         link.setAttribute('aria-label', `Access ${tool.name} tool page`);
                         li.appendChild(link);

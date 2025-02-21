@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON Formatter</title>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+<textarea v-model="jsonInput" @input="formatJSON()"></textarea>
+<pre v-html="formattedJSON"></pre>
+</div>
+<script>
+new Vue({
+  el: '#app',
+  data: {
+    jsonInput: '',
+    formattedJSON: ''
+  },
+  methods: {
+    formatJSON() {
+      try {
+        this.formattedJSON = JSON.stringify(JSON.parse(this.jsonInput), null, 2);
+      } catch (e) {
+        this.formattedJSON = 'Invalid JSON';
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>

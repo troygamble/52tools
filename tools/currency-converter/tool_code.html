@@ -1,0 +1,45 @@
+<div id='currencyConverter'>
+<label for='amount'>Amount:</label>
+<input type='number' id='amount' />
+<br>
+<label for='from'>From:</label>
+<select id='from'>
+<option value='USD'>USD</option>
+<option value='EUR'>EUR</option>
+</select>
+<br>
+<label for='to'>To:</label>
+<select id='to'>
+<option value='USD'>USD</option>
+<option value='EUR'>EUR</option>
+</select>
+<br>
+<button id='convert'>Convert</button>
+<p id='result'></p>
+</div>
+
+<script>
+var btn = document.getElementById('convert');
+btn.addEventListener('click', function() {
+var amount = document.getElementById('amount').value;
+var from = document.getElementById('from').value;
+var to = document.getElementById('to').value;
+var result = document.getElementById('result');
+
+// Conversion rates
+var rates = {
+USD: {EUR: 0.82},
+EUR: {USD: 1.22}
+};
+
+if (from === to) {
+result.innerHTML = 'Same currency selected, no conversion needed.';
+} else if (!rates[from] || !rates[from][to]) {
+result.innerHTML = 'No conversion rates available.';
+} else {
+// Perform the conversion
+var converted = amount * rates[from][to];
+result.innerHTML = amount + ' ' + from + ' = ' + converted + ' ' + to;
+}
+});
+</script>

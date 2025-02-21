@@ -165,3 +165,117 @@
 2025-02-22 09:37:36,112 - INFO - \u267b\ufe0f Refreshed page for: Text Diff Tool
 2025-02-22 09:37:36,112 - INFO - \u267b\ufe0f Refreshed page for: Image Compressor
 2025-02-22 09:37:36,115 - INFO - \U0001f389 All pages processed! Check 'generation_log.txt' for details.
+2025-02-22 09:45:26,604 - INFO - Loaded 53 tools from tools_list.json.
+2025-02-22 09:45:26,605 - INFO - Loaded metadata for 50 tools.
+2025-02-22 09:45:26,605 - INFO - \U0001f504 Refreshing pages without API calls...
+2025-02-22 09:45:26,615 - ERROR - \u26a0\ufe0f Metadata for Word Counter is invalid. Expected dict, got <class 'str'>.
+2025-02-22 09:45:26,618 - ERROR - \u26a0\ufe0f Metadata for JSON Formatter is invalid. Expected dict, got <class 'str'>.
+2025-02-22 09:45:26,634 - INFO - \u267b\ufe0f Refreshed page for: CSV to JSON Converter
+2025-02-22 09:45:26,635 - INFO - \u267b\ufe0f Refreshed page for: Image to Base64 Converter
+2025-02-22 09:45:26,636 - INFO - \u267b\ufe0f Refreshed page for: Pomodoro Timer
+2025-02-22 09:45:26,636 - INFO - \u267b\ufe0f Refreshed page for: SQL Query Builder
+2025-02-22 09:45:26,636 - INFO - \u267b\ufe0f Refreshed page for: Mortgage Calculator
+2025-02-22 09:45:26,636 - INFO - \u267b\ufe0f Refreshed page for: Color Palette Generator
+2025-02-22 09:45:26,637 - INFO - \u267b\ufe0f Refreshed page for: Regex Tester
+2025-02-22 09:45:26,637 - INFO - \u267b\ufe0f Refreshed page for: World Clock
+2025-02-22 09:45:26,637 - INFO - \u267b\ufe0f Refreshed page for: HTML Entity Encoder/Decoder
+2025-02-22 09:45:26,638 - INFO - \u267b\ufe0f Refreshed page for: BMI Calculator
+2025-02-22 09:45:26,638 - INFO - \u267b\ufe0f Refreshed page for: HTML Formatter
+2025-02-22 09:45:26,638 - INFO - \u267b\ufe0f Refreshed page for: Text Case Converter
+2025-02-22 09:45:26,638 - INFO - \u267b\ufe0f Refreshed page for: URL Encoder/Decoder
+2025-02-22 09:45:26,638 - INFO - \u267b\ufe0f Refreshed page for: UUID Generator
+2025-02-22 09:45:26,638 - INFO - \u267b\ufe0f Refreshed page for: XML Formatter
+2025-02-22 09:45:26,638 - INFO - \u267b\ufe0f Refreshed page for: Tip Calculator
+2025-02-22 09:45:26,639 - INFO - \u267b\ufe0f Refreshed page for: Weather Widget
+2025-02-22 09:45:26,639 - INFO - \u267b\ufe0f Refreshed page for: Notes App
+2025-02-22 09:45:26,639 - INFO - \u267b\ufe0f Refreshed page for: IP Address Lookup
+2025-02-22 09:45:26,639 - INFO - \u267b\ufe0f Refreshed page for: Random Number Generator
+2025-02-22 09:45:26,639 - INFO - \u267b\ufe0f Refreshed page for: QR Code Generator
+2025-02-22 09:45:26,639 - INFO - \u267b\ufe0f Refreshed page for: Loan Calculator
+2025-02-22 09:45:26,639 - INFO - \u267b\ufe0f Refreshed page for: Lorem Ipsum Generator
+2025-02-22 09:45:26,639 - INFO - \u267b\ufe0f Refreshed page for: Email Validator
+2025-02-22 09:45:26,639 - INFO - \u267b\ufe0f Refreshed page for: Base64 Encoder/Decoder
+2025-02-22 09:45:26,639 - INFO - \u267b\ufe0f Refreshed page for: Git Cheat Sheet
+2025-02-22 09:45:26,639 - INFO - \u267b\ufe0f Refreshed page for: Age Calculator
+2025-02-22 09:45:26,639 - INFO - \u267b\ufe0f Refreshed page for: URL Validator
+2025-02-22 09:45:26,640 - INFO - \u267b\ufe0f Refreshed page for: Password Generator
+2025-02-22 09:45:26,640 - INFO - \u267b\ufe0f Refreshed page for: Text to Speech
+2025-02-22 09:45:26,640 - INFO - \u267b\ufe0f Refreshed page for: Image Resizer
+2025-02-22 09:45:26,640 - INFO - \u267b\ufe0f Refreshed page for: API Tester
+2025-02-22 09:45:26,640 - INFO - \u267b\ufe0f Refreshed page for: Fake Data Generator
+2025-02-22 09:45:26,640 - INFO - \u267b\ufe0f Refreshed page for: IBAN Validator
+2025-02-22 09:45:26,640 - INFO - \u267b\ufe0f Refreshed page for: Percentage Calculator
+2025-02-22 09:45:26,640 - INFO - \u267b\ufe0f Refreshed page for: Credit Card Validator
+2025-02-22 09:45:26,640 - INFO - \u267b\ufe0f Refreshed page for: File Size Converter
+2025-02-22 09:45:26,640 - INFO - \u267b\ufe0f Refreshed page for: Browser Details Detector
+2025-02-22 09:45:26,640 - INFO - \u267b\ufe0f Refreshed page for: Time Zone Converter
+2025-02-22 09:45:26,640 - INFO - \u267b\ufe0f Refreshed page for: YAML Formatter
+2025-02-22 09:45:26,640 - INFO - \u267b\ufe0f Refreshed page for: Currency Converter
+2025-02-22 09:45:26,641 - INFO - \u267b\ufe0f Refreshed page for: Cron Job Scheduler
+2025-02-22 09:45:26,641 - INFO - \u267b\ufe0f Refreshed page for: Unit Converter
+2025-02-22 09:45:26,641 - INFO - \u267b\ufe0f Refreshed page for: Image Compressor
+2025-02-22 09:45:26,641 - INFO - \u267b\ufe0f Refreshed page for: To-Do List
+2025-02-22 09:45:26,641 - INFO - \u267b\ufe0f Refreshed page for: Color Picker
+2025-02-22 09:45:26,641 - INFO - \u267b\ufe0f Refreshed page for: Binary to Decimal Converter
+2025-02-22 09:45:26,641 - INFO - \u267b\ufe0f Refreshed page for: Hex to RGB Converter
+2025-02-22 09:45:26,641 - INFO - \u267b\ufe0f Refreshed page for: Markdown Editor
+2025-02-22 09:45:26,641 - INFO - \u267b\ufe0f Refreshed page for: Character Counter
+2025-02-22 09:45:26,641 - INFO - \u267b\ufe0f Refreshed page for: Text Diff Tool
+2025-02-22 09:45:26,644 - INFO - \U0001f389 All pages processed! Check 'generation_log.txt' for details.
+2025-02-22 09:47:49,158 - INFO - Loaded 53 tools from tools_list.json.
+2025-02-22 09:47:49,159 - INFO - Loaded metadata for 50 tools.
+2025-02-22 09:47:49,159 - INFO - \U0001f680 Generating pages with full processing...
+2025-02-22 09:47:49,184 - INFO - [SUCCESS] Generated page for Color Palette Generator
+2025-02-22 09:47:49,184 - INFO - [SUCCESS] Generated page for SQL Query Builder
+2025-02-22 09:47:49,190 - INFO - [SUCCESS] Generated page for Image to Base64 Converter
+2025-02-22 09:47:49,190 - INFO - [SUCCESS] Generated page for CSV to JSON Converter
+2025-02-22 09:47:49,191 - INFO - [SUCCESS] Generated page for Pomodoro Timer
+2025-02-22 09:47:49,213 - INFO - [SUCCESS] Generated page for Mortgage Calculator
+2025-02-22 09:47:49,214 - INFO - [SUCCESS] Generated page for HTML Entity Encoder/Decoder
+2025-02-22 09:47:49,222 - INFO - [SUCCESS] Generated page for World Clock
+2025-02-22 09:47:49,241 - INFO - [SUCCESS] Generated page for HTML Formatter
+2025-02-22 09:47:49,246 - INFO - [SUCCESS] Generated page for BMI Calculator
+2025-02-22 09:47:49,250 - INFO - [SUCCESS] Generated page for Regex Tester
+2025-02-22 09:47:49,251 - INFO - [SUCCESS] Generated page for Text Case Converter
+2025-02-22 09:47:49,270 - INFO - [SUCCESS] Generated page for URL Encoder/Decoder
+2025-02-22 09:47:49,274 - INFO - [SUCCESS] Generated page for Tip Calculator
+2025-02-22 09:47:49,278 - INFO - [SUCCESS] Generated page for Git Cheat Sheet
+2025-02-22 09:47:49,283 - INFO - [SUCCESS] Generated page for Base64 Encoder/Decoder
+2025-02-22 09:47:49,286 - INFO - [SUCCESS] Generated page for Loan Calculator
+2025-02-22 09:47:49,291 - INFO - [SUCCESS] Generated page for Weather Widget
+2025-02-22 09:47:49,303 - INFO - [SUCCESS] Generated page for Notes App
+2025-02-22 09:47:49,316 - INFO - [SUCCESS] Generated page for UUID Generator
+2025-02-22 09:47:49,317 - INFO - [SUCCESS] Generated page for IP Address Lookup
+2025-02-22 09:47:49,319 - INFO - [SUCCESS] Generated page for QR Code Generator
+2025-02-22 09:47:49,330 - INFO - [SUCCESS] Generated page for Age Calculator
+2025-02-22 09:47:49,339 - INFO - [SUCCESS] Generated page for XML Formatter
+2025-02-22 09:47:49,351 - INFO - [SUCCESS] Generated page for Image Resizer
+2025-02-22 09:47:49,361 - INFO - [SUCCESS] Generated page for Word Counter
+2025-02-22 09:47:49,390 - INFO - [SUCCESS] Generated page for Random Number Generator
+2025-02-22 09:47:49,391 - INFO - [SUCCESS] Generated page for Lorem Ipsum Generator
+2025-02-22 09:47:49,392 - INFO - [SUCCESS] Generated page for URL Validator
+2025-02-22 09:47:49,392 - INFO - [SUCCESS] Generated page for Email Validator
+2025-02-22 09:47:49,421 - INFO - [SUCCESS] Generated page for Password Generator
+2025-02-22 09:47:49,424 - INFO - [SUCCESS] Generated page for Text to Speech
+2025-02-22 09:47:49,430 - INFO - [SUCCESS] Generated page for JSON Formatter
+2025-02-22 09:47:49,431 - INFO - [SUCCESS] Generated page for Fake Data Generator
+2025-02-22 09:47:49,434 - INFO - [SUCCESS] Generated page for Credit Card Validator
+2025-02-22 09:47:49,457 - INFO - [SUCCESS] Generated page for Currency Converter
+2025-02-22 09:47:49,458 - INFO - [SUCCESS] Generated page for Percentage Calculator
+2025-02-22 09:47:49,466 - INFO - [SUCCESS] Generated page for IBAN Validator
+2025-02-22 09:47:49,503 - INFO - [SUCCESS] Generated page for API Tester
+2025-02-22 09:47:49,504 - INFO - [SUCCESS] Generated page for Cron Job Scheduler
+2025-02-22 09:47:49,504 - INFO - [SUCCESS] Generated page for File Size Converter
+2025-02-22 09:47:49,504 - INFO - [SUCCESS] Generated page for Browser Details Detector
+2025-02-22 09:47:49,508 - INFO - [SUCCESS] Generated page for Time Zone Converter
+2025-02-22 09:47:49,556 - INFO - [SUCCESS] Generated page for YAML Formatter
+2025-02-22 09:47:49,556 - INFO - [SUCCESS] Generated page for Binary to Decimal Converter
+2025-02-22 09:47:49,557 - INFO - [SUCCESS] Generated page for Hex to RGB Converter
+2025-02-22 09:47:49,557 - INFO - [SUCCESS] Generated page for To-Do List
+2025-02-22 09:47:49,558 - INFO - [SUCCESS] Generated page for Unit Converter
+2025-02-22 09:47:49,579 - INFO - [SUCCESS] Generated page for Image Compressor
+2025-02-22 09:47:49,583 - INFO - [SUCCESS] Generated page for Color Picker
+2025-02-22 09:47:49,585 - INFO - [SUCCESS] Generated page for Markdown Editor
+2025-02-22 09:47:49,587 - INFO - [SUCCESS] Generated page for Text Diff Tool
+2025-02-22 09:47:49,594 - INFO - [SUCCESS] Generated page for Character Counter
+2025-02-22 09:47:49,597 - INFO - \U0001f389 All pages processed! Check 'generation_log.txt' for details.

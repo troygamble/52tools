@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image to Base64 Converter</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Image to Base64 Converter</h1>
+<input type="file" id="inputFile">
+<br>
+<button onclick="convertToBase64()">Convert</button>
+<br>
+<p id="base64"></p>
+<script>
+    function convertToBase64() {
+        var file = document.getElementById('inputFile').files[0];
+        var reader = new FileReader();
+        reader.onloadend = function() {
+            document.getElementById('base64').innerHTML = reader.result;
+        }
+        reader.readAsDataURL(file);
+    }
+</script>
+</body>
+</html>

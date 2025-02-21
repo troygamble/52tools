@@ -1,0 +1,3 @@
+{
+  "html": "<div id='textToSpeechContainer'>\n<input id='inputTextField' type='text' placeholder='Enter text here...\'>\n<button id='speakBtn'>Speak</button>\n</div>\n<script>\nwindow.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;\nconst synth = window.speechSynthesis;\nconst speakBtn = document.getElementById('speakBtn');\nconst inputTextField = document.getElementById('inputTextField');\nspeakBtn.addEventListener('click', ()=>{\nvar utterance = new SpeechSynthesisUtterance(inputTextField.value);\nsynth.speak(utterance);\n});\n</script>"
+}

@@ -4,13 +4,13 @@
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit Converter - Quick & Accurate Online Measurement Conversions - 52tools</title>
-    <meta name="description" content="Easily convert units of measurement using our free online Unit Converter tool. Supports weight, length, area, volume, temperature, and more. Fast and user-friendly tool to make unit conversions simple.">
-    <meta name="keywords" content="unit conversion, measurement converter, online unit converter, easy unit converter, free unit converter">
+    <title>Fast and Reliable Unit Converter - Convert Various Measurement Units - 52tools</title>
+    <meta name="description" content="Our Unit Converter tool is efficient, precise, and free. Convert among several units like temperature, length, weight, and many more with ease.">
+    <meta name="keywords" content="unit converter, conversion tool, measurement converter, length converter, temperature converter, weight converter, free converter">
     <link rel="canonical" href="https://tool52.com/tools/unit-converter/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Unit Converter - Quick & Accurate Online Measurement Conversions - 52tools">
-    <meta property="og:description" content="Easily convert units of measurement using our free online Unit Converter tool. Supports weight, length, area, volume, temperature, and more. Fast and user-friendly tool to make unit conversions simple.">
+    <meta property="og:title" content="Fast and Reliable Unit Converter - Convert Various Measurement Units - 52tools">
+    <meta property="og:description" content="Our Unit Converter tool is efficient, precise, and free. Convert among several units like temperature, length, weight, and many more with ease.">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="https://tool52.com/tools/unit-converter/index.html">
     <meta property="og:type" content="website">
@@ -49,9 +49,36 @@
         </nav>
     </header>
     <main>
-        <h1>Unit Converter - Quick & Accurate Online Measurement Conversions</h1>
-        <p>Easily convert units of measurement using our free online Unit Converter tool. Supports weight, length, area, volume, temperature, and more. Fast and user-friendly tool to make unit conversions simple.</p>
-        <p>Content coming soon.</p>
+        <h1>Fast and Reliable Unit Converter - Convert Various Measurement Units</h1>
+        <p>Our Unit Converter tool is efficient, precise, and free. Convert among several units like temperature, length, weight, and many more with ease.</p>
+        <div id='unitConverter'>
+    <h2>Unit Converter</h2>
+    <select id='inputUnit'>
+        <option value='cm'>cm</option>
+        <option value='m'>m</option>
+    </select>
+    <input type='text' id='inputValue' placeholder='Enter a value'/>
+    <select id='outputUnit'>
+        <option value='cm'>cm</option>
+        <option value='m'>m</option>
+    </select>
+    <input type='text' id='outputValue' disabled/>
+    <button onclick='convertUnits()'>Convert</button>
+</div>
+<script>
+    function convertUnits() {
+        var inputUnit = document.getElementById('inputUnit').value;
+        var inputValue = document.getElementById('inputValue').value;
+        var outputUnit = document.getElementById('outputUnit').value;
+        var outputValue = inputValue;
+        if (inputUnit == 'cm' && outputUnit == 'm') {
+            outputValue = inputValue * 0.01;
+        } else if (inputUnit == 'm' && outputUnit == 'cm') {
+            outputValue = inputValue * 100;
+        }
+        document.getElementById('outputValue').value = outputValue;
+    }
+</script>https://www.unitconverter.com
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

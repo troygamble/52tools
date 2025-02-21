@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Regex Tester</title>
+</head>
+<body>
+<h2>REGEX TESTER</h2>
+<form>
+Regex pattern:<br>
+<input type="text" id="pattern" name="pattern"><br>
+Test string:<br>
+<input type="text" id="testString" name="testString"><br><br>
+<input type="button" value="Test" onclick="testRegex()">
+</form>
+<p id="result"></p>
+<script>
+function testRegex() {
+let pattern = document.getElementById('pattern').value;
+let testString = document.getElementById('testString').value;
+try {
+pattern = new RegExp(pattern);
+document.getElementById('result').innerText = pattern.test(testString) ? 'Match Found.': 'No match.';
+} catch(e) {
+document.getElementById('result').innerText = 'Invalid regular expression.';
+}
+}
+</script>
+</body>
+</html>

@@ -4,13 +4,13 @@
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regex Tester - Your Go-To Online Regular Expression Testing and Validation Tool - 52tools</title>
-    <meta name="description" content="Need to test or validate regex patterns? Use our free, online Regex Tester. Perfect for web developers, programmers, data scientists and anyone else who values efficient, reliable text data management. Try Regex Tester today for your pattern deciphering needs.">
-    <meta name="keywords" content="regex tester, regular expression, regex validator, regex engine, pattern checker, expression evaluator, programming, coding tool, web development, string manipulations">
+    <title>Online Regex Tester: Effective Tool for Regular Expressions Testing - 52tools</title>
+    <meta name="description" content="Our 'Regex Tester' is a versatile online tool designed to test and debug your regular expressions. Perfect for developers and programmers to make their workflow seamless.">
+    <meta name="keywords" content="Regex Tester, Regular Expressions Tester, Online Regex Tool, Regex Check, Debug Regular Expressions">
     <link rel="canonical" href="https://tool52.com/tools/regex-tester/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Regex Tester - Your Go-To Online Regular Expression Testing and Validation Tool - 52tools">
-    <meta property="og:description" content="Need to test or validate regex patterns? Use our free, online Regex Tester. Perfect for web developers, programmers, data scientists and anyone else who values efficient, reliable text data management. Try Regex Tester today for your pattern deciphering needs.">
+    <meta property="og:title" content="Online Regex Tester: Effective Tool for Regular Expressions Testing - 52tools">
+    <meta property="og:description" content="Our 'Regex Tester' is a versatile online tool designed to test and debug your regular expressions. Perfect for developers and programmers to make their workflow seamless.">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="https://tool52.com/tools/regex-tester/index.html">
     <meta property="og:type" content="website">
@@ -49,9 +49,31 @@
         </nav>
     </header>
     <main>
-        <h1>Regex Tester - Your Go-To Online Regular Expression Testing and Validation Tool</h1>
-        <p>Need to test or validate regex patterns? Use our free, online Regex Tester. Perfect for web developers, programmers, data scientists and anyone else who values efficient, reliable text data management. Try Regex Tester today for your pattern deciphering needs.</p>
-        <p>Content coming soon.</p>
+        <h1>Online Regex Tester: Effective Tool for Regular Expressions Testing</h1>
+        <p>Our 'Regex Tester' is a versatile online tool designed to test and debug your regular expressions. Perfect for developers and programmers to make their workflow seamless.</p>
+        
+<h2>REGEX TESTER</h2>
+<form>
+Regex pattern:<br>
+<input type="text" id="pattern" name="pattern"><br>
+Test string:<br>
+<input type="text" id="testString" name="testString"><br><br>
+<input type="button" value="Test" onclick="testRegex()">
+</form>
+<p id="result"></p>
+<script>
+function testRegex() {
+let pattern = document.getElementById('pattern').value;
+let testString = document.getElementById('testString').value;
+try {
+pattern = new RegExp(pattern);
+document.getElementById('result').innerText = pattern.test(testString) ? 'Match Found.': 'No match.';
+} catch(e) {
+document.getElementById('result').innerText = 'Invalid regular expression.';
+}
+}
+</script>
+https://www.toolswebsite.com/regex-tester
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

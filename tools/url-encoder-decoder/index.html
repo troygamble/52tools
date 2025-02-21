@@ -4,13 +4,13 @@
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Encoder/Decoder - 52tools</title>
-    <meta name="description" content="No description available.">
-    <meta name="keywords" content="">
+    <title>URL Encoder/Decoder - Free Online Tool for Encoding and Decoding URLs - 52tools</title>
+    <meta name="description" content="Use our fast and secure URL Encoder/Decoder tool to encode or decode any URL easily. Ideal for web developers, programmers, SEO experts, and digital marketers.">
+    <meta name="keywords" content="URL encoder, URL decoder, decode URL, encode URL, SEO tool, free online tool, digital marketing, web development, programming">
     <link rel="canonical" href="https://tool52.com/tools/url-encoder-decoder/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="URL Encoder/Decoder - 52tools">
-    <meta property="og:description" content="No description available.">
+    <meta property="og:title" content="URL Encoder/Decoder - Free Online Tool for Encoding and Decoding URLs - 52tools">
+    <meta property="og:description" content="Use our fast and secure URL Encoder/Decoder tool to encode or decode any URL easily. Ideal for web developers, programmers, SEO experts, and digital marketers.">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="https://tool52.com/tools/url-encoder-decoder/index.html">
     <meta property="og:type" content="website">
@@ -49,9 +49,28 @@
         </nav>
     </header>
     <main>
-        <h1>URL Encoder/Decoder</h1>
-        <p>No description available.</p>
-        <p>Content coming soon.</p>
+        <h1>URL Encoder/Decoder - Free Online Tool for Encoding and Decoding URLs</h1>
+        <p>Use our fast and secure URL Encoder/Decoder tool to encode or decode any URL easily. Ideal for web developers, programmers, SEO experts, and digital marketers.</p>
+        <div class="url-converter">
+        <h2>URL Encoder/Decoder</h2>
+        <textarea id="inputArea" placeholder="Paste URL here" rows="4" cols="50"></textarea>
+        <button id="encodeBtn">Encode</button>
+        <button id="decodeBtn">Decode</button>
+        <h3>Output</h3>
+        <textarea id="outputArea" placeholder="Output will appear here" rows="4" cols="50" readonly></textarea>
+</div>
+<script>
+    document.getElementById('encodeBtn').addEventListener('click', function() {
+        var input = document.getElementById('inputArea').value;
+        var output = encodeURIComponent(input);
+        document.getElementById('outputArea').value = output;
+    });
+    document.getElementById('decodeBtn').addEventListener('click', function() {
+        var input = document.getElementById('inputArea').value;
+        var output = decodeURIComponent(input);
+        document.getElementById('outputArea').value = output;
+    });
+</script>Embrace the simplicity and accuracy of our URL Encoder/Decoder. Our tool assists in converting (encoding/decoding) URLs into a format that can be transmitted over the internet and can then be easily read by web servers and browsers.
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

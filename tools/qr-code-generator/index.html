@@ -4,13 +4,13 @@
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Generator: Create Free QR Codes For URLs, Texts & More - 52tools</title>
-    <meta name="description" content="Experience the simplicity of generating QR codes with our free tool, QR Code Generator. Instantly create QR codes for different data types like urls, texts, emails, and more. Start creating your QR codes now!">
-    <meta name="keywords" content="QR Code Generator, Free QR Code Generator, Online QR Code Maker, QR code for URL, QR code for text, QR Code for Email, QR Code for wifi, QR Code for vcard, QR code for phone number, QR code for sms, QR code for location">
+    <title>QR Code Generator - Fast and Free Custom QR Codes - 52tools</title>
+    <meta name="description" content="Create your own custom QR codes with our free and easy-to-use QR Code Generator. Perfect for setting up quick access to websites, apps, or business promotion.">
+    <meta name="keywords" content="QR code generator, free QR code generator, custom QR code, QR code creator, QR code maker, create QR code, generate QR code">
     <link rel="canonical" href="https://tool52.com/tools/qr-code-generator/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="QR Code Generator: Create Free QR Codes For URLs, Texts & More - 52tools">
-    <meta property="og:description" content="Experience the simplicity of generating QR codes with our free tool, QR Code Generator. Instantly create QR codes for different data types like urls, texts, emails, and more. Start creating your QR codes now!">
+    <meta property="og:title" content="QR Code Generator - Fast and Free Custom QR Codes - 52tools">
+    <meta property="og:description" content="Create your own custom QR codes with our free and easy-to-use QR Code Generator. Perfect for setting up quick access to websites, apps, or business promotion.">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="https://tool52.com/tools/qr-code-generator/index.html">
     <meta property="og:type" content="website">
@@ -49,9 +49,28 @@
         </nav>
     </header>
     <main>
-        <h1>QR Code Generator: Create Free QR Codes For URLs, Texts & More</h1>
-        <p>Experience the simplicity of generating QR codes with our free tool, QR Code Generator. Instantly create QR codes for different data types like urls, texts, emails, and more. Start creating your QR codes now!</p>
-        <p>Content coming soon.</p>
+        <h1>QR Code Generator - Fast and Free Custom QR Codes</h1>
+        <p>Create your own custom QR codes with our free and easy-to-use QR Code Generator. Perfect for setting up quick access to websites, apps, or business promotion.</p>
+        <div>
+    <h1>QR Code Generator</h1>
+    <input id='qr-input' type='text' placeholder='Enter text or link here'/>
+    <button id='generate-btn'>Generate QR Code</button>
+    <div id='qr-output'></div>
+</div>
+<script>
+    document.getElementById('generate-btn').onclick = function() {
+        let qrInput = document.getElementById('qr-input').value;
+        let qrOutput = document.getElementById('qr-output');
+        qrOutput.innerHTML = '';
+        if(qrInput !== '') {
+            let qrCode = new QRious({
+                element: qrOutput,
+                value: qrInput,
+                size: 200
+            });
+        }
+    }
+</script>Looking for an effective, swift, and custom QR code generator? Our tool allows you to design and generate QR codes absolutely free. Ideal for promoting your app, website, or business quickly and conveniently. Try it now!
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

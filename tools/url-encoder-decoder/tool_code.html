@@ -1,0 +1,20 @@
+<div class="url-converter">
+        <h2>URL Encoder/Decoder</h2>
+        <textarea id="inputArea" placeholder="Paste URL here" rows="4" cols="50"></textarea>
+        <button id="encodeBtn">Encode</button>
+        <button id="decodeBtn">Decode</button>
+        <h3>Output</h3>
+        <textarea id="outputArea" placeholder="Output will appear here" rows="4" cols="50" readonly></textarea>
+</div>
+<script>
+    document.getElementById('encodeBtn').addEventListener('click', function() {
+        var input = document.getElementById('inputArea').value;
+        var output = encodeURIComponent(input);
+        document.getElementById('outputArea').value = output;
+    });
+    document.getElementById('decodeBtn').addEventListener('click', function() {
+        var input = document.getElementById('inputArea').value;
+        var output = decodeURIComponent(input);
+        document.getElementById('outputArea').value = output;
+    });
+</script>

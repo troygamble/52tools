@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Counter</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <textarea id="wordInput" rows="6" cols="50" placeholder="Type or paste your text..." style="width: 100%;"></textarea>
+        <button id="countBtn" style="margin-top: 10px;">Count Words</button>
+        <p id="wordCount">Word count: 0</p>
+    </div>
+    <script>
+        document.querySelector('#countBtn').addEventListener('click', function() {
+            var text = document.querySelector('#wordInput').value;
+            var wordCount = text.trim().split(/\s+/).length;
+            document.querySelector('#wordCount').innerHTML = 'Word count: ' + (text.length > 0 ? wordCount : 0);
+        });
+    </script>
+</body>
+</html>

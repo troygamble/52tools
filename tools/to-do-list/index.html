@@ -4,13 +4,13 @@
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List – Your Online Digital Checklist and Organized Task Management Tool - 52tools</title>
-    <meta name="description" content="Make task management effortless with our online tool 'To-Do List'. Create your digital checklist, increase your efficiency, and take control of your productivity. An organized sense of achievement is just a click away.">
-    <meta name="keywords" content="To-Do List, Task Management, Digital Checklist, Productivity Tool, Online Planner">
+    <title>To-Do List - Organize Your Tasks Efficiently Online - 52tools</title>
+    <meta name="description" content="Manage your daily tasks easily with our To-Do List tool. Stay organized with task prioritization, customizable widgets, and categorized to-do lists. Sign up for free today.">
+    <meta name="keywords" content="to-do list, task management, online organization tool, efficient tasking, daily planners, digital note-taking">
     <link rel="canonical" href="https://tool52.com/tools/to-do-list/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="To-Do List – Your Online Digital Checklist and Organized Task Management Tool - 52tools">
-    <meta property="og:description" content="Make task management effortless with our online tool 'To-Do List'. Create your digital checklist, increase your efficiency, and take control of your productivity. An organized sense of achievement is just a click away.">
+    <meta property="og:title" content="To-Do List - Organize Your Tasks Efficiently Online - 52tools">
+    <meta property="og:description" content="Manage your daily tasks easily with our To-Do List tool. Stay organized with task prioritization, customizable widgets, and categorized to-do lists. Sign up for free today.">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="https://tool52.com/tools/to-do-list/index.html">
     <meta property="og:type" content="website">
@@ -49,9 +49,41 @@
         </nav>
     </header>
     <main>
-        <h1>To-Do List – Your Online Digital Checklist and Organized Task Management Tool</h1>
-        <p>Make task management effortless with our online tool 'To-Do List'. Create your digital checklist, increase your efficiency, and take control of your productivity. An organized sense of achievement is just a click away.</p>
-        <p>Content coming soon.</p>
+        <h1>To-Do List - Organize Your Tasks Efficiently Online</h1>
+        <p>Manage your daily tasks easily with our To-Do List tool. Stay organized with task prioritization, customizable widgets, and categorized to-do lists. Sign up for free today.</p>
+        
+
+<h3>TO-DO LIST</h3>
+<input id='taskInput' type='text' placeholder='New Task'>
+<button id='addTaskBtn'>Add Task</button>
+
+<ul id='taskList'></ul>
+
+<script>
+
+let addTaskBtn = document.getElementById('addTaskBtn');
+let taskInput = document.getElementById('taskInput');
+let taskList = document.getElementById('taskList');
+
+addTaskBtn.onclick = function() {
+let task = taskInput.value;
+if (task.trim() == '') { alert('Please write something for task'); return false; }
+let listItem = document.createElement('li');
+listItem.textContent = task;
+let deleteBtn = document.createElement('button');
+deleteBtn.textContent = 'Delete';
+listItem.appendChild(deleteBtn);
+taskList.appendChild(listItem);
+
+  deleteBtn.onclick = function(e) {
+taskList.removeChild(listItem);
+};
+
+taskInput.value = '';
+};
+</script>
+
+https://www.todolist.com/
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

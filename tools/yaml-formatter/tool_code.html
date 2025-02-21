@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YAML Formatter</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.11.0/js-yaml.min.js"></script>
+</head>
+<body>
+	<textarea id="input" placeholder="Enter YAML here"></textarea>
+	<button id="format">Format YAML</button>
+	<pre id="output"></pre>
+	<script>
+		document.getElementById('format').addEventListener('click', function() {
+			var input = document.getElementById('input').value;
+			try {
+				var output = jsyaml.safeDump(jsyaml.safeLoad(input));
+				document.getElementById('output').innerText = output;
+			} catch (e) {
+				alert('Invalid YAML!');
+			}
+		});
+	</script>
+</body>
+</html>

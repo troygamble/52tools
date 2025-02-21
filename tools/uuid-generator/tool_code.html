@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>UUID Generator</title>
+<script>
+function generateUUID() {
+var d = new Date().getTime();
+if (typeof performance !== 'undefined' && typeof performance.now === 'function') {
+d += performance.now();
+}
+return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+var r = (d + Math.random() * 16) % 16 | 0;
+d = Math.floor(d / 16);
+return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+});
+}
+document.getElementById('generate').addEventListener('click', function() {
+document.getElementById('uuid').value = generateUUID();
+});
+</script>
+</head>
+<body>
+<button id='generate'>Generate UUID</button>
+<input type='text' id='uuid' readonly>
+</body>
+</html>

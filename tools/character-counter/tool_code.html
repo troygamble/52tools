@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Character Counter</title>
+<script>
+function characterCount() {
+var text = document.getElementById('text').value;
+document.getElementById('count').innerHTML = 'Character Count: ' + text.length;
+}
+</script>
+</head>
+<body>
+<h2>Character Counter Tool</h2>
+<textarea id='text' onkeyup='characterCount()'></textarea>
+<p id='count'>Character Count: 0</p>
+</body>
+</html>

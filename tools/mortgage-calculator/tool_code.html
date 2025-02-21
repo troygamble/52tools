@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mortgage Calculator</title>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+</head>
+<body>
+<h1>Mortgage Calculator</h1>
+<form id='mortgageCalculator'>
+<label for='homePrice'>Home Price:</label>
+<input type='number' id='homePrice' required><br>
+<label for='downPayment'>Down Payment:</label>
+<input type='number' id='downPayment' required><br>
+<label for='loanTerm'>Loan Term (Years):</label>
+<input type='number' id='loanTerm' required><br>
+<label for='interestRate'>Interest Rate:</label>
+<input type='number' id='interestRate' required><br>
+<button type='submit'>Calculate</button>
+</form>
+<h2 id='monthlyPayment'></h2>
+<script>
+$('#mortgageCalculator').on('submit', function(event){
+event.preventDefault();
+var homePrice = $('#homePrice').val();
+var downPayment = $('#downPayment').val();
+var loanAmount = homePrice - downPayment;
+var loanTerm = $('#loanTerm').val();
+var numPayments = loanTerm * 12;
+var interestRate = $('#interestRate').val();
+var monthlyInterestRate = (interestRate / 100) / 12;
+var monthlyPayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numPayments));
+$('#monthlyPayment').text('Monthly Payment: ' + monthlyPayment.toFixed(2));
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Base64 Encoder/Decoder</title>
+<script>
+function base64Encode() {
+var val = document.getElementById('input').value;
+var base64 = window.btoa(val);
+document.getElementById('output').value = base64;
+}
+function base64Decode() {
+var val = document.getElementById('output').value;
+var text = window.atob(val);
+document.getElementById('input').value = text;
+}
+</script>
+</head>
+<body>
+<h2>Base64 Encoder/Decoder</h2>
+<div>
+<textarea id='input' placeholder='Input'></textarea>
+<button onclick='base64Encode()'>Encode</button>
+<button onclick='base64Decode()'>Decode</button>
+<textarea id='output' placeholder='Output'></textarea>
+</div>
+</body>
+</html>

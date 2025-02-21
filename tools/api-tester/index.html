@@ -4,13 +4,13 @@
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Tester - Your Ultimate Web Tool for Simplified API Testing & Debugging - 52tools</title>
-    <meta name="description" content="Boost your productivity with our API Tester - A comprehensive web tool designed to aid developers, QA teams, and software testers in testing and debugging API for optimal performance.">
-    <meta name="keywords" content="API testing, API debugging, web tool, software testing, QA, developers, programming, productivity, API performance, API Tester">
+    <title>API Tester - Efficient and Reliable Tool for API Testing - 52tools</title>
+    <meta name="description" content="API Tester is an intuitive, robust, and highly reliable tool designed to make API testing faster, easier, and more efficient. Designed to cater to both beginners and experts.">
+    <meta name="keywords" content="API testing, API tester, Web API Testing, REST API testing tool, Automated API testing, API Testing Software, API endpoint tester">
     <link rel="canonical" href="https://tool52.com/tools/api-tester/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="API Tester - Your Ultimate Web Tool for Simplified API Testing & Debugging - 52tools">
-    <meta property="og:description" content="Boost your productivity with our API Tester - A comprehensive web tool designed to aid developers, QA teams, and software testers in testing and debugging API for optimal performance.">
+    <meta property="og:title" content="API Tester - Efficient and Reliable Tool for API Testing - 52tools">
+    <meta property="og:description" content="API Tester is an intuitive, robust, and highly reliable tool designed to make API testing faster, easier, and more efficient. Designed to cater to both beginners and experts.">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="https://tool52.com/tools/api-tester/index.html">
     <meta property="og:type" content="website">
@@ -49,9 +49,35 @@
         </nav>
     </header>
     <main>
-        <h1>API Tester - Your Ultimate Web Tool for Simplified API Testing & Debugging</h1>
-        <p>Boost your productivity with our API Tester - A comprehensive web tool designed to aid developers, QA teams, and software testers in testing and debugging API for optimal performance.</p>
-        <p>Content coming soon.</p>
+        <h1>API Tester - Efficient and Reliable Tool for API Testing</h1>
+        <p>API Tester is an intuitive, robust, and highly reliable tool designed to make API testing faster, easier, and more efficient. Designed to cater to both beginners and experts.</p>
+        
+    <h1>API Tester</h1>
+    <form id='api-tester-form'>
+        <label for='url'>URL:</label><br>
+        <input type='text' id='url' name='url'><br>
+        <input type='submit' value='Test API'>
+    </form>
+    <pre id='result'></pre>
+    <script>
+        $(document).ready(function(){
+            $('#api-tester-form').submit(function(e){
+                e.preventDefault();
+                var url = $('#url').val();
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    success: function(data) {
+                        $('#result').text(JSON.stringify(data, null, 2));
+                    },
+                    error: function(error) {
+                        $('#result').text('Error: ' + error);
+                    }
+                });
+            });
+        });
+    </script>
+
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

@@ -4,13 +4,13 @@
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Size Converter | Tool52 - 52tools</title>
-    <meta name="description" content="Learn about File Size Converter, a free and powerful online tool available at Tool52.">
-    <meta name="keywords" content="File Size Converter, online tool, Tool52">
+    <title>File Size Converter - Convert Bytes, KB, MB, GB, TB Online - 52tools</title>
+    <meta name="description" content="Use our free online File Size Converter to easily convert your files between bytes, kilobytes, megabytes, gigabytes, and terabytes instantly. Customizable settings for accurate conversions.">
+    <meta name="keywords" content="File Size Converter, Convert KB to MB, Convert MB to GB, Convert GB to TB, Online File Size Converter, Byte Converter, Kilobyte Converter, Megabyte Converter, Gigabyte Converter, Terabyte Converter">
     <link rel="canonical" href="https://tool52.com/tools/file-size-converter/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="File Size Converter | Tool52 - 52tools">
-    <meta property="og:description" content="Learn about File Size Converter, a free and powerful online tool available at Tool52.">
+    <meta property="og:title" content="File Size Converter - Convert Bytes, KB, MB, GB, TB Online - 52tools">
+    <meta property="og:description" content="Use our free online File Size Converter to easily convert your files between bytes, kilobytes, megabytes, gigabytes, and terabytes instantly. Customizable settings for accurate conversions.">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="https://tool52.com/tools/file-size-converter/index.html">
     <meta property="og:type" content="website">
@@ -49,9 +49,43 @@
         </nav>
     </header>
     <main>
-        <h1>File Size Converter | Tool52</h1>
-        <p>Learn about File Size Converter, a free and powerful online tool available at Tool52.</p>
-        <p>Content coming soon.</p>
+        <h1>File Size Converter - Convert Bytes, KB, MB, GB, TB Online</h1>
+        <p>Use our free online File Size Converter to easily convert your files between bytes, kilobytes, megabytes, gigabytes, and terabytes instantly. Customizable settings for accurate conversions.</p>
+        <div id='file-size-converter'>
+    <label for='input-size'>File size to Convert:</label>
+    <input id='input-size' type='text'>
+    <select id='input-unit'>
+        <option value='byte'>Byte</option>
+        <option value='kilobyte'>Kilobyte</option>
+        <option value='megabyte'>Megabyte</option>
+        <option value='gigabyte'>Gigabyte</option>
+        <option value='terabyte'>Terabyte</option>
+    </select>
+    <button id='convert-button'>Convert</button>
+    <div id='output-container'>
+        <p id='output-text'></p>
+    </div>
+</div>
+<script>
+    document.getElementById('convert-button').addEventListener('click', function() {
+        var unitMap = {
+            byte: 1,
+            kilobyte: 1024,
+            megabyte: 1048576,
+            gigabyte: 1073741824,
+            terabyte: 1099511627776
+        };
+        var inputSize = document.getElementById('input-size').value;
+        var inputUnit = document.getElementById('input-unit').value;
+        var outputText = document.getElementById('output-text');
+        if(isNaN(inputSize) || inputSize < 0) {
+            outputText.textContent = 'Invalid input! File size must be a non-negative number.';
+        } else {
+            var sizeInBytes = inputSize * unitMap[inputUnit];
+            outputText.textContent = 'File size in bytes: ' + sizeInBytes;
+        }
+    });
+</script>https://www.filesizeconverter.com
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Age Calculator</title>
+<script>
+function calculateAge() {
+const dateOfBirth = document.getElementById('dob').value;
+const dob = new Date(dateOfBirth);
+const today = new Date();
+const ageInMilliseconds = today - dob;
+const ageInSeconds = ageInMilliseconds / 1000;
+const ageInMinutes = ageInSeconds / 60;
+const ageInHours = ageInMinutes / 60;
+const ageInDays = ageInHours / 24;
+const ageInYears = ageInDays / 365;
+return Math.floor(ageInYears);
+}
+document.getElementById('age').innerHTML = calculateAge();
+</script>
+</head>
+<body>
+<h2>Age Calculator</h2>
+<p>Enter your Date of Birth:</p>
+<input type='date' id='dob'>
+<button onclick='calculateAge()'>Calculate Age</button>
+<p id='age'></p>
+</body>
+</html>

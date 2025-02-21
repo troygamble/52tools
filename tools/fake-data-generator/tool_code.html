@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fake Data Generator</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+</head>
+<body>
+<h1>Fake Data Generator</h1>
+<button onclick="generateData()">Generate</button>
+<p id="data"></p>
+<script>
+function generateData() {
+var randomName = faker.name.findName();
+var randomEmail = faker.internet.email();
+var randomCard = faker.helpers.createCard();
+document.getElementById('data').innerHTML = 'Name: ' + randomName + '<br>Email: ' + randomEmail + '<br>Card: ' + JSON.stringify(randomCard);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.31/moment-timezone-with-data.min.js"></script>
+</head>
+<body>
+<h2>Time Zone Converter</h2>
+<label for="time">Time (24-hour format):</label><br>
+<input type="text" id="time" name="time" value="12:00"><br>
+<label for="fromZone">From Time Zone:</label><br>
+<input type="text" id="fromZone" name="fromZone" value="America/New_York"><br>
+<label for="toZone">To Time Zone:</label><br>
+<input type="text" id="toZone" name="toZone" value="Asia/Kolkata"><br>
+<button id="convert" onclick="convertTime()">Convert</button>
+<p id="output"></p>
+<script>
+function convertTime() {
+    var time = $('#time').val();
+    var fromZone = $('#fromZone').val();
+    var toZone = $('#toZone').val();
+    var result = moment.tz(time, 'HH:mm', fromZone).tz(toZone).format('HH:mm');
+    $('#output').text('Converted Time: '+result);
+}
+</script>
+</body>
+</html>

@@ -4,13 +4,13 @@
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hex to RGB Converter - Accurate & Easy Hexadecimal to RGB Conversion - 52tools</title>
-    <meta name="description" content="Make your color conversions effortless with the Hex to RGB Converter. This powerful online tool lets you turn your hexadecimal color codes into RGB values accurately and quickly. Ideal for web designers, developers and digital artists. Try it now!">
-    <meta name="keywords" content="hex to RGB, color converter, color tool, hexadecimal converter, web tool, RGB values, web designers, web developers, digital artists">
+    <title>Online Hex to RGB Converter | Convert Hexadecimal to RGB Instantly - 52tools</title>
+    <meta name="description" content="Use our free online Hex to RGB converter tool to instantly convert hexadecimal codes to RGB values. Ideal for web developers and designers!">
+    <meta name="keywords" content="Hex to RGB, Hexadecimal to RGB, RGB converter, Hexadecimal converter, Web tool, Hexadecimal to RGB converter online">
     <link rel="canonical" href="https://tool52.com/tools/hex-to-rgb-converter/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Hex to RGB Converter - Accurate & Easy Hexadecimal to RGB Conversion - 52tools">
-    <meta property="og:description" content="Make your color conversions effortless with the Hex to RGB Converter. This powerful online tool lets you turn your hexadecimal color codes into RGB values accurately and quickly. Ideal for web designers, developers and digital artists. Try it now!">
+    <meta property="og:title" content="Online Hex to RGB Converter | Convert Hexadecimal to RGB Instantly - 52tools">
+    <meta property="og:description" content="Use our free online Hex to RGB converter tool to instantly convert hexadecimal codes to RGB values. Ideal for web developers and designers!">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="https://tool52.com/tools/hex-to-rgb-converter/index.html">
     <meta property="og:type" content="website">
@@ -49,9 +49,9 @@
         </nav>
     </header>
     <main>
-        <h1>Hex to RGB Converter - Accurate & Easy Hexadecimal to RGB Conversion</h1>
-        <p>Make your color conversions effortless with the Hex to RGB Converter. This powerful online tool lets you turn your hexadecimal color codes into RGB values accurately and quickly. Ideal for web designers, developers and digital artists. Try it now!</p>
-        <p>Content coming soon.</p>
+        <h1>Online Hex to RGB Converter | Convert Hexadecimal to RGB Instantly</h1>
+        <p>Use our free online Hex to RGB converter tool to instantly convert hexadecimal codes to RGB values. Ideal for web developers and designers!</p>
+        <div class='converter'><h1>Hex to RGB Converter</h1><input type='text' id='hexInput' placeholder='Enter Hex Code...' /><button id='convertButton'>Convert to RGB</button><p id='result' class='result'></p></div><script>document.getElementById('convertButton').addEventListener('click', function() { let hex = document.getElementById('hexInput').value; if (!/^#?[0-9A-F]{6}$/i.test(hex)) { document.getElementById('result').innerText = 'Invalid Hex Code'; return; } let r = parseInt(hex.slice(1,3), 16), g = parseInt(hex.slice(3,5), 16), b = parseInt(hex.slice(5,7), 16); document.getElementById('result').innerText = 'RGB(' + r + ',' + g + ',' + b + ')'; });</script>
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

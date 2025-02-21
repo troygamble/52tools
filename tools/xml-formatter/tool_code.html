@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>XML Formatter</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/beautify/0.0.8/beautify.min.js"></script>
+</head>
+<body>
+<textarea id="xmlInput" rows="15" cols="50"></textarea>
+<br>
+<button id="formatButton">Format XML</button>
+<br>
+<textarea id="xmlOutput" rows="15" cols="50" readonly></textarea>
+<script type="text/javascript">
+function formatXML(input) {
+var xml = $.parseXML(input);
+return window.vkbeautify.xml(new XMLSerializer().serializeToString(xml));
+}
+$('#formatButton').click(function() {
+var input = $('#xmlInput').val();
+var output = formatXML(input);
+$('#xmlOutput').val(output);
+});
+</script>
+</body>
+</html>

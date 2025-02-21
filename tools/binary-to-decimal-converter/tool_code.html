@@ -1,0 +1,17 @@
+<div id='conversion-tool'>
+	<input id='binary-input' type='text' placeholder='Enter binary value' />
+	<button onclick='binaryToDecimal()'>Convert</button>
+	<p id='result'></p>
+</div>
+<script>
+	function binaryToDecimal() {
+		var binary = document.getElementById('binary-input').value;
+		var decimal = 0;
+		for(var i = 0; i < binary.length; i++){
+			if(binary[binary.length-i-1] === '1'){
+				decimal += Math.pow(2, i);
+			}
+		}
+		document.getElementById('result').innerText = 'Decimal value is: ' + decimal + '.';
+	}
+</script>

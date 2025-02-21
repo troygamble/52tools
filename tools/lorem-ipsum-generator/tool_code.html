@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lorem Ipsum Generator</title>
+<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+</head>
+<body>
+<h1>Lorem Ipsum Generator</h1>
+<label for='paragraphs'>Number of Paragraphs:</label><br>
+<input type='number' id='paragraphs' name='paragraphs' min='1' max='5'><br>
+<button id='generate'>Generate</button>
+<div id='output'></div>
+<script>
+$(document).ready(function(){
+$('#generate').click(function(){
+var par = $('#paragraphs').val();
+$.ajax({
+url: 'https://loripsum.net/api/' + par + '/short/prude',
+method: 'GET',
+}).done(function(response){
+$('#output').html(response);
+}).fail(function(){
+$('#output').html('Something went wrong. Please try again.');
+});
+});
+});
+</script>
+</body>
+</html>

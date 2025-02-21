@@ -1,0 +1,35 @@
+<div id='file-size-converter'>
+    <label for='input-size'>File size to Convert:</label>
+    <input id='input-size' type='text'>
+    <select id='input-unit'>
+        <option value='byte'>Byte</option>
+        <option value='kilobyte'>Kilobyte</option>
+        <option value='megabyte'>Megabyte</option>
+        <option value='gigabyte'>Gigabyte</option>
+        <option value='terabyte'>Terabyte</option>
+    </select>
+    <button id='convert-button'>Convert</button>
+    <div id='output-container'>
+        <p id='output-text'></p>
+    </div>
+</div>
+<script>
+    document.getElementById('convert-button').addEventListener('click', function() {
+        var unitMap = {
+            byte: 1,
+            kilobyte: 1024,
+            megabyte: 1048576,
+            gigabyte: 1073741824,
+            terabyte: 1099511627776
+        };
+        var inputSize = document.getElementById('input-size').value;
+        var inputUnit = document.getElementById('input-unit').value;
+        var outputText = document.getElementById('output-text');
+        if(isNaN(inputSize) || inputSize < 0) {
+            outputText.textContent = 'Invalid input! File size must be a non-negative number.';
+        } else {
+            var sizeInBytes = inputSize * unitMap[inputUnit];
+            outputText.textContent = 'File size in bytes: ' + sizeInBytes;
+        }
+    });
+</script>

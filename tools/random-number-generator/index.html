@@ -4,13 +4,13 @@
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Number Generator | Free and Easy-to-use Online Tool - 52tools</title>
-    <meta name="description" content="Need random numbers instantly? Use our Random Number Generator, the best online tool for statistics, data analysis, and simulations. Free and easy to use. Generate your numbers now!">
-    <meta name="keywords" content="random number generator, online tool, statistics, data analysis, simulation, number generator, digital numbers">
+    <title>Random Number Generator | Fast, Free & Reliable Online Tool - 52tools</title>
+    <meta name="description" content="Use our free online Random Number Generator to produce a lightning-fast, reliable randomized number within your specified parameters. Perfect for lotteries, data-testing, giveaways and more!">
+    <meta name="keywords" content="Random Number Generator, Online Number Generator, Randomized Number Tool, Lottery Number Generator">
     <link rel="canonical" href="https://tool52.com/tools/random-number-generator/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Random Number Generator | Free and Easy-to-use Online Tool - 52tools">
-    <meta property="og:description" content="Need random numbers instantly? Use our Random Number Generator, the best online tool for statistics, data analysis, and simulations. Free and easy to use. Generate your numbers now!">
+    <meta property="og:title" content="Random Number Generator | Fast, Free & Reliable Online Tool - 52tools">
+    <meta property="og:description" content="Use our free online Random Number Generator to produce a lightning-fast, reliable randomized number within your specified parameters. Perfect for lotteries, data-testing, giveaways and more!">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="https://tool52.com/tools/random-number-generator/index.html">
     <meta property="og:type" content="website">
@@ -49,9 +49,23 @@
         </nav>
     </header>
     <main>
-        <h1>Random Number Generator | Free and Easy-to-use Online Tool</h1>
-        <p>Need random numbers instantly? Use our Random Number Generator, the best online tool for statistics, data analysis, and simulations. Free and easy to use. Generate your numbers now!</p>
-        <p>Content coming soon.</p>
+        <h1>Random Number Generator | Fast, Free & Reliable Online Tool</h1>
+        <p>Use our free online Random Number Generator to produce a lightning-fast, reliable randomized number within your specified parameters. Perfect for lotteries, data-testing, giveaways and more!</p>
+        
+<header><h1>Random Number Generator</h1></header>
+<label>Min: </label><input type='number' id='minVal' value='0'>
+<label>Max: </label><input type='number' id='maxVal' value='100'>
+<button id='generate'>Generate</button>
+<p id='output'></p>
+<script>
+document.getElementById('generate').addEventListener('click', function() {
+var min = document.getElementById('minVal').value;
+var max = document.getElementById('maxVal').value;
+var randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+document.getElementById('output').innerText = 'Random Number: ' + randomNum;
+});
+</script>
+Experience the best-in-class online Random Number Generator, built to provide randomness within specified ranges quickly and effectively. Discover the efficiency of our tool whether you're setting up a lottery, testing software, conducting a giveaway or more!
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

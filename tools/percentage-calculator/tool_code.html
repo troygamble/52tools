@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Percentage Calculator</title>
+</head>
+<body>
+
+<h2>Percentage Calculator</h2>
+
+<label for="num1">Number 1:</label><br>
+<input type="text" id="num1" name="num1"><br>
+<label for="num2">Number 2:</label><br>
+<input type="text" id="num2" name="num2"><br>
+<button type="button" onclick="calculate()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+function calculate() {
+  var num1 = document.getElementById("num1").value;
+  var num2 = document.getElementById("num2").value;
+  var percent = (num1 / num2) * 100;
+
+  document.getElementById("result").innerHTML = 'The percentage is: ' + percent.toFixed(2) + '%';
+}
+</script>
+
+</body>
+</html>

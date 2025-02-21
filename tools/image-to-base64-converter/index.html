@@ -4,13 +4,13 @@
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image to Base64 Converter - Free Online Image Conversion Tool | Optimize Web & App Performance - 52tools</title>
-    <meta name="description" content="Looking for a quick and easy way to convert your images to Base64? Use our free Image to Base64 Converter to optimize your websites and apps. Instant conversion, easy to use, suitable for developers of all skill levels.">
-    <meta name="keywords" content="Base64, Image converter, Online tool, Images to Base64, Convert to Base64, Web optimization, App development, Data URI scheme">
+    <title>Fast & Free Image to Base64 Converter Online - Convert JPG, PNG, GIF Easily - 52tools</title>
+    <meta name="description" content="Our Image to Base64 Converter is a fast & easy online tool to convert images like JPG, PNG, and GIF into a Base64 encoded string. Save time & hassle with this free tool.">
+    <meta name="keywords" content="Image to Base64, Base64 converter, online Base64 converter, JPG to Base64, PNG to Base64, GIF to Base64, free Base64 converter">
     <link rel="canonical" href="https://tool52.com/tools/image-to-base64-converter/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Image to Base64 Converter - Free Online Image Conversion Tool | Optimize Web & App Performance - 52tools">
-    <meta property="og:description" content="Looking for a quick and easy way to convert your images to Base64? Use our free Image to Base64 Converter to optimize your websites and apps. Instant conversion, easy to use, suitable for developers of all skill levels.">
+    <meta property="og:title" content="Fast & Free Image to Base64 Converter Online - Convert JPG, PNG, GIF Easily - 52tools">
+    <meta property="og:description" content="Our Image to Base64 Converter is a fast & easy online tool to convert images like JPG, PNG, and GIF into a Base64 encoded string. Save time & hassle with this free tool.">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="https://tool52.com/tools/image-to-base64-converter/index.html">
     <meta property="og:type" content="website">
@@ -49,9 +49,26 @@
         </nav>
     </header>
     <main>
-        <h1>Image to Base64 Converter - Free Online Image Conversion Tool | Optimize Web & App Performance</h1>
-        <p>Looking for a quick and easy way to convert your images to Base64? Use our free Image to Base64 Converter to optimize your websites and apps. Instant conversion, easy to use, suitable for developers of all skill levels.</p>
-        <p>Content coming soon.</p>
+        <h1>Fast & Free Image to Base64 Converter Online - Convert JPG, PNG, GIF Easily</h1>
+        <p>Our Image to Base64 Converter is a fast & easy online tool to convert images like JPG, PNG, and GIF into a Base64 encoded string. Save time & hassle with this free tool.</p>
+        
+<h1>Image to Base64 Converter</h1>
+<input type="file" id="inputFile">
+<br>
+<button onclick="convertToBase64()">Convert</button>
+<br>
+<p id="base64"></p>
+<script>
+    function convertToBase64() {
+        var file = document.getElementById('inputFile').files[0];
+        var reader = new FileReader();
+        reader.onloadend = function() {
+            document.getElementById('base64').innerHTML = reader.result;
+        }
+        reader.readAsDataURL(file);
+    }
+</script>
+
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

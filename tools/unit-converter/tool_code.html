@@ -1,0 +1,28 @@
+<div id='unitConverter'>
+    <h2>Unit Converter</h2>
+    <select id='inputUnit'>
+        <option value='cm'>cm</option>
+        <option value='m'>m</option>
+    </select>
+    <input type='text' id='inputValue' placeholder='Enter a value'/>
+    <select id='outputUnit'>
+        <option value='cm'>cm</option>
+        <option value='m'>m</option>
+    </select>
+    <input type='text' id='outputValue' disabled/>
+    <button onclick='convertUnits()'>Convert</button>
+</div>
+<script>
+    function convertUnits() {
+        var inputUnit = document.getElementById('inputUnit').value;
+        var inputValue = document.getElementById('inputValue').value;
+        var outputUnit = document.getElementById('outputUnit').value;
+        var outputValue = inputValue;
+        if (inputUnit == 'cm' && outputUnit == 'm') {
+            outputValue = inputValue * 0.01;
+        } else if (inputUnit == 'm' && outputUnit == 'cm') {
+            outputValue = inputValue * 100;
+        }
+        document.getElementById('outputValue').value = outputValue;
+    }
+</script>

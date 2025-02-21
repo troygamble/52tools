@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Formatter</title>
+    <style>
+        .formatter {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <textarea id='input' class='formatter'></textarea>
+    <button onclick='formatHtml()'>Format HTML</button>
+    <textarea id='output' class='formatter'></textarea>
+    <script>
+        function formatHtml() {
+            var input = document.getElementById('input').value;
+            var output = html_beautify(input);
+            document.getElementById('output').value = output;
+        }
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.11.0/beautify-html.min.js'></script>
+</body>
+</html>

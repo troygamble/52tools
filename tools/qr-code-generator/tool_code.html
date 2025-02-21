@@ -1,0 +1,20 @@
+<div>
+    <h1>QR Code Generator</h1>
+    <input id='qr-input' type='text' placeholder='Enter text or link here'/>
+    <button id='generate-btn'>Generate QR Code</button>
+    <div id='qr-output'></div>
+</div>
+<script>
+    document.getElementById('generate-btn').onclick = function() {
+        let qrInput = document.getElementById('qr-input').value;
+        let qrOutput = document.getElementById('qr-output');
+        qrOutput.innerHTML = '';
+        if(qrInput !== '') {
+            let qrCode = new QRious({
+                element: qrOutput,
+                value: qrInput,
+                size: 200
+            });
+        }
+    }
+</script>

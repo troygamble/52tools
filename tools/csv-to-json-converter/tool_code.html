@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSV to JSON Converter</title>
+</head>
+<body>
+<h1>CSV to JSON Converter</h1>
+<br>
+<input id='csv' type='file'>
+<button id='convert'>Convert</button>
+<pre id='json'></pre>
+<script>
+document.getElementById('convert').addEventListener('click', function () {
+var file = document.getElementById('csv').files[0];
+var reader = new FileReader();
+reader.onload = function(e) {
+var text = e.target.result;
+var rows = text.split('\n');
+var json = [];
+var headers = rows[0].split(',');
+for (var i = 1; i < rows.length; i++) {
+var obj = {};
+var currentline = rows[i].split(',');
+for (var j = 0; j < headers.length; j++) {
+obj[headers[j].trim()] = currentline[j];
+}
+json.push(obj);
+}
+document.getElementById('json').textContent = JSON.stringify(json, null, 2);
+};
+reader.readAsText(file);
+});
+</script>
+</body>
+</html>

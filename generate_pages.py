@@ -209,6 +209,11 @@ async def generate_tool_page(tool_name, log_file, semaphore, force_regenerate=Fa
 
             logging.info(f"[SUCCESS] Generated page for {tool_name}")
 
+            # ✅ Save the raw tool HTML separately for reference
+            async with aiofiles.open(f"{tool_dir}/tool_code.html", "w", encoding="utf-8") as f:
+                await f.write(full_html)
+
+
         except Exception as e:
             logging.error(f"[ERROR] Failed {tool_name}: {e}")
 

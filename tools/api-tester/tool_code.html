@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>API Tester</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>API Tester</h1>
+    <form id='api-tester-form'>
+        <label for='url'>URL:</label><br>
+        <input type='text' id='url' name='url'><br>
+        <input type='submit' value='Test API'>
+    </form>
+    <pre id='result'></pre>
+    <script>
+        $(document).ready(function(){
+            $('#api-tester-form').submit(function(e){
+                e.preventDefault();
+                var url = $('#url').val();
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    success: function(data) {
+                        $('#result').text(JSON.stringify(data, null, 2));
+                    },
+                    error: function(error) {
+                        $('#result').text('Error: ' + error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

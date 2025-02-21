@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<textarea id='inputArea' oninput='updateOutput()' style='width: 100%; height: 50%'></textarea>
+<div id='outputArea' style='width: 100%; height: 50%; overflow: auto'></div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js'></script>
+<script>
+	let converter = new showdown.Converter();
+
+	function updateOutput() {
+		let markdownText = document.getElementById('inputArea').value;
+		let htmlText = converter.makeHtml(markdownText);
+		document.getElementById('outputArea').innerHTML = htmlText;
+	}
+</script>
+
+</body>
+</html>

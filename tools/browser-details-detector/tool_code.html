@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Browser Details Detector</title>
+</head>
+<body>
+<h2>Browser Details:</h2>
+<p id='details'></p>
+
+<script>
+var details = 'Browser CodeName: ' + navigator.appCodeName;
+details += '<br>Browser Name: ' + navigator.appName;
+details += '<br>Browser Version: ' + navigator.appVersion;
+details += '<br>Cookies Enabled: ' + navigator.cookieEnabled;
+details += '<br>Platform: ' + navigator.platform;
+if (navigator.userAgent) {
+details += '<br>User-agent header: ' + navigator.userAgent;
+}
+document.getElementById('details').innerHTML = details;
+</script>
+</body>
+</html>

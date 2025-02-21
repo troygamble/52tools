@@ -4,13 +4,13 @@
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browser Details Detector | Your Comprehensive Online Tool for Browser Inspection - 52tools</title>
-    <meta name="description" content="Get insights about your web browser with our Browser Details Detector. This tool allows you to check details like browser version, JavaScript status, cookies status, and more, aiding you in troubleshooting or optimizing for better browsing experience.">
-    <meta name="keywords" content="browser detector, browser details, web tool, online browser tester, JavaScript status detector, cookies status detector">
+    <title>Browser Details Detector - Detect Your Web Browser Specifications Online - 52tools</title>
+    <meta name="description" content="Carry out comprehensive tests with our browser details detector tool. Check your web browser's specifications instantly, including version, user agent, operating system. Ideal for web developers and quality analysts.">
+    <meta name="keywords" content="Browser detector, Web browser details, User agent detector, Check browser version online, Browser info tool, Browser specification tool">
     <link rel="canonical" href="https://tool52.com/tools/browser-details-detector/index.html">
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Browser Details Detector | Your Comprehensive Online Tool for Browser Inspection - 52tools">
-    <meta property="og:description" content="Get insights about your web browser with our Browser Details Detector. This tool allows you to check details like browser version, JavaScript status, cookies status, and more, aiding you in troubleshooting or optimizing for better browsing experience.">
+    <meta property="og:title" content="Browser Details Detector - Detect Your Web Browser Specifications Online - 52tools">
+    <meta property="og:description" content="Carry out comprehensive tests with our browser details detector tool. Check your web browser's specifications instantly, including version, user agent, operating system. Ideal for web developers and quality analysts.">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="https://tool52.com/tools/browser-details-detector/index.html">
     <meta property="og:type" content="website">
@@ -49,9 +49,24 @@
         </nav>
     </header>
     <main>
-        <h1>Browser Details Detector | Your Comprehensive Online Tool for Browser Inspection</h1>
-        <p>Get insights about your web browser with our Browser Details Detector. This tool allows you to check details like browser version, JavaScript status, cookies status, and more, aiding you in troubleshooting or optimizing for better browsing experience.</p>
-        <p>Content coming soon.</p>
+        <h1>Browser Details Detector - Detect Your Web Browser Specifications Online</h1>
+        <p>Carry out comprehensive tests with our browser details detector tool. Check your web browser's specifications instantly, including version, user agent, operating system. Ideal for web developers and quality analysts.</p>
+        
+<h2>Browser Details:</h2>
+<p id='details'></p>
+
+<script>
+var details = 'Browser CodeName: ' + navigator.appCodeName;
+details += '<br>Browser Name: ' + navigator.appName;
+details += '<br>Browser Version: ' + navigator.appVersion;
+details += '<br>Cookies Enabled: ' + navigator.cookieEnabled;
+details += '<br>Platform: ' + navigator.platform;
+if (navigator.userAgent) {
+details += '<br>User-agent header: ' + navigator.userAgent;
+}
+document.getElementById('details').innerHTML = details;
+</script>
+
     </main>
     <footer>
         <p>© 2023 52tools. All rights reserved.</p>

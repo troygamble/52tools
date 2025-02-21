@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Entity Encoder/Decoder</title>
+<script>
+function encodeHTML() {
+var htmlInput = document.getElementById('htmlInput').value;
+var encodedHTML = encodeURIComponent(htmlInput);
+document.getElementById('output').innerHTML = encodedHTML;
+} 
+function decodeHTML() {
+var encodedHTML = document.getElementById('htmlInput').value;
+var decodedHTML = decodeURIComponent(encodedHTML);
+document.getElementById('output').innerHTML = decodedHTML;
+}
+</script>
+</head>
+<body>
+<h1>HTML Entity Encoder/Decoder</h1>
+<textarea id='htmlInput' rows='10' cols='50'></textarea><br>
+<button onclick='encodeHTML()'>Encode</button>
+<button onclick='decodeHTML()'>Decode</button>
+<p id='output'></p>
+</body>
+</html>
