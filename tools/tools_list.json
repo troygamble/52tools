@@ -1,3 +1,216 @@
 {
-    "tools": []
+    "tools": [
+        {
+            "name": "Age Calculator",
+            "slug": "age-calculator"
+        },
+        {
+            "name": "Api Tester",
+            "slug": "api-tester"
+        },
+        {
+            "name": "Base64 Encoder Decoder",
+            "slug": "base64-encoder-decoder"
+        },
+        {
+            "name": "Binary To Decimal Converter",
+            "slug": "binary-to-decimal-converter"
+        },
+        {
+            "name": "Bmi Calculator",
+            "slug": "bmi-calculator"
+        },
+        {
+            "name": "Browser Details Detector",
+            "slug": "browser-details-detector"
+        },
+        {
+            "name": "Character Counter",
+            "slug": "character-counter"
+        },
+        {
+            "name": "Color Palette Generator",
+            "slug": "color-palette-generator"
+        },
+        {
+            "name": "Color Picker",
+            "slug": "color-picker"
+        },
+        {
+            "name": "Credit Card Validator",
+            "slug": "credit-card-validator"
+        },
+        {
+            "name": "Cron Job Scheduler",
+            "slug": "cron-job-scheduler"
+        },
+        {
+            "name": "Csv To Json Converter",
+            "slug": "csv-to-json-converter"
+        },
+        {
+            "name": "Currency Converter",
+            "slug": "currency-converter"
+        },
+        {
+            "name": "Email Validator",
+            "slug": "email-validator"
+        },
+        {
+            "name": "Fake Data Generator",
+            "slug": "fake-data-generator"
+        },
+        {
+            "name": "File Size Converter",
+            "slug": "file-size-converter"
+        },
+        {
+            "name": "Git Cheat Sheet",
+            "slug": "git-cheat-sheet"
+        },
+        {
+            "name": "Hex To Rgb Converter",
+            "slug": "hex-to-rgb-converter"
+        },
+        {
+            "name": "Html Entity Encoder Decoder",
+            "slug": "html-entity-encoder-decoder"
+        },
+        {
+            "name": "Html Formatter",
+            "slug": "html-formatter"
+        },
+        {
+            "name": "Iban Validator",
+            "slug": "iban-validator"
+        },
+        {
+            "name": "Image Compressor",
+            "slug": "image-compressor"
+        },
+        {
+            "name": "Image Resizer",
+            "slug": "image-resizer"
+        },
+        {
+            "name": "Image To Base64 Converter",
+            "slug": "image-to-base64-converter"
+        },
+        {
+            "name": "Ip Address Lookup",
+            "slug": "ip-address-lookup"
+        },
+        {
+            "name": "Json Formatter",
+            "slug": "json-formatter"
+        },
+        {
+            "name": "Loan Calculator",
+            "slug": "loan-calculator"
+        },
+        {
+            "name": "Lorem Ipsum Generator",
+            "slug": "lorem-ipsum-generator"
+        },
+        {
+            "name": "Markdown Editor",
+            "slug": "markdown-editor"
+        },
+        {
+            "name": "Mortgage Calculator",
+            "slug": "mortgage-calculator"
+        },
+        {
+            "name": "Notes App",
+            "slug": "notes-app"
+        },
+        {
+            "name": "Password Generator",
+            "slug": "password-generator"
+        },
+        {
+            "name": "Percentage Calculator",
+            "slug": "percentage-calculator"
+        },
+        {
+            "name": "Pomodoro Timer",
+            "slug": "pomodoro-timer"
+        },
+        {
+            "name": "Qr Code Generator",
+            "slug": "qr-code-generator"
+        },
+        {
+            "name": "Random Number Generator",
+            "slug": "random-number-generator"
+        },
+        {
+            "name": "Regex Tester",
+            "slug": "regex-tester"
+        },
+        {
+            "name": "Sql Query Builder",
+            "slug": "sql-query-builder"
+        },
+        {
+            "name": "Text Case Converter",
+            "slug": "text-case-converter"
+        },
+        {
+            "name": "Text Diff Tool",
+            "slug": "text-diff-tool"
+        },
+        {
+            "name": "Text To Speech",
+            "slug": "text-to-speech"
+        },
+        {
+            "name": "Time Zone Converter",
+            "slug": "time-zone-converter"
+        },
+        {
+            "name": "Tip Calculator",
+            "slug": "tip-calculator"
+        },
+        {
+            "name": "To Do List",
+            "slug": "to-do-list"
+        },
+        {
+            "name": "Unit Converter",
+            "slug": "unit-converter"
+        },
+        {
+            "name": "Url Encoder Decoder",
+            "slug": "url-encoder-decoder"
+        },
+        {
+            "name": "Url Validator",
+            "slug": "url-validator"
+        },
+        {
+            "name": "Uuid Generator",
+            "slug": "uuid-generator"
+        },
+        {
+            "name": "Weather Widget",
+            "slug": "weather-widget"
+        },
+        {
+            "name": "Word Counter",
+            "slug": "word-counter"
+        },
+        {
+            "name": "World Clock",
+            "slug": "world-clock"
+        },
+        {
+            "name": "Xml Formatter",
+            "slug": "xml-formatter"
+        },
+        {
+            "name": "Yaml Formatter",
+            "slug": "yaml-formatter"
+        }
+    ]
 }
