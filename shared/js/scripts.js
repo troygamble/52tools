@@ -1,28 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.querySelector('.theme-toggle');
     const body = document.body;
-    const navContainers = document.querySelectorAll('.nav-links'); // Handles navbar & sidebar nav
+    const navContainers = document.querySelectorAll('.nav-links');
     const dropBtn = document.querySelector('.dropbtn');
-    const toolsContainer = document.getElementById('tools-container'); // Only on homepage
+    const toolsContainer = document.getElementById('tools-container');
 
-    // ✅ Apply saved theme from localStorage
+    // ✅ Theme toggling with persistence
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        body.classList.add('dark-mode');
-    }
-
-    // ✅ Theme toggle and persistence
+    if (savedTheme === 'dark') body.classList.add('dark-mode');
     themeToggle?.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
-        const newTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
-        localStorage.setItem('theme', newTheme);
+        localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
     });
 
-    // ✅ Dynamic navigation loading + homepage grid generation
+    // ✅ Dynamic navigation & tool card generation
     fetch('/tools/tools_list.json')
         .then(response => response.json())
         .then(data => {
-            // 🔗 Populate navigation (dropdown + sidebar)
+            // 🔗 Load navigation
             navContainers.forEach(navContainer => {
                 data.tools.forEach(tool => {
                     const li = document.createElement('li');
@@ -31,27 +26,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
 
-            // 🏗️ Populate homepage tools grid if on the homepage
+            // 🏗️ Load homepage grid with descriptions
             if (toolsContainer) {
                 data.tools.forEach(tool => {
+                    const description = tool.description || 'A powerful online tool designed for productivity and efficiency.';
                     const toolCard = document.createElement('div');
                     toolCard.className = 'tool-card';
                     toolCard.innerHTML = `
-                        <h3>${tool.name}</h3>
-                        <p>${tool.description || 'No description available.'}</p>
-                        <a href="/tools/${tool.slug}/index.html">Try Tool →</a>`;
+                        <a href="/tools/${tool.slug}/index.html" class="tool-link">
+                            <h3>${tool.name}</h3>
+                            <p>${description}</p>
+                        </a>`;
                     toolsContainer.appendChild(toolCard);
                 });
             }
         })
         .catch(error => console.error('❌ Navigation load error:', error));
 
-    // ✅ Dropdown toggle behavior
+    // ✅ Dropdown toggle
     dropBtn?.addEventListener('click', () => {
         document.querySelector('.dropdown-content').classList.toggle('show');
     });
 
-    // ✅ Close dropdown when clicking outside
     window.addEventListener('click', (e) => {
         if (!dropBtn.contains(e.target)) {
             document.querySelector('.dropdown-content').classList.remove('show');

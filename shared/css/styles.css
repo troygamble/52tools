@@ -130,31 +130,58 @@ main {
     transition: background-color 0.3s ease;
 }
 
-/* Homepage Tool List - Responsive Grid */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+/* Homepage Tool List - Responsive Grid (Improved) */
 .tools-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 10px;
 }
 
 .tool-card {
     background-color: var(--card-background);
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
 
-.tool-card a {
-    text-decoration: none;
+.tool-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tool-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
     color: var(--text-color);
-    font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-.tool-card a:hover {
-    color: var(--accent-color);
+.tool-card p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+.tool-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+/* Media Queries for Responsive Behavior */
+@media (max-width: 1024px) {
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -170,8 +197,17 @@ main {
     .tools-grid {
         grid-template-columns: 1fr;
     }
+
+    .tool-card {
+        padding: 15px;
+    }
+
+    .tool-card h3 {
+        font-size: 1rem;
+    }
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 1rem;
@@ -179,6 +215,7 @@ footer {
     transition: background-color 0.3s ease;
 }
 
+/* Theme Toggle Button */
 .theme-toggle {
     background-color: var(--accent-color);
     color: white;
@@ -216,27 +253,8 @@ body.dark-mode a:hover {
     color: var(--accent-color);
 }
 
+/* Tool Card Hover Animation */
 .tool-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
-
-body.dark-mode a:hover {
-    color: #1e90ff;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--text-color);
-    transition: color 0.3s ease;
-}
-
-.sidebar {
-    height: calc(100vh - 60px); /* Adjust based on header height */
-    overflow-y: auto;
-}
-
-.sidebar a.active, .dropdown-content a.active {
-    font-weight: bold;
-    border-left: 4px solid var(--accent-color);
-}
-
