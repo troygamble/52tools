@@ -19,55 +19,89 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: var(--nav-background);
-    padding: 1rem;
-}
-
-nav {
+/* Navigation */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--nav-background);
+    padding: 10px;
 }
 
-.logo {
+.brand-logo {
     font-size: 1.5rem;
-    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
 }
 
-.nav-links {
-    list-style: none;
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Page layout */
+.layout {
     display: flex;
-    gap: 1rem;
 }
 
-.nav-toggle {
-    display: none;
+.sidebar {
+    width: 250px;
+    border-right: 1px solid #ddd;
+    padding: 20px;
 }
 
-.nav-toggle-label {
-    display: none;
+main {
+    flex-grow: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Responsive design */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
+    .layout {
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: var(--nav-background);
+    }
+
+    .sidebar {
         width: 100%;
+        border-right: none;
     }
+}
 
-    .nav-toggle:checked ~ .nav-links {
-        display: flex;
-    }
-
-    .nav-toggle-label {
-        display: block;
-        cursor: pointer;
-    }
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--nav-background);
 }
 
 .theme-toggle {
@@ -77,44 +111,4 @@ nav {
     padding: 0.5rem 1rem;
     cursor: pointer;
     border-radius: 4px;
-}
-
-main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--nav-background);
-}
-
-input, textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: var(--accent-color);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-pre {
-    background-color: #f4f4f4;
-    padding: 1rem;
-    border-radius: 4px;
-    overflow-x: auto;
-}
-
-body.dark-mode pre {
-    background-color: #2c2c2c;
 }

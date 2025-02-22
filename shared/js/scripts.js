@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.querySelector('.theme-toggle');
     const body = document.body;
-    const navContainer = document.querySelector('.nav-links');
+    const navContainers = document.querySelectorAll('.nav-links'); // Handle multiple navs (top & sidebar)
+    const dropBtn = document.querySelector('.dropbtn');
 
     // ✅ Theme toggling with localStorage persistence
     if (localStorage.getItem('theme') === 'dark') {
@@ -13,24 +14,33 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
     });
 
-    // ✅ Dynamic navigation loading (Fixed the 'fetch' chain)
+    // ✅ Dynamic navigation loading (dropdown & sidebar)
     fetch('/tools/tools_list.json')
         .then(response => {
             if (!response.ok) throw new Error('Failed to load navigation data.');
             return response.json();
         })
         .then(data => {
-            data.tools.forEach(tool => {
-                const li = document.createElement('li');
-                li.innerHTML = `<a href="/tools/${tool.slug}/index.html">${tool.name}</a>`;
-                navContainer.appendChild(li);
+            navContainers.forEach(navContainer => {
+                data.tools.forEach(tool => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<a href="/tools/${tool.slug}/index.html">${tool.name}</a>`;
+                    navContainer.appendChild(li);
+                });
             });
         })
         .catch(error => console.error('❌ Navigation load error:', error));
 
-    // ✅ Mobile navigation toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    navToggle.addEventListener('change', () => {
-        navContainer.style.display = navToggle.checked ? 'flex' : 'none';
+    // ✅ Dropdown toggle for "All Tools"
+    dropBtn?.addEventListener('click', () => {
+        const dropdownContent = document.querySelector('.dropdown-content');
+        dropdownContent.classList.toggle('show');
+    });
+
+    // ✅ Close dropdown when clicking outside
+    window.addEventListener('click', (e) => {
+        if (!dropBtn.contains(e.target)) {
+            document.querySelector('.dropdown-content').classList.remove('show');
+        }
     });
 });
