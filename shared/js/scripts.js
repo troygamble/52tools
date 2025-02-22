@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ✅ Dynamic navigation loading
     fetch('/tools/tools_list.json');
-        .then(response => {
+        then(response => {
             if (!response.ok) throw new Error('Failed to load navigation data.');
             return response.json();
         })
