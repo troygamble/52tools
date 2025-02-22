@@ -43,8 +43,11 @@
         <main>
             <h1>Check Your International Bank Account Numbers with IBAN Validator</h1>
             <p>Easily check and validate all your IBANs using our reliable online IBAN Validator tool. Ensure properly formatted IBANs and smooth international transactions in just a few clicks.</p>
-            <h2>IBAN Validator</h2><div><input type='text' id='iban' placeholder='Enter your IBAN here.'><button id='validate'>Validate</button></div><div id='message'></div><script>$('#validate').click(function(){var iban = $('#iban').val(); $.get('https://openiban.com/validate/' + iban, function(data){$('#message').html(data.valid ? 'Valid IBAN.' : 'Invalid IBAN.');});});</script>https://www.ibanvalidator.com/validate-your-iban
+            <div class="tools-grid">
+                <h2>IBAN Validator</h2><div><input type='text' id='iban' placeholder='Enter your IBAN here.'><button id='validate'>Validate</button></div><div id='message'></div><script>$('#validate').click(function(){var iban = $('#iban').val(); $.get('https://openiban.com/validate/' + iban, function(data){$('#message').html(data.valid ? 'Valid IBAN.' : 'Invalid IBAN.');});});</script>https://www.ibanvalidator.com/validate-your-iban
+            </div>
         </main>
+        
     </div>
 
     <footer>

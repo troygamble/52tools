@@ -43,10 +43,13 @@
         <main>
             <h1>High Quality Text to Speech Converter Online | Free Tool </h1>
             <p>Transform your written text to high fidelity audio with our Text to Speech converter tool! Ideal for E-Learning, Presentations, YouTube Videos and more. Try Now!</p>
-            {
+            <div class="tools-grid">
+                {
   "html": "<div id='textToSpeechContainer'>\n<input id='inputTextField' type='text' placeholder='Enter text here...\'>\n<button id='speakBtn'>Speak</button>\n</div>\n<script>\nwindow.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;\nconst synth = window.speechSynthesis;\nconst speakBtn = document.getElementById('speakBtn');\nconst inputTextField = document.getElementById('inputTextField');\nspeakBtn.addEventListener('click', ()=>{\nvar utterance = new SpeechSynthesisUtterance(inputTextField.value);\nsynth.speak(utterance);\n});\n</script>"
 }https://www.texttospeech.com
+            </div>
         </main>
+        
     </div>
 
     <footer>

@@ -43,8 +43,11 @@
         <main>
             <h1>Password Generator | Secure, Random & Unique Password Creation Tool</h1>
             <p>Use our Online Password Generator to create secure, powerful, and unique passwords instantly. Protect your accounts and personal data with strong, random passwords!</p>
-            <div id='passwordGenerator'><br/><input type='button' value='Generate Password' onclick='generatePassword()'/><br/><input type='text' id='generatedPassword' readonly /></div><script>function generatePassword() {var chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()';var passwordLength = 8;var password = '';for (var i = 0; i < passwordLength; i++) {var randomNumber = Math.floor(Math.random() * chars.length);password += chars.substring(randomNumber,randomNumber+1); }document.getElementById('generatedPassword').value = password;}</script>https://www.passwordgenerator.com
+            <div class="tools-grid">
+                <div id='passwordGenerator'><br/><input type='button' value='Generate Password' onclick='generatePassword()'/><br/><input type='text' id='generatedPassword' readonly /></div><script>function generatePassword() {var chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()';var passwordLength = 8;var password = '';for (var i = 0; i < passwordLength; i++) {var randomNumber = Math.floor(Math.random() * chars.length);password += chars.substring(randomNumber,randomNumber+1); }document.getElementById('generatedPassword').value = password;}</script>https://www.passwordgenerator.com
+            </div>
         </main>
+        
     </div>
 
     <footer>

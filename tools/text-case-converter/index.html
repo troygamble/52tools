@@ -43,8 +43,11 @@
         <main>
             <h1>Efficient Text Case Converter Tool | Change Your Text Case Online</h1>
             <p>Use our sophisticated Text Case Converter tool to easily convert your texts into any desired case. Perfect for writers, coders, and everyone in need of text transformation.</p>
-            <div class='wrapper'><h1>Text Case Converter</h1><textarea id='input' rows='5' style='width: 100%'></textarea><button class='button' id='uppercase'>Convert to UPPERCASE</button><button class='button' id='lowercase'>Convert to lowercase</button><button class='button' id='titlecase'>Convert to Title Case</button><div class='result' id='result'></div></div><script>document.getElementById('uppercase').addEventListener('click', function() { document.getElementById('result').innerText = document.getElementById('input').value.toUpperCase();});document.getElementById('lowercase').addEventListener('click', function() { document.getElementById('result').innerText = document.getElementById('input').value.toLowerCase();});document.getElementById('titlecase').addEventListener('click', function() { document.getElementById('result').innerText = document.getElementById('input').value.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});});</script>
+            <div class="tools-grid">
+                <div class='wrapper'><h1>Text Case Converter</h1><textarea id='input' rows='5' style='width: 100%'></textarea><button class='button' id='uppercase'>Convert to UPPERCASE</button><button class='button' id='lowercase'>Convert to lowercase</button><button class='button' id='titlecase'>Convert to Title Case</button><div class='result' id='result'></div></div><script>document.getElementById('uppercase').addEventListener('click', function() { document.getElementById('result').innerText = document.getElementById('input').value.toUpperCase();});document.getElementById('lowercase').addEventListener('click', function() { document.getElementById('result').innerText = document.getElementById('input').value.toLowerCase();});document.getElementById('titlecase').addEventListener('click', function() { document.getElementById('result').innerText = document.getElementById('input').value.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});});</script>
+            </div>
         </main>
+        
     </div>
 
     <footer>

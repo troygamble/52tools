@@ -1,25 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.querySelector('.theme-toggle');
     const body = document.body;
-    const navContainers = document.querySelectorAll('.nav-links'); // Handle multiple navs (top & sidebar)
+    const navContainers = document.querySelectorAll('.nav-links');
     const dropBtn = document.querySelector('.dropbtn');
 
-    // ✅ Theme toggling with localStorage persistence
-    if (localStorage.getItem('theme') === 'dark') {
+    // ✅ Apply saved theme from localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
         body.classList.add('dark-mode');
     }
 
+    // ✅ Toggle dark mode and persist setting
     themeToggle.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
-        localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+        const newTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+        localStorage.setItem('theme', newTheme);
     });
 
-    // ✅ Dynamic navigation loading (dropdown & sidebar)
+    // ✅ Dynamic navigation loading
     fetch('/tools/tools_list.json')
-        .then(response => {
-            if (!response.ok) throw new Error('Failed to load navigation data.');
-            return response.json();
-        })
+        .then(response => response.json())
         .then(data => {
             navContainers.forEach(navContainer => {
                 data.tools.forEach(tool => {
@@ -28,13 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     navContainer.appendChild(li);
                 });
             });
-        })
-        .catch(error => console.error('❌ Navigation load error:', error));
+        });
 
     // ✅ Dropdown toggle for "All Tools"
     dropBtn?.addEventListener('click', () => {
-        const dropdownContent = document.querySelector('.dropdown-content');
-        dropdownContent.classList.toggle('show');
+        document.querySelector('.dropdown-content').classList.toggle('show');
     });
 
     // ✅ Close dropdown when clicking outside

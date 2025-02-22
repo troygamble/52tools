@@ -3,12 +3,18 @@
     --text-color: #333333;
     --accent-color: #007bff;
     --nav-background: #f8f9fa;
+    --sidebar-width: 250px;
+    --card-background: #f5f5f5;
+    --hover-background: #e0e0e0;
 }
 
 body.dark-mode {
     --background-color: #1a1a1a;
     --text-color: #f0f0f0;
+    --accent-color: #1e90ff;
     --nav-background: #2c2c2c;
+    --card-background: #333333;
+    --hover-background: #444444;
 }
 
 body {
@@ -17,26 +23,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Navigation */
+/* Navbar styling */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--nav-background);
     padding: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .brand-logo {
     font-size: 1.5rem;
     color: var(--text-color);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .dropdown {
     position: relative;
-    display: inline-block;
 }
 
 .dropbtn {
@@ -46,15 +54,18 @@ body {
     padding: 0.5rem 1rem;
     cursor: pointer;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--background-color);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    min-width: 160px;
+    background-color: var(--card-background);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
     z-index: 1;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
 .dropdown-content.show {
@@ -66,17 +77,49 @@ body {
     display: block;
     text-decoration: none;
     color: var(--text-color);
+    border-bottom: 1px solid var(--hover-background);
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Page layout */
-.layout {
-    display: flex;
+.dropdown-content a:hover {
+    background-color: var(--accent-color);
+    color: white;
 }
 
+/* Sidebar Styling */
 .sidebar {
-    width: 250px;
+    width: var(--sidebar-width);
     border-right: 1px solid #ddd;
     padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+    background-color: var(--nav-background);
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Main Content & Layout */
+.layout {
+    display: flex;
 }
 
 main {
@@ -84,9 +127,36 @@ main {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    transition: background-color 0.3s ease;
 }
 
-/* Responsive design */
+/* Homepage Tool List - Responsive Grid */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tool-card {
+    background-color: var(--card-background);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.tool-card a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.tool-card a:hover {
+    color: var(--accent-color);
+}
+
 @media (max-width: 768px) {
     .layout {
         flex-direction: column;
@@ -94,7 +164,11 @@ main {
 
     .sidebar {
         width: 100%;
-        border-right: none;
+        height: auto;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -102,6 +176,7 @@ footer {
     text-align: center;
     padding: 1rem;
     background-color: var(--nav-background);
+    transition: background-color 0.3s ease;
 }
 
 .theme-toggle {
@@ -111,4 +186,32 @@ footer {
     padding: 0.5rem 1rem;
     cursor: pointer;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Dark Mode Transitions for All Interactive Elements */
+body.dark-mode .theme-toggle,
+body.dark-mode .dropbtn {
+    background-color: var(--accent-color);
+}
+
+body.dark-mode .tool-card,
+body.dark-mode .dropdown-content,
+body.dark-mode .sidebar,
+body.dark-mode footer,
+body.dark-mode main {
+    background-color: var(--card-background);
+}
+
+body.dark-mode .dropdown-content a:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+body.dark-mode a {
+    color: var(--text-color);
+}
+
+body.dark-mode a:hover {
+    color: var(--accent-color);
 }
