@@ -215,3 +215,28 @@ body.dark-mode a {
 body.dark-mode a:hover {
     color: var(--accent-color);
 }
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode a:hover {
+    color: #1e90ff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.sidebar {
+    height: calc(100vh - 60px); /* Adjust based on header height */
+    overflow-y: auto;
+}
+
+.sidebar a.active, .dropdown-content a.active {
+    font-weight: bold;
+    border-left: 4px solid var(--accent-color);
+}
+
