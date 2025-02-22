@@ -8,50 +8,42 @@
     <meta name="description" content="Use our best online Percentage Calculator tool for quick and accurate calculations. It helps to calculate percentages without any hassle. Ideal for students, professionals, and anyone needing to calculate percentages.">
     <meta name="keywords" content="percentage calculator, online percentage calculator, calculate percentages, percentage calculation tool, math tool">
     <link rel="canonical" href="/tools/percentage-calculator/index.html">
+
     <!-- Open Graph Meta Tags for Social Sharing -->
     <meta property="og:title" content="Best Online Percentage Calculator Tool | Calculate Percentages Easily - 52tools">
     <meta property="og:description" content="Use our best online Percentage Calculator tool for quick and accurate calculations. It helps to calculate percentages without any hassle. Ideal for students, professionals, and anyone needing to calculate percentages.">
     <meta property="og:image" content="/shared/images/default_og.png">
     <meta property="og:url" content="/tools/percentage-calculator/index.html">
     <meta property="og:type" content="website">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/shared/images/favicon.ico">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/shared/css/styles.css">
-    <style>
-        @keyframes pulse {
-            0% { opacity: 0.6; }
-            50% { opacity: 1; }
-            100% { opacity: 0.6; }
-        }
-        .nav-links.active {
-            display: flex !important;
-            flex-direction: column;
-            background-color: var(--nav-background);
-            animation: slideDown 0.3s ease-in-out;
-        }
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
 </head>
+
 <body>
     <header>
-        <nav role="navigation" aria-label="Main Navigation">
-            <div class="logo">52tools</div>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
-            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">☰</label>
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-            </ul>
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <a href="/" class="brand-logo">52Tools</a>
+            <div class="dropdown">
+                <button class="dropbtn">All Tools ⌄</button>
+                <div class="dropdown-content nav-links"></div>
+            </div>
             <button class="theme-toggle" aria-label="Toggle theme">Toggle Theme</button>
         </nav>
     </header>
-    <main>
-        <h1>Best Online Percentage Calculator Tool | Calculate Percentages Easily</h1>
-        <p>Use our best online Percentage Calculator tool for quick and accurate calculations. It helps to calculate percentages without any hassle. Ideal for students, professionals, and anyone needing to calculate percentages.</p>
-        
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>All Tools</h3>
+            <ul class="nav-links"></ul>
+        </aside>
+        <main>
+            <h1>Best Online Percentage Calculator Tool | Calculate Percentages Easily</h1>
+            <p>Use our best online Percentage Calculator tool for quick and accurate calculations. It helps to calculate percentages without any hassle. Ideal for students, professionals, and anyone needing to calculate percentages.</p>
+            
 
 <h2>Percentage Calculator</h2>
 
@@ -74,92 +66,17 @@ function calculate() {
 </script>
 
 
-    </main>
+        </main>
+    </div>
+
     <footer>
-        <p>© 2023 52tools. All rights reserved.</p>
+        <p>© 2024 52tools. All rights reserved.</p>
         <!-- Google AdSense -->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3058622880826183"
             crossorigin="anonymous"></script>
-
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const themeToggle = document.querySelector('.theme-toggle');
-            const body = document.body;
-            const navContainer = document.querySelector('.nav-links');
-            const navToggle = document.querySelector('.nav-toggle');
-            const loadingIndicator = document.createElement('div');
 
-            // ✅ Accessibility: Add ARIA roles
-            navContainer.setAttribute('role', 'navigation');
-            navContainer.setAttribute('aria-label', 'Main Navigation');
-
-            // ✅ Loading indicator with animation for dynamic navigation
-            loadingIndicator.textContent = 'Loading navigation...';
-            loadingIndicator.setAttribute('role', 'status');
-            loadingIndicator.style.padding = '1rem';
-            loadingIndicator.style.textAlign = 'center';
-            loadingIndicator.style.fontStyle = 'italic';
-            loadingIndicator.style.opacity = '0.7';
-            loadingIndicator.style.animation = 'pulse 1.5s infinite';
-            navContainer.parentNode.insertBefore(loadingIndicator, navContainer);
-
-            // ✅ Theme toggling with localStorage & system preference
-            const applyTheme = (theme) => {
-                body.classList.toggle('dark-mode', theme === 'dark');
-                localStorage.setItem('theme', theme);
-            };
-
-            const preferredTheme = localStorage.getItem('theme') ||
-                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-            applyTheme(preferredTheme);
-
-            themeToggle.addEventListener('click', () => {
-                const newTheme = body.classList.contains('dark-mode') ? 'light' : 'dark';
-                applyTheme(newTheme);
-            });
-
-            // ✅ Dynamic navigation loading with retry logic and user feedback
-            const loadNavigation = async (retries = 3) => {
-                try {
-                    const response = await fetch('/tools/tools_list.json');
-                    if (!response.ok) throw new Error('Failed to load navigation data.');
-                    const data = await response.json();
-                    navContainer.innerHTML = '';
-                    data.tools.forEach(tool => {
-                        const li = document.createElement('li');
-                        const link = document.createElement('a');
-                        link.href = `tools/${tool.slug}/index.html`;
-                        link.textContent = tool.name;
-                        link.setAttribute('aria-label', `Access ${tool.name} tool page`);
-                        li.appendChild(link);
-                        navContainer.appendChild(li);
-                    });
-                } catch (error) {
-                    if (retries > 0) {
-                        console.warn(`Retrying navigation load... (${3 - retries + 1})`);
-                        setTimeout(() => loadNavigation(retries - 1), 1000);
-                    } else {
-                        console.error('❌ Navigation load error:', error);
-                        navContainer.innerHTML = '<p role="alert" style="color: red; text-align: center;">Failed to load navigation. Please try again later.</p>';
-                    }
-                } finally {
-                    loadingIndicator.remove();
-                }
-            };
-            loadNavigation();
-
-            // ✅ Mobile navigation toggle using CSS classes for smoother transitions
-            navToggle.addEventListener('change', () => {
-                navContainer.classList.toggle('active', navToggle.checked);
-            });
-
-            // ✅ Listen for system preference changes and adjust theme
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
-                applyTheme(event.matches ? 'dark' : 'light');
-            });
-        });
-    </script>
+    <!-- ✅ Only external JS reference -->
     <script src="/shared/js/scripts.js"></script>
 </body>
 </html>
