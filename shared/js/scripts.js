@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
     });
 
-    // ✅ Dynamic navigation loading
-    fetch('/tools/tools_list.json');
-        then(response => {
+    // ✅ Dynamic navigation loading (Fixed the 'fetch' chain)
+    fetch('/tools/tools_list.json')
+        .then(response => {
             if (!response.ok) throw new Error('Failed to load navigation data.');
             return response.json();
         })
@@ -31,10 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // ✅ Mobile navigation toggle
     const navToggle = document.querySelector('.nav-toggle');
     navToggle.addEventListener('change', () => {
-        if (navToggle.checked) {
-            navContainer.style.display = 'flex';
-        } else {
-            navContainer.style.display = 'none';
-        }
+        navContainer.style.display = navToggle.checked ? 'flex' : 'none';
     });
 });
