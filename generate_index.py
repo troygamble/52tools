@@ -22,7 +22,7 @@ load_dotenv()
 # ===============================================
 # ✅ Global settings from .env
 # ===============================================
-base_url = os.getenv("BASE_URL", "https://troygamble.github.io/52tools")
+base_url = ""
 
 
 # ===============================================

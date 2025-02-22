@@ -32,7 +32,8 @@ client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 # ===============================================
 # ✅ Global settings from .env
 # ===============================================
-base_url = os.getenv("BASE_URL", "https://troygamble.github.io/52tools")
+base_url = ""
+
 
 # ===============================================
 # ✅ Utility: Slugify tool names for safe filenames

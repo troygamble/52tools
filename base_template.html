@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <base href="{{ base_url }}/">
+    <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if tool_title %}{{ tool_title }} - 52tools{% else %}52tools - Explore Essential Online Tools{% endif %}</title>
@@ -15,9 +15,9 @@
     <meta property="og:url" content="{{ canonical_url }}">
     <meta property="og:type" content="website">
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="shared/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/shared/images/favicon.ico">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="shared/css/styles.css">
+    <link rel="stylesheet" href="/shared/css/styles.css">
     <style>
         @keyframes pulse {
             0% { opacity: 0.6; }
@@ -138,6 +138,6 @@
             });
         });
     </script>
-    <script src="shared/js/scripts.js"></script>
+    <script src="/shared/js/scripts.js"></script>
 </body>
 </html>

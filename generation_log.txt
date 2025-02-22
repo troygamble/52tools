@@ -336,3 +336,60 @@
 2025-02-22 10:12:01,104 - INFO - [SUCCESS] Generated page for Character Counter
 2025-02-22 10:12:01,104 - INFO - [SUCCESS] Generated page for Unit Converter
 2025-02-22 10:12:01,120 - INFO - \U0001f389 All pages processed! Check 'generation_log.txt' for details.
+2025-02-22 11:14:22,556 - INFO - Loaded 53 tools from tools_list.json.
+2025-02-22 11:14:22,565 - INFO - Loaded metadata for 50 tools.
+2025-02-22 11:14:22,565 - INFO - \U0001f504 Refreshing pages without API calls...
+2025-02-22 11:14:22,891 - INFO - [SUCCESS] Generated page for HTML Entity Encoder/Decoder
+2025-02-22 11:14:22,891 - INFO - [SUCCESS] Generated page for Text Case Converter
+2025-02-22 11:14:22,892 - INFO - [SUCCESS] Generated page for Image to Base64 Converter
+2025-02-22 11:14:22,892 - INFO - [SUCCESS] Generated page for Color Palette Generator
+2025-02-22 11:14:22,892 - INFO - [SUCCESS] Generated page for Mortgage Calculator
+2025-02-22 11:14:22,893 - INFO - [SUCCESS] Generated page for CSV to JSON Converter
+2025-02-22 11:14:22,893 - INFO - [SUCCESS] Generated page for URL Encoder/Decoder
+2025-02-22 11:14:22,893 - INFO - [SUCCESS] Generated page for Loan Calculator
+2025-02-22 11:14:22,894 - INFO - [SUCCESS] Generated page for Regex Tester
+2025-02-22 11:14:22,894 - INFO - [SUCCESS] Generated page for Base64 Encoder/Decoder
+2025-02-22 11:14:22,895 - INFO - [SUCCESS] Generated page for SQL Query Builder
+2025-02-22 11:14:22,895 - INFO - [SUCCESS] Generated page for Pomodoro Timer
+2025-02-22 11:14:22,895 - INFO - [SUCCESS] Generated page for BMI Calculator
+2025-02-22 11:14:22,895 - INFO - [SUCCESS] Generated page for World Clock
+2025-02-22 11:14:22,896 - INFO - [SUCCESS] Generated page for Notes App
+2025-02-22 11:14:22,896 - INFO - [SUCCESS] Generated page for Weather Widget
+2025-02-22 11:14:22,896 - INFO - [SUCCESS] Generated page for Git Cheat Sheet
+2025-02-22 11:14:22,896 - INFO - [SUCCESS] Generated page for QR Code Generator
+2025-02-22 11:14:22,896 - INFO - [SUCCESS] Generated page for Random Number Generator
+2025-02-22 11:14:22,896 - INFO - [SUCCESS] Generated page for XML Formatter
+2025-02-22 11:14:22,896 - INFO - [SUCCESS] Generated page for Tip Calculator
+2025-02-22 11:14:22,896 - INFO - [SUCCESS] Generated page for URL Validator
+2025-02-22 11:14:22,896 - INFO - [SUCCESS] Generated page for Age Calculator
+2025-02-22 11:14:22,897 - INFO - [SUCCESS] Generated page for Image Resizer
+2025-02-22 11:14:22,897 - INFO - [SUCCESS] Generated page for IP Address Lookup
+2025-02-22 11:14:22,899 - INFO - [SUCCESS] Generated page for Word Counter
+2025-02-22 11:14:22,899 - INFO - [SUCCESS] Generated page for HTML Formatter
+2025-02-22 11:14:22,899 - INFO - [SUCCESS] Generated page for UUID Generator
+2025-02-22 11:14:22,899 - INFO - [SUCCESS] Generated page for Lorem Ipsum Generator
+2025-02-22 11:14:22,899 - INFO - [SUCCESS] Generated page for API Tester
+2025-02-22 11:14:22,900 - INFO - [SUCCESS] Generated page for Credit Card Validator
+2025-02-22 11:14:22,900 - INFO - [SUCCESS] Generated page for Percentage Calculator
+2025-02-22 11:14:22,900 - INFO - [SUCCESS] Generated page for Text to Speech
+2025-02-22 11:14:22,901 - INFO - [SUCCESS] Generated page for Time Zone Converter
+2025-02-22 11:14:22,902 - INFO - [SUCCESS] Generated page for YAML Formatter
+2025-02-22 11:14:22,902 - INFO - [SUCCESS] Generated page for Fake Data Generator
+2025-02-22 11:14:22,903 - INFO - [SUCCESS] Generated page for Currency Converter
+2025-02-22 11:14:22,903 - INFO - [SUCCESS] Generated page for IBAN Validator
+2025-02-22 11:14:22,903 - INFO - [SUCCESS] Generated page for Email Validator
+2025-02-22 11:14:22,904 - INFO - [SUCCESS] Generated page for Password Generator
+2025-02-22 11:14:22,904 - INFO - [SUCCESS] Generated page for JSON Formatter
+2025-02-22 11:14:22,904 - INFO - [SUCCESS] Generated page for File Size Converter
+2025-02-22 11:14:22,905 - INFO - [SUCCESS] Generated page for Image Compressor
+2025-02-22 11:14:22,905 - INFO - [SUCCESS] Generated page for Browser Details Detector
+2025-02-22 11:14:22,905 - INFO - [SUCCESS] Generated page for Binary to Decimal Converter
+2025-02-22 11:14:22,905 - INFO - [SUCCESS] Generated page for Unit Converter
+2025-02-22 11:14:22,906 - INFO - [SUCCESS] Generated page for Hex to RGB Converter
+2025-02-22 11:14:22,913 - INFO - [SUCCESS] Generated page for Cron Job Scheduler
+2025-02-22 11:14:22,913 - INFO - [SUCCESS] Generated page for Color Picker
+2025-02-22 11:14:22,913 - INFO - [SUCCESS] Generated page for To-Do List
+2025-02-22 11:14:22,913 - INFO - [SUCCESS] Generated page for Text Diff Tool
+2025-02-22 11:14:22,916 - INFO - [SUCCESS] Generated page for Character Counter
+2025-02-22 11:14:22,919 - INFO - [SUCCESS] Generated page for Markdown Editor
+2025-02-22 11:14:22,923 - INFO - \U0001f389 All pages processed! Check 'generation_log.txt' for details.
